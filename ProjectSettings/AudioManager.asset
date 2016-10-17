@@ -11,6 +11,11 @@ AudioManager:
   m_DSPBufferSize: 0
   m_VirtualVoiceCount: 512
   m_RealVoiceCount: 32
+<<<<<<< HEAD
   m_SpatializerPlugin: OculusSpatializer
   m_DisableAudio: 0
   m_VirtualizeEffects: 1
+=======
+  m_SpatializerPlugin: 
+  m_DisableAudio: 0
+>>>>>>> 11d3c9e... VR Samples

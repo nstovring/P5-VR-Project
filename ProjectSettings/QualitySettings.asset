@@ -72,7 +72,11 @@ QualitySettings:
     blendWeights: 2
     textureQuality: 0
     anisotropicTextures: 1
+<<<<<<< HEAD
     antiAliasing: 0
+=======
+    antiAliasing: 4
+>>>>>>> 11d3c9e... VR Samples
     softParticles: 0
     softVegetation: 0
     realtimeReflectionProbes: 0
