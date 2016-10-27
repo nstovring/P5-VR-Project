@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 guid: 2003398a2f5e52841b79f8ed8731bfa0
+<<<<<<< HEAD
 timeCreated: 1479067906
+=======
+timeCreated: 1477578382
+>>>>>>> e3f44c3... Baked LightMaps
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
