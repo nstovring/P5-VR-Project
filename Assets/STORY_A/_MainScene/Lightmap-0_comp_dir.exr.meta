@@ -5,6 +5,7 @@ guid: 2003398a2f5e52841b79f8ed8731bfa0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 timeCreated: 1479067906
 =======
 timeCreated: 1477578382
@@ -21,6 +22,9 @@ timeCreated: 1477578382
 =======
 timeCreated: 1477578382
 >>>>>>> e3f44c3... Baked LightMaps
+=======
+timeCreated: 1477922579
+>>>>>>> 67689ae... Working Scene Transitions
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
