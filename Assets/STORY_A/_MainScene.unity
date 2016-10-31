@@ -36,7 +36,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 1912008552}
   m_IndirectSpecularColor: {r: 1.3502687, g: 1.4970317, b: 1.7126658, a: 1}
 --- !u!157 &3
 LightmapSettings:
@@ -51,14 +51,14 @@ LightmapSettings:
     m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 1
     m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 4
     m_Resolution: 2
     m_BakeResolution: 10
     m_TextureWidth: 2048
     m_TextureHeight: 1024
-    m_AO: 1
+    m_AO: 0
     m_AOMaxDistance: 2
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
@@ -66,12 +66,12 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_DirectLightInLightProbes: 1
+    m_DirectLightInLightProbes: 0
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 112000176, guid: 7fcda966e069bb94da21bb976275761e,
+  m_LightingDataAsset: {fileID: 112000001, guid: 7fcda966e069bb94da21bb976275761e,
     type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
