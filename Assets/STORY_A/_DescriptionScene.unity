@@ -130,6 +130,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 177758, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
   m_IsPrefabParent: 0
@@ -175,6 +179,11 @@ Prefab:
     - target: {fileID: 1000011983855050, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
       propertyPath: m_Name
       value: MainCameraGearVR
+      objectReference: {fileID: 0}
+    - target: {fileID: 20000010742696948, guid: 110930e30b8f6cc4687c3dc5d87423ad,
+        type: 2}
+      propertyPath: far clip plane
+      value: 39.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
@@ -415,7 +424,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -554,7 +563,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010627931712, guid: 977bfd0bfc14b0745836429237a03542, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000010444978042, guid: 977bfd0bfc14b0745836429237a03542, type: 2}
       propertyPath: m_StaticEditorFlags
