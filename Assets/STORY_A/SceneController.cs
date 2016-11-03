@@ -30,7 +30,9 @@ public class SceneController : MonoBehaviour
         teacher = GameObject.FindGameObjectWithTag("Teacher");
         emil = GameObject.FindGameObjectWithTag("Emil");
 
-        SceneAudioSource.transform.position = emil.transform.position;
+        //Emil Narratter
+        SceneAudioSource.spatialize = false;
+        SceneAudioSource.transform.position = Camera.main.transform.position;
         Camera.main.GetComponent<VRCameraFade>().FadeIn(2, false);
         SceneAudioSource.PlayOneShot(NarrationAudioClips[1]);
         soundDelay = NarrationAudioClips[1].length;
@@ -38,6 +40,7 @@ public class SceneController : MonoBehaviour
 
         yield return new WaitForSeconds(2);
         // Læren stiller et spørgsmål
+        SceneAudioSource.spatialize = true;
         SceneAudioSource.transform.position = teacher.transform.position;
         SceneAudioSource.PlayOneShot(CharacterAudioClips[0]);
         soundDelay = CharacterAudioClips[0].length;
@@ -56,17 +59,17 @@ public class SceneController : MonoBehaviour
         yield return new WaitForSeconds(soundDelay);
 
         yield return new WaitForSeconds(3);
-
+        SceneAudioSource.spatialize = false;
         SceneAudioSource.PlayOneShot(NarrationAudioClips[2]);
         soundDelay = NarrationAudioClips[2].length;
         yield return new WaitForSeconds(soundDelay);
         yield return new WaitForSeconds(2);
         Camera.main.GetComponent<VRCameraFade>().FadeOut(2, false);
-        foreach (var classMate in classMates)
-        {
-            Debug.Log("Rotating arms");
-            classMate.GetComponent<ClassMate>().RotateArm(0);
-        }
+        //foreach (var classMate in classMates)
+        //{
+        //    Debug.Log("Reset animations");
+        //    classMate.GetComponent<ClassMate>().RotateArm(0);
+        //}
         wrongSceneOver = true;
     }
 
@@ -76,8 +79,8 @@ public class SceneController : MonoBehaviour
         wrongSceneOver = false;
         classMates = GameObject.FindGameObjectsWithTag("ClassMate");
         Camera.main.GetComponent<VRCameraFade>().FadeIn(2, false);
-        SceneAudioSource.transform.position = emil.transform.position;
-        //Emil narrater
+        //Emil Narratter
+        SceneAudioSource.spatialize = false;
         SceneAudioSource.PlayOneShot(NarrationAudioClips[4]);
         soundDelay = NarrationAudioClips[4].length;
         yield return new WaitForSeconds(soundDelay);
@@ -85,17 +88,18 @@ public class SceneController : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         //Lærer stiller spørgsmål igen
+        SceneAudioSource.spatialize = true;
         SceneAudioSource.transform.position = teacher.transform.position;
         SceneAudioSource.PlayOneShot(CharacterAudioClips[0]);
         soundDelay = CharacterAudioClips[0].length;
         yield return new WaitForSeconds(soundDelay);
-        Debug.Log("Rotating arms??");
+        Debug.Log("Animate arms??");
 
        // GameObject.FindGameObjectWithTag("Emil").GetComponent<ClassMate>().RotateArm(-180);
 
         foreach (var classMate in classMates)
         {
-            Debug.Log("Rotating arms");
+            Debug.Log("Animate arms");
             //classMate.GetComponent<ClassMate>().RotateArm(-180);
         }
 
@@ -107,7 +111,7 @@ public class SceneController : MonoBehaviour
         yield return new WaitForSeconds(soundDelay);
 
         //Emil svarer
-        SceneAudioSource.transform.position = emil.transform.position;
+        SceneAudioSource.spatialize = false;
         SceneAudioSource.PlayOneShot(NarrationAudioClips[5]);
         soundDelay = NarrationAudioClips[5].length;
         yield return new WaitForSeconds(soundDelay);
