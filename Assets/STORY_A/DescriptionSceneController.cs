@@ -11,19 +11,37 @@ public class DescriptionSceneController : MonoBehaviour
     public AudioSource BackgroundAudioSource;
     public AudioSource BackgroundFadeAudioSource;
     public AudioClip[] NarrationAudioClips = new AudioClip[4];
+<<<<<<< HEAD
     public AudioClip[] BackgroundAudioClips = new AudioClip[4];
     public AudioMixerSnapshot backgroundSoundSnapshot;
     public AudioMixerSnapshot backgroundFadeSoundSnapshot;
+=======
+>>>>>>> 83befd8... Test introduction scenes
 
     public float lightDelay = 1;
     public float soundDelay = 3;
     public float houseSpeed = 1;
     public bool pictureFadeInMode;
     // Use this for initialization
+<<<<<<< HEAD
  //   private IEnumerator Start ()
 	//{
  //           yield return StartCoroutine(PictureFadeInScene());
  //   }
+=======
+    private IEnumerator Start ()
+	{
+	   
+        if (pictureFadeInMode)
+        {
+            yield return StartCoroutine(PictureFadeInScene());
+        }
+        else
+        {
+            yield return StartCoroutine(BogScene());
+        }
+    }
+>>>>>>> 83befd8... Test introduction scenes
 
     public Transform bookAnimator;
     public Transform houseScale;
@@ -49,10 +67,15 @@ public class DescriptionSceneController : MonoBehaviour
     public Renderer[] frameRenderers;
     private IEnumerator PictureFadeInScene()
     {
+<<<<<<< HEAD
 
         //SceneAudioSource.PlayOneShot(NarrationAudioClips[0]);
         //soundDelay = NarrationAudioClips[0].length;
         yield return PlaySoundAndDelay(NarrationAudioClips[0]);
+=======
+        SceneAudioSource.PlayOneShot(NarrationAudioClips[0]);
+        soundDelay = NarrationAudioClips[0].length;
+>>>>>>> 83befd8... Test introduction scenes
         for (int index = 0; index < frameRenderers.Length; index++)
         {
             Material tempMat = new Material(frameRenderers[index].material);
@@ -62,6 +85,7 @@ public class DescriptionSceneController : MonoBehaviour
 
         var frameRenderer = frameRenderers[0];
 
+<<<<<<< HEAD
         PlayBackgroundClip(BackgroundAudioClips[0]);
         backgroundFadeSoundSnapshot.TransitionTo(4f);
         yield return StartCoroutine(lerpColor(frameRenderer, 0.5f));
@@ -81,11 +105,26 @@ public class DescriptionSceneController : MonoBehaviour
         backgroundSoundSnapshot.TransitionTo(4f);
         yield return StartCoroutine(lerpColor(frameRenderers[3], 0.2f));
         yield return PlaySoundAndDelay(NarrationAudioClips[4]);
+=======
+        yield return StartCoroutine(lerpColor(frameRenderer, 0.5f));
+        //yield return new WaitForSeconds(3f);
+
+
+        yield return StartCoroutine(lerpColor(frameRenderers[1], 0.2f));
+        //yield return new WaitForSeconds(3f);
+        yield return StartCoroutine(lerpColor(frameRenderers[2], 0.2f));
+        yield return StartCoroutine(lerpColor(frameRenderers[3], 0.2f));
+
+>>>>>>> 83befd8... Test introduction scenes
 
         yield return new WaitForSeconds(3f);
         //yield return StartCoroutine(lerpObject(houseAnimation[0], houseAnimation[1], houseSpeed));
 
+<<<<<<< HEAD
         //yield return new WaitForSeconds(soundDelay);
+=======
+        yield return new WaitForSeconds(soundDelay);
+>>>>>>> 83befd8... Test introduction scenes
 
         Camera.main.GetComponent<VRCameraFade>().FadeOut(2, false);
       
@@ -93,11 +132,26 @@ public class DescriptionSceneController : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+<<<<<<< HEAD
     IEnumerator PlaySoundAndDelay(AudioClip clip)
     {
         SceneAudioSource.PlayOneShot(clip);
         soundDelay = clip.length;
         yield return new WaitForSeconds(soundDelay);
+=======
+    IEnumerator lerpColor(Renderer rend, float speed)
+    {
+        Renderer frameRenderer = rend;
+        Color color = frameRenderer.material.GetColor("_EmissionColor");
+
+        while (color != Color.white)
+        {
+            color = Color.Lerp(color, Color.white, speed);
+            //frameRenderer.material.SetColor("_Color", color);
+            frameRenderer.material.SetColor("_EmissionColor", color);
+            yield return new WaitForSeconds(0.07f);
+        }
+>>>>>>> 83befd8... Test introduction scenes
     }
 
     void PlayBackgroundClip(AudioClip clip)
@@ -146,6 +200,22 @@ public class DescriptionSceneController : MonoBehaviour
             audio1Volume -= 0.1f * Time.deltaTime;
             audioSource.volume = audio1Volume;
         }
+    }
+
+    IEnumerator scaleObject(Transform curObject, Vector3 endScale, float speed)
+    {
+        float step =  speed;
+        while (Vector3.Distance(curObject.localScale, endScale) > 0.01)
+        {
+            //curObject.transform.localScale = Vector3.Lerp(curObject.transform.position, endScale,
+            //    speed);
+
+            curObject.localScale = Vector3.Lerp(curObject.transform.localScale, endScale , step);
+            //step += 0.1f;
+            yield return new WaitForEndOfFrame();
+        }
+
+
     }
 
     IEnumerator scaleObject(Transform curObject, Vector3 endScale, float speed)

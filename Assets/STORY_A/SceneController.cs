@@ -23,8 +23,17 @@ public class SceneController : MonoBehaviour
     // Use this for initialization
     private IEnumerator Start ()
 	{
+<<<<<<< HEAD
         
         //GameObject[] temp = GameObject.FindGameObjectsWithTag("ClassMate");
+=======
+        classMates = GameObject.FindGameObjectsWithTag("ClassMate");
+        teacher = GameObject.FindGameObjectWithTag("Teacher");
+        teacherAnimator = teacher.GetComponentInChildren<Animator>();
+        emil = GameObject.FindGameObjectWithTag("Emil");
+        yield return StartCoroutine(ClassRoomSceneA());
+    }
+>>>>>>> 83befd8... Test introduction scenes
 
         //classMates = new List<ClassMate>();
         //foreach (var o in temp)
@@ -46,6 +55,7 @@ public class SceneController : MonoBehaviour
     private VRCameraFade myFade;
     private IEnumerator ClassRoomSceneA()
     {
+<<<<<<< HEAD
         myFade = Camera.main.GetComponent<VRCameraFade>();
 
         //Emil Narratter
@@ -59,6 +69,25 @@ public class SceneController : MonoBehaviour
         yield return PlaySoundAtLocation(CharacterAudioClips[1], teacher.transform.position, true);
         teacher.StopTalking();
         teacherAnimator.SetBool("Gesturing", false);
+=======
+        //Emil Narratter
+        SceneAudioSource.spatialize = false;
+        SceneAudioSource.transform.position = Camera.main.transform.position;
+        Camera.main.GetComponent<VRCameraFade>().FadeIn(2, false);
+        SceneAudioSource.PlayOneShot(NarrationAudioClips[1]);
+        soundDelay = NarrationAudioClips[1].length;
+        yield return new WaitForSeconds(soundDelay);
+        yield return new WaitForSeconds(2);
+        // Læren stiller et spørgsmål
+        SceneAudioSource.spatialize = true;
+        SceneAudioSource.transform.position = teacher.transform.position;
+        teacherAnimator.SetBool("Gesturing", true);
+        SceneAudioSource.PlayOneShot(CharacterAudioClips[0]);
+        soundDelay = CharacterAudioClips[0].length;
+        yield return new WaitForSeconds(soundDelay);
+        teacherAnimator.SetBool("Gesturing", false);
+        Debug.Log("Rotating arms??");
+>>>>>>> 83befd8... Test introduction scenes
         foreach (var classMate in classMates)
         {
             if (classMate.myState == ClassMate.classMateStates.Idle)
@@ -102,11 +131,20 @@ public class SceneController : MonoBehaviour
         SceneAudioSource.spatialize = true;
         SceneAudioSource.transform.position = teacher.transform.position;
         teacherAnimator.SetBool("Gesturing", true);
+<<<<<<< HEAD
         teacher.StartTalking();
         yield return PlaySoundAtLocation(CharacterAudioClips[1], teacher.transform.position, true);
         teacher.StopTalking();
         teacherAnimator.SetBool("Gesturing", false);
         emil.HandsUp();
+=======
+        SceneAudioSource.PlayOneShot(CharacterAudioClips[0]);
+        soundDelay = CharacterAudioClips[0].length;
+        yield return new WaitForSeconds(soundDelay);
+        Debug.Log("Animate arms??");
+
+       // GameObject.FindGameObjectWithTag("Emil").GetComponent<ClassMate>().RotateArm(-180);
+>>>>>>> 83befd8... Test introduction scenes
 
         foreach (var classMate in classMates)
         {
@@ -118,6 +156,7 @@ public class SceneController : MonoBehaviour
         yield return new WaitForSeconds(1);
         //Lærer spørger emil specifikt
         teacherAnimator.SetBool("Gesturing", true);
+<<<<<<< HEAD
         teacher.StartTalking();
         yield return PlaySoundAtLocation(CharacterAudioClips[2], teacher.transform.position, true);
         teacher.StopTalking();
@@ -125,6 +164,12 @@ public class SceneController : MonoBehaviour
         foreach (var classMate in classMates)
         {
             classMate.HandsDown();
+=======
+        SceneAudioSource.transform.position = teacher.transform.position;
+        SceneAudioSource.PlayOneShot(CharacterAudioClips[2]);
+        soundDelay = CharacterAudioClips[2].length;
+        yield return new WaitForSeconds(soundDelay);
+>>>>>>> 83befd8... Test introduction scenes
 
         }
         //Emil svarer
