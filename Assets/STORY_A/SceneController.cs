@@ -16,20 +16,22 @@ public class SceneController : MonoBehaviour
     public GameObject emil;
     public GameObject[] classMates;
 
-    private bool wrongSceneOver = false; 
+    private bool wrongSceneOver = false;
+
+    private Animator teacherAnimator;
     // Use this for initialization
     private IEnumerator Start ()
 	{
-	    yield return StartCoroutine(ClassRoomSceneA());
+        classMates = GameObject.FindGameObjectsWithTag("ClassMate");
+        teacher = GameObject.FindGameObjectWithTag("Teacher");
+        teacherAnimator = teacher.GetComponentInChildren<Animator>();
+        emil = GameObject.FindGameObjectWithTag("Emil");
+        yield return StartCoroutine(ClassRoomSceneA());
     }
 
 
     private IEnumerator ClassRoomSceneA()
     {
-        classMates = GameObject.FindGameObjectsWithTag("ClassMate");
-        teacher = GameObject.FindGameObjectWithTag("Teacher");
-        emil = GameObject.FindGameObjectWithTag("Emil");
-
         //Emil Narratter
         SceneAudioSource.spatialize = false;
         SceneAudioSource.transform.position = Camera.main.transform.position;
@@ -37,15 +39,15 @@ public class SceneController : MonoBehaviour
         SceneAudioSource.PlayOneShot(NarrationAudioClips[1]);
         soundDelay = NarrationAudioClips[1].length;
         yield return new WaitForSeconds(soundDelay);
-
         yield return new WaitForSeconds(2);
         // Læren stiller et spørgsmål
         SceneAudioSource.spatialize = true;
         SceneAudioSource.transform.position = teacher.transform.position;
+        teacherAnimator.SetBool("Gesturing", true);
         SceneAudioSource.PlayOneShot(CharacterAudioClips[0]);
         soundDelay = CharacterAudioClips[0].length;
         yield return new WaitForSeconds(soundDelay);
-
+        teacherAnimator.SetBool("Gesturing", false);
         Debug.Log("Rotating arms??");
         foreach (var classMate in classMates)
         {
@@ -90,6 +92,7 @@ public class SceneController : MonoBehaviour
         //Lærer stiller spørgsmål igen
         SceneAudioSource.spatialize = true;
         SceneAudioSource.transform.position = teacher.transform.position;
+        teacherAnimator.SetBool("Gesturing", true);
         SceneAudioSource.PlayOneShot(CharacterAudioClips[0]);
         soundDelay = CharacterAudioClips[0].length;
         yield return new WaitForSeconds(soundDelay);
@@ -105,6 +108,7 @@ public class SceneController : MonoBehaviour
 
         yield return new WaitForSeconds(1);
         //Lærer spørger emil specifikt
+        teacherAnimator.SetBool("Gesturing", true);
         SceneAudioSource.transform.position = teacher.transform.position;
         SceneAudioSource.PlayOneShot(CharacterAudioClips[2]);
         soundDelay = CharacterAudioClips[2].length;
