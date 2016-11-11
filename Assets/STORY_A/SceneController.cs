@@ -48,11 +48,9 @@ public class SceneController : MonoBehaviour
         soundDelay = CharacterAudioClips[0].length;
         yield return new WaitForSeconds(soundDelay);
         teacherAnimator.SetBool("Gesturing", false);
-        Debug.Log("Rotating arms??");
         foreach (var classMate in classMates)
         {
-            Debug.Log("Rotating arms");
-            //classMate.GetComponent<ClassMate>().RotateArm(-180);
+            classMate.GetComponent<ClassMate>().HandsUp();
         }
         yield return new WaitForSeconds(2);
         SceneAudioSource.transform.position = emil.transform.position;
@@ -96,16 +94,19 @@ public class SceneController : MonoBehaviour
         SceneAudioSource.PlayOneShot(CharacterAudioClips[0]);
         soundDelay = CharacterAudioClips[0].length;
         yield return new WaitForSeconds(soundDelay);
-        Debug.Log("Animate arms??");
-
-       // GameObject.FindGameObjectWithTag("Emil").GetComponent<ClassMate>().RotateArm(-180);
+        GameObject.FindGameObjectWithTag("Emil").GetComponent<ClassMate>().HandsUp();
 
         foreach (var classMate in classMates)
         {
-            Debug.Log("Animate arms");
-            //classMate.GetComponent<ClassMate>().RotateArm(-180);
-        }
+            classMate.GetComponent<ClassMate>().HandsUp();
 
+        }
+        yield return new WaitForSeconds(0.4f);
+        foreach (var classMate in classMates)
+        {
+            classMate.GetComponent<ClassMate>().HandsDown();
+
+        }
         yield return new WaitForSeconds(1);
         //Lærer spørger emil specifikt
         teacherAnimator.SetBool("Gesturing", true);
