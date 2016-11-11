@@ -1,0 +1,1100 @@
+fileFormatVersion: 2
+guid: 3ee7f034ec2f5fd4485805a273e4deb4
+timeCreated: 1478870034
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Head
+    100002: FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips
+    100004: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow
+    100006: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm
+    100008: FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand
+    100010: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1
+    100012: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2
+    100014: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3
+    100016: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle4
+    100018: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1
+    100020: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2
+    100022: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3
+    100024: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb4
+    100026: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg
+    100028: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle
+    100030: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee
+    100032: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_toe
+    100034: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder
+    100036: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase
+    100038: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck
+    100040: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow
+    100042: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm
+    100044: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand
+    100046: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1
+    100048: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2
+    100050: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3
+    100052: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle4
+    100054: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1
+    100056: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2
+    100058: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3
+    100060: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb4
+    100062: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg
+    100064: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle
+    100066: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee
+    100068: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_toe
+    100070: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder
+    100072: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1
+    100074: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine
+    100076: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1
+    100078: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2
+    100080: FemaleClassmate2WithRig:Skeleton
+    100082: //RootNode
+    100084: pCube7
+    400000: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Head
+    400002: FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips
+    400004: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow
+    400006: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm
+    400008: FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand
+    400010: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1
+    400012: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2
+    400014: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3
+    400016: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle4
+    400018: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1
+    400020: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2
+    400022: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3
+    400024: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb4
+    400026: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg
+    400028: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle
+    400030: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee
+    400032: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_toe
+    400034: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder
+    400036: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase
+    400038: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck
+    400040: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow
+    400042: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm
+    400044: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand
+    400046: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1
+    400048: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2
+    400050: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3
+    400052: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle4
+    400054: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1
+    400056: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2
+    400058: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3
+    400060: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb4
+    400062: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg
+    400064: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle
+    400066: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee
+    400068: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_toe
+    400070: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder
+    400072: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1
+    400074: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine
+    400076: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1
+    400078: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2
+    400080: FemaleClassmate2WithRig:Skeleton
+    400082: //RootNode
+    400084: pCube7
+    4300000: pCube7
+    7400000: Female_RaiseHand
+    7400002: Female_Idle
+    7400004: Female_Reading
+    7400006: Female_Drawing
+    9500000: //RootNode
+    13700000: pCube7
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Female_RaiseHand
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_toe
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_toe
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Head
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb4
+        weight: 1
+      - path: pCube7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Female_Idle
+      takeName: Take 001
+      firstFrame: 26
+      lastFrame: 122
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_toe
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_toe
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Head
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb4
+        weight: 1
+      - path: pCube7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Female_Reading
+      takeName: Take 001
+      firstFrame: 123
+      lastFrame: 218
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_toe
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_toe
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Head
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb4
+        weight: 1
+      - path: pCube7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Female_Drawing
+      takeName: Take 001
+      firstFrame: 219
+      lastFrame: 344
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_toe
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_toe
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Head
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle4
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3
+        weight: 1
+      - path: FemaleClassmate2WithRig:Skeleton/FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3/FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb4
+        weight: 1
+      - path: pCube7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 12
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: FemaleClassmateAnimations(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:Skeleton
+      position: {x: -0.0024243502, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.062034536, y: 0.062034536, z: 0.062034536}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips
+      position: {x: -0, y: 10.384692, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg
+      position: {x: -2.9027932, y: -0.7524005, z: 0}
+      rotation: {x: 0.0000000019258055, y: -2.4630608e-22, z: -2.1893874e-22, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee
+      position: {x: 8.5904896e-16, y: -4.817897, z: 0.21366787}
+      rotation: {x: -0.0000000019258055, y: 2.736734e-23, z: -2.326224e-22, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999999}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle
+      position: {x: -4.2632563e-16, y: -4.054632, z: 0}
+      rotation: {x: -8.881784e-16, y: -2.295737e-16, z: 4.1090775e-16, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.99999994}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase
+      position: {x: -0.0000011444091, y: -0.6256729, z: 1.2962945}
+      rotation: {x: 0.26089504, y: 0.678808, z: -0.03806397, w: 0.68535}
+      scale: {x: 0.99999994, y: 1, z: 0.99999964}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_toe
+      position: {x: -1.0286502, y: 0.28128514, z: -0.022879345}
+      rotation: {x: -0.11553407, y: -0.71048725, z: -0.111415744, w: 0.68516153}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1.0000002}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine
+      position: {x: -0, y: 1.0021261, z: -0.016876202}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1
+      position: {x: -0, y: 1.1242713, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2
+      position: {x: -0, y: 1.1242713, z: 0}
+      rotation: {x: -0.059378956, y: 0.99580705, z: 0.0041421135, w: -0.06946474}
+      scale: {x: 1.0000012, y: 1, z: 1.000001}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder
+      position: {x: -2.096449, y: -2.9859447e-15, z: 1.3322676e-15}
+      rotation: {x: 0.059378956, y: -0.99580705, z: -0.0041421135, w: -0.06946474}
+      scale: {x: 0.99999964, y: 1, z: 0.9999998}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm
+      position: {x: 2.2121294, y: 0.3236801, z: 0.16269895}
+      rotation: {x: -0.008691363, y: -0.00008813292, z: 0.0070470646, w: 0.9999375}
+      scale: {x: 0.9999996, y: 1.000001, z: 0.99999964}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow
+      position: {x: 2.6099167, y: 0, z: 7.9936054e-17}
+      rotation: {x: 9.3132246e-10, y: -0.00000032064415, z: 0.000000027501127, w: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 0.99999994}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand
+      position: {x: 2.662462, y: -0.00043618697, z: -0.000007591274}
+      rotation: {x: 0.013927483, y: -0.0026542132, z: -0.016113374, w: 0.9997696}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1
+      position: {x: -0.0047273934, y: -0.10308606, z: 0.4369418}
+      rotation: {x: -0.055776414, y: 0.020312339, z: 0.052971914, w: 0.99683017}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2
+      position: {x: 0.17550957, y: -0.06544996, z: 0.20989679}
+      rotation: {x: 0.08308994, y: 0.08998309, z: -0.041419096, w: 0.99160653}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3
+      position: {x: 0.19438201, y: -0.0000018310546, z: 0.38993964}
+      rotation: {x: 0.0000015348196, y: -0.15476787, z: -0.0000015003607, w: 0.98795086}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb4
+      position: {x: 0.34781614, y: 0.0000009155273, z: 0.31092978}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1
+      position: {x: 0.6521292, y: 0.060107116, z: 0.0026405668}
+      rotation: {x: -0.000083728686, y: -0.0007495311, z: 0.046461474, w: 0.99891984}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.99999994}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2
+      position: {x: 0.71320766, y: -0.11110565, z: 0.000036292076}
+      rotation: {x: -0.011272908, y: 0.03774922, z: -0.044848472, w: 0.9982167}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000002}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3
+      position: {x: 0.7420624, y: -0.048904724, z: 0.000012722951}
+      rotation: {x: -0.0000019448341, y: 0.00006569921, z: 0.024882965, w: 0.99969035}
+      scale: {x: 1, y: 1.0000001, z: 0.9999997}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle4
+      position: {x: 0.468359, y: -0.054383237, z: 0.00006961764}
+      rotation: {x: 0.000000032369368, y: -0.0003509871, z: -0.000000034082234, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000004}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck
+      position: {x: -0.13360323, y: 1.1163046, z: 2.2964252e-16}
+      rotation: {x: 0.059378956, y: -0.99580705, z: -0.0041421135, w: -0.06946474}
+      scale: {x: 0.99999964, y: 1, z: 0.9999998}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Head
+      position: {x: -0, y: 5.166678, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999999}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder
+      position: {x: 2.216892, y: 0.5162357, z: 0.8820324}
+      rotation: {x: -0.99580705, y: -0.059378956, z: -0.06946474, w: 0.0041421135}
+      scale: {x: 1.0000005, y: 1.0000012, z: 0.9999998}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm
+      position: {x: 2.1333783, y: -0.37683138, z: 0.16269895}
+      rotation: {x: -0.00869149, y: -0.000074620475, z: 0.0086031435, w: 0.9999253}
+      scale: {x: 0.99999964, y: 1.0000008, z: 0.99999964}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow
+      position: {x: 2.0789874, y: 0.009135305, z: 0.00015865528}
+      rotation: {x: 0.000094423034, y: 0.0065766075, z: -0.0010809014, w: 0.99997777}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand
+      position: {x: 2.6371114, y: -0.0036219417, z: 0.20833014}
+      rotation: {x: 0.013927462, y: -0.0026542011, z: -0.016113326, w: 0.9997696}
+      scale: {x: 1.000001, y: 1.000001, z: 1.0000001}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1
+      position: {x: 0.48142454, y: -0.09582, z: 0.43423027}
+      rotation: {x: -0.05884613, y: 0.10102828, z: 0.047844086, w: 0.99198866}
+      scale: {x: 1.0000006, y: 1.0000005, z: 0.9999997}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2
+      position: {x: 0.1622873, y: -0.06433228, z: 0.33545247}
+      rotation: {x: 0.041350786, y: -0.003169483, z: -0.02061309, w: 0.99892706}
+      scale: {x: 1.0000007, y: 1.0000006, z: 0.99999994}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3
+      position: {x: 0.19438201, y: -0.0000018310546, z: 0.38993964}
+      rotation: {x: 0.0000012479717, y: -0.15476988, z: -0.0000010691579, w: 0.98795056}
+      scale: {x: 1.0000006, y: 1.0000006, z: 0.9999998}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb4
+      position: {x: 0.34781614, y: 0.0000009155273, z: 0.31092978}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000006, z: 0.99999994}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1
+      position: {x: 0.6521292, y: 0.060107116, z: 0.0026405668}
+      rotation: {x: -0.00008367372, y: -0.0007495606, z: 0.046461433, w: 0.9989198}
+      scale: {x: 1.0000008, y: 1.0000008, z: 0.99999964}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2
+      position: {x: 0.71320766, y: -0.11110565, z: 0.000036292076}
+      rotation: {x: 0.0008294452, y: 0.14576586, z: -0.0459997, w: 0.9882488}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3
+      position: {x: 0.6833986, y: -0.049179167, z: 0.19994536}
+      rotation: {x: -0.0000019344734, y: 0.000065624714, z: 0.024882955, w: 0.9996904}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle4
+      position: {x: 0.8739295, y: -0.06852061, z: 0.28206196}
+      rotation: {x: 0.0000000061056644, y: -0.00035088212, z: -0.000000019178062,
+        w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000002}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg
+      position: {x: 2.902788, y: -0.7524005, z: 0}
+      rotation: {x: 0.9997477, y: 0.0021326768, z: -0.00004972979, w: 0.022361439}
+      scale: {x: 0.9999997, y: 1.0000001, z: 1.0000002}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee
+      position: {x: -0, y: 4.8178916, z: -0.16615587}
+      rotation: {x: 0.053024992, y: -2.910383e-11, z: 9.313226e-10, w: 0.9985932}
+      scale: {x: 0.9999997, y: 0.9999999, z: 0.99999976}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle
+      position: {x: -4.2632563e-16, y: 4.0546365, z: -4.9654977e-16}
+      rotation: {x: -0.03068105, y: 0.000025239002, z: 0.0024357843, w: 0.99952626}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000005}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1
+      position: {x: 0.000012130737, y: 0.62567395, z: -1.2962999}
+      rotation: {x: 0.11683005, y: 0.7104375, z: 0.11013255, w: 0.6852008}
+      scale: {x: 1.0000002, y: 1, z: 1}
+      transformModified: 1
+    - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_toe
+      position: {x: 1.0286499, y: -0.28128567, z: 0.022877559}
+      rotation: {x: -0.115534, y: -0.71048737, z: -0.111415714, w: 0.6851615}
+      scale: {x: 1.0000004, y: 1.0000014, z: 1.0000011}
+      transformModified: 1
+    - name: pCube7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

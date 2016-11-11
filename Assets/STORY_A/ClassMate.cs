@@ -5,29 +5,46 @@ public class ClassMate : MonoBehaviour
 {
     public Transform arm;
     public bool armUp = false;
+    private Animator myAnimator;
+    public enum classMateStates
+    {
+        Idle,Sleeping, Drawing,HandsUp
+    }
+
+    private classMateStates myState;
 	// Use this for initialization
-	void Start () {
-	
-	}
+	void Start ()
+	{
+	    myAnimator = GetComponentInChildren<Animator>();
+	    switch (myState)
+	    {
+	        case classMateStates.Idle:
+	        break;
+            case classMateStates.Drawing:
+            myAnimator.SetBool("Drawing", true);
+	        break;
+            case classMateStates.Sleeping:
+            myAnimator.SetBool("Sleeping", true);
+	        break;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	    if (armUp)
-	    {
-	        RotateArm(-180);
-	    }
+	    //if (armUp)
+	    //{
+	    //    RotateArm(-180);
+	    //}
 	}
 
-    public void RotateArm(float angle)
+    public void HandsUp()
     {
-        armUp = false;
-        Debug.Log("Rotating arm");
-
-        Quaternion endRotation = Quaternion.identity;
-        endRotation.eulerAngles = new Vector3(angle, 0, 0);
-        StartCoroutine(rotateObject(arm, endRotation));
+       myAnimator.SetBool("Hand Raised", true);
     }
-
+    public void HandsDown()
+    {
+        myAnimator.SetBool("Hand Raised", false);
+    }
     IEnumerator rotateObject(Transform curObject, Quaternion endRotation)
     {
         while (Quaternion.Angle(curObject.transform.rotation, endRotation) > 0.1)
