@@ -135,7 +135,7 @@ public class GvrEye : MonoBehaviour {
     // Draw to the mono camera's target, or the stereo screen.
     cam.targetTexture = monoCamera.targetTexture ?? GvrViewer.Instance.StereoScreen;
     if (cam.targetTexture == null) {
-      // When drawing straight to screen, account for lens FOV limits.
+      // When Drawing straight to screen, account for lens FOV limits.
       // Note: do this after all calls to FixProjection() which needs the unfixed rect.
       Rect viewport = GvrViewer.Instance.Viewport(eye);
       bool isRightEye = eye == GvrViewer.Eye.Right;
@@ -242,7 +242,7 @@ public class GvrEye : MonoBehaviour {
     cam.CopyFrom(monoCamera);
     cam.cullingMask ^= toggleCullingMask.value;
 
-    // Not sure why we have to do this, but if we don't then switching between drawing to
+    // Not sure why we have to do this, but if we don't then switching between Drawing to
     // the main screen or to the stereo rendertexture acts very strangely.
     cam.depth = monoCamera.depth;
 

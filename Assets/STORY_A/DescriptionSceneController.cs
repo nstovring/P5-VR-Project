@@ -8,6 +8,7 @@ public class DescriptionSceneController : MonoBehaviour
 {
     public AudioSource SceneAudioSource;
     public AudioClip[] NarrationAudioClips = new AudioClip[4];
+    public AudioClip[] BackgroundAudioClips = new AudioClip[4];
 
     public float lightDelay = 1;
     public float soundDelay = 3;
@@ -97,15 +98,24 @@ public class DescriptionSceneController : MonoBehaviour
         }
     }
 
-    IEnumerator lerpObject(Transform curObject,Transform endPosition, float speed)
+    private float audio2Volume;
+    float audio1Volume;
+
+    void fadeIn(AudioSource audioSource)
     {
-        float step = 0.01f * speed;
-        while (Vector3.Distance(curObject.position,endPosition.position) > 0.1)
+        if (audio2Volume < 1f)
         {
-            curObject.transform.position = Vector3.MoveTowards(curObject.transform.position, endPosition.transform.position,
-                step);
-            //step+=0.1f;
-            yield return new WaitForEndOfFrame();
+            audio2Volume += 0.1f * Time.deltaTime;
+            audioSource.volume = audio2Volume;
+        }
+    }
+
+    void fadeOut(AudioSource audioSource)
+    {
+        if (audio1Volume > 0.1f)
+        {
+            audio1Volume -= 0.1f * Time.deltaTime;
+            audioSource.volume = audio1Volume;
         }
     }
 

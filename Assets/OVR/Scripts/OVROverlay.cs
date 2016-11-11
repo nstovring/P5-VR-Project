@@ -27,7 +27,7 @@ using VR = UnityEngine.VR;
 
 /// <summary>
 /// Add OVROverlay script to an object with an optional mesh primitive
-/// rendered as a TimeWarp overlay instead by drawing it into the eye buffer.
+/// rendered as a TimeWarp overlay instead by Drawing it into the eye buffer.
 /// This will take full advantage of the display resolution and avoid double
 /// resampling of the texture.
 /// 
