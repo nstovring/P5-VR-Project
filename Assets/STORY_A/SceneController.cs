@@ -9,6 +9,7 @@ public class SceneController : MonoBehaviour
     public AudioSource SceneAudioSource;
     public AudioClip[] NarrationAudioClips = new AudioClip[4];
     public AudioClip[] CharacterAudioClips = new AudioClip[3];
+    public AudioClip[] BackgroundAudioClips = new AudioClip[4];
 
     public float soundDelay = 3;
     public float houseSpeed = 1;

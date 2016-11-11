@@ -376,7 +376,7 @@ public class GvrViewer : MonoBehaviour {
 #if UNITY_IOS
     Application.targetFrameRate = 60;
 #endif
-    // Prevent the screen from dimming / sleeping
+    // Prevent the screen from dimming / Sleeping
     Screen.sleepTimeout = SleepTimeout.NeverSleep;
     InitDevice();
     StereoScreen = null;
