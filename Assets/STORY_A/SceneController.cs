@@ -13,9 +13,9 @@ public class SceneController : MonoBehaviour
 
     public float soundDelay = 3;
     public float houseSpeed = 1;
-    public GameObject teacher;
-    public GameObject emil;
-    public GameObject[] classMates;
+    public ClassMate teacher;
+    public ClassMate emil;
+    public List<ClassMate> classMates;
 
     private bool wrongSceneOver = false;
 
@@ -23,54 +23,68 @@ public class SceneController : MonoBehaviour
     // Use this for initialization
     private IEnumerator Start ()
 	{
-        classMates = GameObject.FindGameObjectsWithTag("ClassMate");
-        teacher = GameObject.FindGameObjectWithTag("Teacher");
+        
+        //GameObject[] temp = GameObject.FindGameObjectsWithTag("ClassMate");
+
+        //classMates = new List<ClassMate>();
+        //foreach (var o in temp)
+        //{
+        //        classMates.Add(o.GetComponent<ClassMate>());
+        //}
+
+        if (!teacher)
+        teacher = GameObject.FindGameObjectWithTag("Teacher").GetComponent<ClassMate>();
         teacherAnimator = teacher.GetComponentInChildren<Animator>();
-        emil = GameObject.FindGameObjectWithTag("Emil");
+        if(!emil)
+        emil = GameObject.FindGameObjectWithTag("Emil").GetComponent<ClassMate>();
+        yield return new WaitForSeconds(2);
+        myFade = Camera.main.GetComponent<VRCameraFade>();
+        myFade.FadeIn(5, false);
         yield return StartCoroutine(ClassRoomSceneA());
     }
 
-
+    private VRCameraFade myFade;
     private IEnumerator ClassRoomSceneA()
     {
+        myFade = Camera.main.GetComponent<VRCameraFade>();
+
         //Emil Narratter
-        SceneAudioSource.spatialize = false;
-        SceneAudioSource.transform.position = Camera.main.transform.position;
-        Camera.main.GetComponent<VRCameraFade>().FadeIn(2, false);
-        SceneAudioSource.PlayOneShot(NarrationAudioClips[1]);
-        soundDelay = NarrationAudioClips[1].length;
-        yield return new WaitForSeconds(soundDelay);
+        yield return PlaySoundAtLocation(NarrationAudioClips[0], teacher.transform.position, false);
+       
         yield return new WaitForSeconds(2);
         // Læren stiller et spørgsmål
-        SceneAudioSource.spatialize = true;
-        SceneAudioSource.transform.position = teacher.transform.position;
         teacherAnimator.SetBool("Gesturing", true);
-        SceneAudioSource.PlayOneShot(CharacterAudioClips[0]);
-        soundDelay = CharacterAudioClips[0].length;
-        yield return new WaitForSeconds(soundDelay);
+        StartCoroutine(teacher.Talking());
+        yield return PlaySoundAtLocation(CharacterAudioClips[1], teacher.transform.position, true);
+        teacher.talking = false;
         teacherAnimator.SetBool("Gesturing", false);
         foreach (var classMate in classMates)
         {
-            classMate.GetComponent<ClassMate>().HandsUp();
+            if (classMate.myState == ClassMate.classMateStates.Idle)
+                classMate.myAnimator.SetBool("Idle", false);
+                classMate.HandsUp();
         }
         yield return new WaitForSeconds(2);
-        SceneAudioSource.transform.position = emil.transform.position;
-        SceneAudioSource.PlayOneShot(CharacterAudioClips[1]);
-        soundDelay = CharacterAudioClips[1].length;
-        yield return new WaitForSeconds(soundDelay);
+
+        // 2!
+        StartCoroutine(emil.Talking());
+        yield return PlaySoundAtLocation(CharacterAudioClips[0], emil.transform.position, true);
+        emil.talking = false;
+        foreach (var classMate in classMates)
+        {
+            classMate.HandsDown();
+            classMate.myAnimator.SetBool("Idle", true);
+        }
 
         yield return new WaitForSeconds(3);
-        SceneAudioSource.spatialize = false;
-        SceneAudioSource.PlayOneShot(NarrationAudioClips[2]);
-        soundDelay = NarrationAudioClips[2].length;
-        yield return new WaitForSeconds(soundDelay);
+
+        yield return PlaySoundAtLocation(NarrationAudioClips[1], teacher.transform.position, false);
+
+        yield return PlaySoundAtLocation(NarrationAudioClips[2], teacher.transform.position, false);
+
         yield return new WaitForSeconds(2);
-        Camera.main.GetComponent<VRCameraFade>().FadeOut(2, false);
-        //foreach (var classMate in classMates)
-        //{
-        //    Debug.Log("Reset animations");
-        //    classMate.GetComponent<ClassMate>().RotateArm(0);
-        //}
+        myFade.FadeOut(2, false);
+        
         wrongSceneOver = true;
     }
 
@@ -78,76 +92,70 @@ public class SceneController : MonoBehaviour
     private IEnumerator ClassRoomSceneB()
     {
         wrongSceneOver = false;
-        classMates = GameObject.FindGameObjectsWithTag("ClassMate");
-        Camera.main.GetComponent<VRCameraFade>().FadeIn(2, false);
+        myFade.FadeIn(2, false);
         //Emil Narratter
-        SceneAudioSource.spatialize = false;
-        SceneAudioSource.PlayOneShot(NarrationAudioClips[4]);
-        soundDelay = NarrationAudioClips[4].length;
-        yield return new WaitForSeconds(soundDelay);
-
+        yield return PlaySoundAtLocation(NarrationAudioClips[3], teacher.transform.position, false);
         yield return new WaitForSeconds(2);
 
         //Lærer stiller spørgsmål igen
         SceneAudioSource.spatialize = true;
         SceneAudioSource.transform.position = teacher.transform.position;
         teacherAnimator.SetBool("Gesturing", true);
-        SceneAudioSource.PlayOneShot(CharacterAudioClips[0]);
-        soundDelay = CharacterAudioClips[0].length;
-        yield return new WaitForSeconds(soundDelay);
-        GameObject.FindGameObjectWithTag("Emil").GetComponent<ClassMate>().HandsUp();
+        StartCoroutine(teacher.Talking());
+        yield return PlaySoundAtLocation(CharacterAudioClips[1], teacher.transform.position, true);
+        teacher.talking = false;
+        teacherAnimator.SetBool("Gesturing", false);
+        emil.HandsUp();
 
         foreach (var classMate in classMates)
         {
-            classMate.GetComponent<ClassMate>().HandsUp();
-
+            if(classMate.myState == ClassMate.classMateStates.Idle)
+            classMate.HandsUp();
         }
         yield return new WaitForSeconds(0.4f);
-        foreach (var classMate in classMates)
-        {
-            classMate.GetComponent<ClassMate>().HandsDown();
-
-        }
+      
         yield return new WaitForSeconds(1);
         //Lærer spørger emil specifikt
         teacherAnimator.SetBool("Gesturing", true);
-        SceneAudioSource.transform.position = teacher.transform.position;
-        SceneAudioSource.PlayOneShot(CharacterAudioClips[2]);
-        soundDelay = CharacterAudioClips[2].length;
-        yield return new WaitForSeconds(soundDelay);
+        StartCoroutine(teacher.Talking());
+        yield return PlaySoundAtLocation(CharacterAudioClips[2], teacher.transform.position, true);
+        teacher.talking = false;
+        teacherAnimator.SetBool("Gesturing", false);
+        foreach (var classMate in classMates)
+        {
+            classMate.HandsDown();
 
+        }
         //Emil svarer
-        SceneAudioSource.spatialize = false;
-        SceneAudioSource.PlayOneShot(NarrationAudioClips[5]);
-        soundDelay = NarrationAudioClips[5].length;
-        yield return new WaitForSeconds(soundDelay);
+        StartCoroutine(emil.Talking());
+        yield return PlaySoundAtLocation(CharacterAudioClips[0], emil.transform.position, true);
+        emil.talking = false;
+
+        // Godt emil!
+        StartCoroutine(teacher.Talking());
+        yield return PlaySoundAtLocation(CharacterAudioClips[3], teacher.transform.position, true);
+        teacher.talking = false;
+
+        //Nogle gane spørger han mine venner det er også ok
+
+        yield return PlaySoundAtLocation(NarrationAudioClips[4], teacher.transform.position, false);
+
+        //når jeg rækker hånden op blah blah blah
+        yield return PlaySoundAtLocation(NarrationAudioClips[5], teacher.transform.position, false);
+
         yield return new WaitForSeconds(5);
 
-        Camera.main.GetComponent<VRCameraFade>().FadeOut(2, false);
+        myFade.FadeOut(2, false);
         entireSceneOver = true;
     }
 
-    IEnumerator lerpObject(Transform curObject,Transform endPosition, float speed)
+    IEnumerator PlaySoundAtLocation(AudioClip clip, Vector3 soundLocation, bool spatialize)
     {
-        float step = 0.01f * speed;
-        while (Vector3.Distance(curObject.position,endPosition.position) > 0.1)
-        {
-            curObject.transform.position = Vector3.MoveTowards(curObject.transform.position, endPosition.transform.position,
-                step);
-            //step+=0.1f;
-            yield return new WaitForEndOfFrame();
-        }
-    }
-
-    IEnumerator rotateObject(Transform curObject, Quaternion endRotation, float speed)
-    {
-        float step = 0.01f * speed;
-        while(Quaternion.Angle(curObject.transform.rotation,endRotation) > 0.1)
-        {
-            curObject.transform.rotation = Quaternion.Lerp(curObject.transform.rotation, endRotation, 0.1f);
-            yield return new WaitForEndOfFrame();
-        }
-        yield return new WaitForSeconds(2);
+        SceneAudioSource.spatialize = spatialize;
+        SceneAudioSource.transform.position = soundLocation;
+        SceneAudioSource.PlayOneShot(clip);
+        soundDelay = clip.length;
+        yield return new WaitForSeconds(soundDelay);
     }
 
     private bool entireSceneOver = false;
