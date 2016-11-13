@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: a94abe0c44efc544794d88692a47b5e2
+timeCreated: 1478997350
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Head
+    100004: FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips
+    100006: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow
+    100008: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm
+    100010: FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand
+    100012: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1
+    100014: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2
+    100016: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3
+    100018: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle4
+    100020: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1
+    100022: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2
+    100024: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3
+    100026: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb4
+    100028: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg
+    100030: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle
+    100032: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee
+    100034: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_toe
+    100036: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder
+    100038: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase
+    100040: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck
+    100042: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow
+    100044: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm
+    100046: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand
+    100048: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1
+    100050: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2
+    100052: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3
+    100054: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle4
+    100056: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1
+    100058: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2
+    100060: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3
+    100062: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb4
+    100064: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg
+    100066: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle
+    100068: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee
+    100070: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_toe
+    100072: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder
+    100074: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1
+    100076: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine
+    100078: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1
+    100080: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2
+    100082: FemaleClassmate2WithRig:Skeleton
+    100084: pCube7
+    400000: //RootNode
+    400002: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Head
+    400004: FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips
+    400006: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow
+    400008: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm
+    400010: FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand
+    400012: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1
+    400014: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2
+    400016: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3
+    400018: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle4
+    400020: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1
+    400022: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2
+    400024: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3
+    400026: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb4
+    400028: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg
+    400030: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle
+    400032: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee
+    400034: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_toe
+    400036: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder
+    400038: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase
+    400040: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck
+    400042: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow
+    400044: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm
+    400046: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand
+    400048: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1
+    400050: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2
+    400052: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3
+    400054: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle4
+    400056: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1
+    400058: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2
+    400060: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3
+    400062: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb4
+    400064: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg
+    400066: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle
+    400068: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee
+    400070: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_toe
+    400072: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder
+    400074: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1
+    400076: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine
+    400078: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1
+    400080: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2
+    400082: FemaleClassmate2WithRig:Skeleton
+    400084: pCube7
+    4300000: pCube7
+    9500000: //RootNode
+    13700000: pCube7
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
