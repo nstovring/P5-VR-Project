@@ -1,14 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using VRStandardAssets.Utils;
 
 public class DescriptionSceneController : MonoBehaviour
 {
     public AudioSource SceneAudioSource;
+    public AudioSource BackgroundAudioSource;
+    public AudioSource BackgroundFadeAudioSource;
     public AudioClip[] NarrationAudioClips = new AudioClip[4];
     public AudioClip[] BackgroundAudioClips = new AudioClip[4];
+    public AudioMixerSnapshot backgroundSoundSnapshot;
+    public AudioMixerSnapshot backgroundFadeSoundSnapshot;
 
     public float lightDelay = 1;
     public float soundDelay = 3;
@@ -17,15 +22,7 @@ public class DescriptionSceneController : MonoBehaviour
     // Use this for initialization
     private IEnumerator Start ()
 	{
-	   
-        if (pictureFadeInMode)
-        {
             yield return StartCoroutine(PictureFadeInScene());
-        }
-        else
-        {
-            yield return StartCoroutine(BogScene());
-        }
     }
 
     public Transform bookAnimator;
@@ -52,8 +49,10 @@ public class DescriptionSceneController : MonoBehaviour
     public Renderer[] frameRenderers;
     private IEnumerator PictureFadeInScene()
     {
-        SceneAudioSource.PlayOneShot(NarrationAudioClips[0]);
-        soundDelay = NarrationAudioClips[0].length;
+
+        //SceneAudioSource.PlayOneShot(NarrationAudioClips[0]);
+        //soundDelay = NarrationAudioClips[0].length;
+        yield return PlaySoundAndDelay(NarrationAudioClips[0]);
         for (int index = 0; index < frameRenderers.Length; index++)
         {
             Material tempMat = new Material(frameRenderers[index].material);
@@ -63,20 +62,30 @@ public class DescriptionSceneController : MonoBehaviour
 
         var frameRenderer = frameRenderers[0];
 
+        PlayBackgroundClip(BackgroundAudioClips[0]);
+        backgroundFadeSoundSnapshot.TransitionTo(2f);
         yield return StartCoroutine(lerpColor(frameRenderer, 0.5f));
-        //yield return new WaitForSeconds(3f);
+        yield return PlaySoundAndDelay(NarrationAudioClips[1]);
 
-
+        PlayBackgroundFadeClip(BackgroundAudioClips[1]);
+        backgroundSoundSnapshot.TransitionTo(2f);
         yield return StartCoroutine(lerpColor(frameRenderers[1], 0.2f));
-        //yield return new WaitForSeconds(3f);
-        yield return StartCoroutine(lerpColor(frameRenderers[2], 0.2f));
-        yield return StartCoroutine(lerpColor(frameRenderers[3], 0.2f));
+        yield return PlaySoundAndDelay(NarrationAudioClips[2]);
 
+        PlayBackgroundClip(BackgroundAudioClips[2]);
+        backgroundFadeSoundSnapshot.TransitionTo(2f);
+        yield return StartCoroutine(lerpColor(frameRenderers[2], 0.2f));
+        yield return PlaySoundAndDelay(NarrationAudioClips[3]);
+
+        PlayBackgroundFadeClip(BackgroundAudioClips[3]);
+        backgroundSoundSnapshot.TransitionTo(2f);
+        yield return StartCoroutine(lerpColor(frameRenderers[3], 0.2f));
+        yield return PlaySoundAndDelay(NarrationAudioClips[4]);
 
         yield return new WaitForSeconds(3f);
         //yield return StartCoroutine(lerpObject(houseAnimation[0], houseAnimation[1], houseSpeed));
 
-        yield return new WaitForSeconds(soundDelay);
+        //yield return new WaitForSeconds(soundDelay);
 
         Camera.main.GetComponent<VRCameraFade>().FadeOut(2, false);
       
@@ -84,17 +93,37 @@ public class DescriptionSceneController : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    IEnumerator PlaySoundAndDelay(AudioClip clip)
+    {
+        SceneAudioSource.PlayOneShot(clip);
+        soundDelay = clip.length;
+        yield return new WaitForSeconds(soundDelay);
+    }
+
+    void PlayBackgroundClip(AudioClip clip)
+    {
+        BackgroundAudioSource.clip = clip;
+        BackgroundAudioSource.Play();
+    }
+    void PlayBackgroundFadeClip(AudioClip clip)
+    {
+        BackgroundFadeAudioSource.clip = clip;
+        BackgroundFadeAudioSource.Play();
+    }
     IEnumerator lerpColor(Renderer rend, float speed)
     {
         Renderer frameRenderer = rend;
-        Color color = frameRenderer.material.GetColor("_EmissionColor");
+        //Color color = frameRenderer.material.GetColor("_EmissionColor");
+        float alpha = frameRenderer.material.GetFloat("_Alpha");
 
-        while (color != Color.white)
+        while (alpha > 0)
         {
-            color = Color.Lerp(color, Color.white, speed);
+            alpha = Mathf.Lerp(alpha, 0, speed);
             //frameRenderer.material.SetColor("_Color", color);
-            frameRenderer.material.SetColor("_EmissionColor", color);
-            yield return new WaitForSeconds(0.07f);
+            frameRenderer.material.SetFloat("_Alpha", alpha);
+            if (alpha <= 0.01)
+                alpha = 0;
+            yield return new WaitForSeconds(0.1f);
         }
     }
 
