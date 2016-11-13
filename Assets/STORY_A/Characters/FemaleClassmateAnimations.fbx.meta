@@ -109,7 +109,10 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -578,7 +581,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 12
+    globalScale: 10
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -872,208 +875,208 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: FemaleClassmate2WithRig:Skeleton
-      position: {x: -0.0024243502, y: 0, z: 0}
+      position: {x: -0.0020202918, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.062034536, y: 0.062034536, z: 0.062034536}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:hips
-      position: {x: -0, y: 10.384692, z: 0}
+      position: {x: -0, y: 8.65391, z: 0}
       rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg
-      position: {x: -2.9027932, y: -0.7524005, z: 0}
+      position: {x: -2.4189942, y: -0.6270004, z: 0}
       rotation: {x: 0.0000000019258055, y: -2.4630608e-22, z: -2.1893874e-22, w: 1}
       scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftLeg_knee
-      position: {x: 8.5904896e-16, y: -4.817897, z: 0.21366787}
+      position: {x: 7.1587413e-16, y: -4.014914, z: 0.17805655}
       rotation: {x: -0.0000000019258055, y: 2.736734e-23, z: -2.326224e-22, w: 1}
       scale: {x: 0.99999994, y: 0.9999999, z: 0.9999999}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_ankle
-      position: {x: -4.2632563e-16, y: -4.054632, z: 0}
+      position: {x: -3.5527135e-16, y: -3.37886, z: 0}
       rotation: {x: -8.881784e-16, y: -2.295737e-16, z: 4.1090775e-16, w: 1}
       scale: {x: 1.0000001, y: 0.99999994, z: 0.99999994}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftToeBase
-      position: {x: -0.0000011444091, y: -0.6256729, z: 1.2962945}
+      position: {x: -0.00000095367426, y: -0.5213941, z: 1.0802454}
       rotation: {x: 0.26089504, y: 0.678808, z: -0.03806397, w: 0.68535}
       scale: {x: 0.99999994, y: 1, z: 0.99999964}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Leftleg_toe
-      position: {x: -1.0286502, y: 0.28128514, z: -0.022879345}
+      position: {x: -0.85720843, y: 0.23440428, z: -0.019066121}
       rotation: {x: -0.11553407, y: -0.71048725, z: -0.111415744, w: 0.68516153}
       scale: {x: 1.0000001, y: 0.9999999, z: 1.0000002}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine
-      position: {x: -0, y: 1.0021261, z: -0.016876202}
+      position: {x: -0, y: 0.83510506, z: -0.014063502}
       rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine1
-      position: {x: -0, y: 1.1242713, z: 0}
+      position: {x: -0, y: 0.9368927, z: 0}
       rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Spine2
-      position: {x: -0, y: 1.1242713, z: 0}
+      position: {x: -0, y: 0.9368927, z: 0}
       rotation: {x: -0.059378956, y: 0.99580705, z: 0.0041421135, w: -0.06946474}
       scale: {x: 1.0000012, y: 1, z: 1.000001}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightShoulder
-      position: {x: -2.096449, y: -2.9859447e-15, z: 1.3322676e-15}
+      position: {x: -1.7470407, y: -2.4882872e-15, z: 1.110223e-15}
       rotation: {x: 0.059378956, y: -0.99580705, z: -0.0041421135, w: -0.06946474}
       scale: {x: 0.99999964, y: 1, z: 0.9999998}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightArm
-      position: {x: 2.2121294, y: 0.3236801, z: 0.16269895}
+      position: {x: 1.8434411, y: 0.2697334, z: 0.13558246}
       rotation: {x: -0.008691363, y: -0.00008813292, z: 0.0070470646, w: 0.9999375}
       scale: {x: 0.9999996, y: 1.000001, z: 0.99999964}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightAlbow
-      position: {x: 2.6099167, y: 0, z: 7.9936054e-17}
+      position: {x: 2.1749306, y: 0, z: 6.661338e-17}
       rotation: {x: 9.3132246e-10, y: -0.00000032064415, z: 0.000000027501127, w: 1}
       scale: {x: 1.0000004, y: 1.0000001, z: 0.99999994}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHand
-      position: {x: 2.662462, y: -0.00043618697, z: -0.000007591274}
+      position: {x: 2.2187183, y: -0.00036348912, z: -0.0000063260613}
       rotation: {x: 0.013927483, y: -0.0026542132, z: -0.016113374, w: 0.9997696}
       scale: {x: 1.0000001, y: 1, z: 1.0000001}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb1
-      position: {x: -0.0047273934, y: -0.10308606, z: 0.4369418}
+      position: {x: -0.0039394945, y: -0.08590505, z: 0.36411816}
       rotation: {x: -0.055776414, y: 0.020312339, z: 0.052971914, w: 0.99683017}
       scale: {x: 1.0000001, y: 1, z: 1}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb2
-      position: {x: 0.17550957, y: -0.06544996, z: 0.20989679}
+      position: {x: 0.14625797, y: -0.054541633, z: 0.17491399}
       rotation: {x: 0.08308994, y: 0.08998309, z: -0.041419096, w: 0.99160653}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb3
-      position: {x: 0.19438201, y: -0.0000018310546, z: 0.38993964}
+      position: {x: 0.16198501, y: -0.0000015258788, z: 0.32494968}
       rotation: {x: 0.0000015348196, y: -0.15476787, z: -0.0000015003607, w: 0.98795086}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandThumb4
-      position: {x: 0.34781614, y: 0.0000009155273, z: 0.31092978}
+      position: {x: 0.28984678, y: 0.0000007629394, z: 0.25910813}
       rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle1
-      position: {x: 0.6521292, y: 0.060107116, z: 0.0026405668}
+      position: {x: 0.54344094, y: 0.050089262, z: 0.0022004722}
       rotation: {x: -0.000083728686, y: -0.0007495311, z: 0.046461474, w: 0.99891984}
       scale: {x: 1.0000004, y: 1.0000002, z: 0.99999994}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle2
-      position: {x: 0.71320766, y: -0.11110565, z: 0.000036292076}
+      position: {x: 0.5943397, y: -0.09258804, z: 0.000030243396}
       rotation: {x: -0.011272908, y: 0.03774922, z: -0.044848472, w: 0.9982167}
       scale: {x: 1.0000002, y: 1.0000004, z: 1.0000002}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle3
-      position: {x: 0.7420624, y: -0.048904724, z: 0.000012722951}
+      position: {x: 0.6183853, y: -0.040753935, z: 0.000010602459}
       rotation: {x: -0.0000019448341, y: 0.00006569921, z: 0.024882965, w: 0.99969035}
       scale: {x: 1, y: 1.0000001, z: 0.9999997}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightHandMiddle4
-      position: {x: 0.468359, y: -0.054383237, z: 0.00006961764}
+      position: {x: 0.39029914, y: -0.045319363, z: 0.000058014703}
       rotation: {x: 0.000000032369368, y: -0.0003509871, z: -0.000000034082234, w: 1}
       scale: {x: 0.9999999, y: 1.0000001, z: 1.0000004}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Neck
-      position: {x: -0.13360323, y: 1.1163046, z: 2.2964252e-16}
+      position: {x: -0.11133602, y: 0.93025386, z: 1.9136876e-16}
       rotation: {x: 0.059378956, y: -0.99580705, z: -0.0041421135, w: -0.06946474}
       scale: {x: 0.99999964, y: 1, z: 0.9999998}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Head
-      position: {x: -0, y: 5.166678, z: 0}
+      position: {x: -0, y: 4.305565, z: 0}
       rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 0.9999999, y: 1.0000001, z: 0.9999999}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftShoulder
-      position: {x: 2.216892, y: 0.5162357, z: 0.8820324}
+      position: {x: 1.84741, y: 0.4301964, z: 0.73502696}
       rotation: {x: -0.99580705, y: -0.059378956, z: -0.06946474, w: 0.0041421135}
       scale: {x: 1.0000005, y: 1.0000012, z: 0.9999998}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftArm
-      position: {x: 2.1333783, y: -0.37683138, z: 0.16269895}
+      position: {x: 1.7778152, y: -0.31402615, z: 0.13558246}
       rotation: {x: -0.00869149, y: -0.000074620475, z: 0.0086031435, w: 0.9999253}
       scale: {x: 0.99999964, y: 1.0000008, z: 0.99999964}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftAlbow
-      position: {x: 2.0789874, y: 0.009135305, z: 0.00015865528}
+      position: {x: 1.7324895, y: 0.007612754, z: 0.00013221274}
       rotation: {x: 0.000094423034, y: 0.0065766075, z: -0.0010809014, w: 0.99997777}
       scale: {x: 1, y: 0.9999998, z: 0.9999998}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:leftHand
-      position: {x: 2.6371114, y: -0.0036219417, z: 0.20833014}
+      position: {x: 2.1975927, y: -0.0030182847, z: 0.17360845}
       rotation: {x: 0.013927462, y: -0.0026542011, z: -0.016113326, w: 0.9997696}
       scale: {x: 1.000001, y: 1.000001, z: 1.0000001}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb1
-      position: {x: 0.48142454, y: -0.09582, z: 0.43423027}
+      position: {x: 0.40118712, y: -0.07985, z: 0.36185855}
       rotation: {x: -0.05884613, y: 0.10102828, z: 0.047844086, w: 0.99198866}
       scale: {x: 1.0000006, y: 1.0000005, z: 0.9999997}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb2
-      position: {x: 0.1622873, y: -0.06433228, z: 0.33545247}
+      position: {x: 0.1352394, y: -0.053610228, z: 0.27954373}
       rotation: {x: 0.041350786, y: -0.003169483, z: -0.02061309, w: 0.99892706}
       scale: {x: 1.0000007, y: 1.0000006, z: 0.99999994}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb3
-      position: {x: 0.19438201, y: -0.0000018310546, z: 0.38993964}
+      position: {x: 0.16198501, y: -0.0000015258788, z: 0.32494968}
       rotation: {x: 0.0000012479717, y: -0.15476988, z: -0.0000010691579, w: 0.98795056}
       scale: {x: 1.0000006, y: 1.0000006, z: 0.9999998}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandThumb4
-      position: {x: 0.34781614, y: 0.0000009155273, z: 0.31092978}
+      position: {x: 0.28984678, y: 0.0000007629394, z: 0.25910813}
       rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1.0000006, y: 1.0000006, z: 0.99999994}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle1
-      position: {x: 0.6521292, y: 0.060107116, z: 0.0026405668}
+      position: {x: 0.54344094, y: 0.050089262, z: 0.0022004722}
       rotation: {x: -0.00008367372, y: -0.0007495606, z: 0.046461433, w: 0.9989198}
       scale: {x: 1.0000008, y: 1.0000008, z: 0.99999964}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle2
-      position: {x: 0.71320766, y: -0.11110565, z: 0.000036292076}
+      position: {x: 0.5943397, y: -0.09258804, z: 0.000030243396}
       rotation: {x: 0.0008294452, y: 0.14576586, z: -0.0459997, w: 0.9882488}
       scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle3
-      position: {x: 0.6833986, y: -0.049179167, z: 0.19994536}
+      position: {x: 0.56949884, y: -0.040982638, z: 0.16662113}
       rotation: {x: -0.0000019344734, y: 0.000065624714, z: 0.024882955, w: 0.9996904}
       scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:LeftHandMiddle4
-      position: {x: 0.8739295, y: -0.06852061, z: 0.28206196}
+      position: {x: 0.7282746, y: -0.05710051, z: 0.23505163}
       rotation: {x: 0.0000000061056644, y: -0.00035088212, z: -0.000000019178062,
         w: 1}
       scale: {x: 1.0000004, y: 1.0000004, z: 1.0000002}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightLeg
-      position: {x: 2.902788, y: -0.7524005, z: 0}
+      position: {x: 2.41899, y: -0.6270004, z: 0}
       rotation: {x: 0.9997477, y: 0.0021326768, z: -0.00004972979, w: 0.022361439}
       scale: {x: 0.9999997, y: 1.0000001, z: 1.0000002}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_knee
-      position: {x: -0, y: 4.8178916, z: -0.16615587}
+      position: {x: -0, y: 4.0149097, z: -0.13846323}
       rotation: {x: 0.053024992, y: -2.910383e-11, z: 9.313226e-10, w: 0.9985932}
       scale: {x: 0.9999997, y: 0.9999999, z: 0.99999976}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_ankle
-      position: {x: -4.2632563e-16, y: 4.0546365, z: -4.9654977e-16}
+      position: {x: -3.5527135e-16, y: 3.3788636, z: -4.1379148e-16}
       rotation: {x: -0.03068105, y: 0.000025239002, z: 0.0024357843, w: 0.99952626}
       scale: {x: 1.0000001, y: 1.0000005, z: 1.0000005}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:RightToeBase1
-      position: {x: 0.000012130737, y: 0.62567395, z: -1.2962999}
+      position: {x: 0.000010108947, y: 0.52139497, z: -1.0802499}
       rotation: {x: 0.11683005, y: 0.7104375, z: 0.11013255, w: 0.6852008}
       scale: {x: 1.0000002, y: 1, z: 1}
       transformModified: 1
     - name: FemaleClassmate2WithRig:FemaleClassmate1WithRig:Rightleg_toe
-      position: {x: 1.0286499, y: -0.28128567, z: 0.022877559}
+      position: {x: 0.85720825, y: -0.23440473, z: 0.019064631}
       rotation: {x: -0.115534, y: -0.71048737, z: -0.111415714, w: 0.6851615}
       scale: {x: 1.0000004, y: 1.0000014, z: 1.0000011}
       transformModified: 1

@@ -3,23 +3,46 @@ using System.Collections;
 
 public class ClassMate : MonoBehaviour
 {
-    public Transform arm;
-    public bool armUp = false;
-    private Animator myAnimator;
+    public Animator myAnimator;
     public enum classMateStates
     {
         Idle,Sleeping, Drawing,HandsUp
     }
 
-    private classMateStates myState;
-	// Use this for initialization
-	void Start ()
-	{
-	    myAnimator = GetComponentInChildren<Animator>();
-	    switch (myState)
+    public enum classMateType
+    {
+        male,female
+    }
+
+    public classMateType myType;
+    public classMateStates myState;
+
+    public Texture2D[] MaleTextures;
+    public Texture2D[] FemaleTextures;
+    private Texture2D[] myTexture2DArray;
+
+    public Renderer myRenderer;
+    // Use this for initialization
+    void Start ()
+    {
+        //myRenderer = GetComponentInChildren<Renderer>();
+        if (myType == classMateType.female)
+        {
+            myTexture2DArray = FemaleTextures;
+        }
+
+        if (myType == classMateType.male)
+        {
+            myTexture2DArray = MaleTextures;
+        }
+
+        myAnimator = GetComponentInChildren<Animator>();
+        myAnimator.applyRootMotion = false;
+        switch (myState)
 	    {
 	        case classMateStates.Idle:
-	        break;
+            myAnimator.SetBool("Idle", true);
+            break;
             case classMateStates.Drawing:
             myAnimator.SetBool("Drawing", true);
 	        break;
@@ -31,11 +54,23 @@ public class ClassMate : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-	    //if (armUp)
-	    //{
-	    //    RotateArm(-180);
-	    //}
+	   
 	}
+
+    private int myTexture;
+    public bool talking;
+    [Range(0.1f,2)]
+    public float talkSpeed = 1;
+    public IEnumerator Talking()
+    {
+        while (talking)
+        {
+            myRenderer.material.mainTexture = myTexture2DArray[0];
+            yield return new WaitForSeconds(talkSpeed/10);
+            myRenderer.material.mainTexture = myTexture2DArray[1];
+        }
+        myRenderer.material.mainTexture = myTexture2DArray[0];
+    }
 
     public void HandsUp()
     {
@@ -44,14 +79,5 @@ public class ClassMate : MonoBehaviour
     public void HandsDown()
     {
         myAnimator.SetBool("Hand Raised", false);
-    }
-    IEnumerator rotateObject(Transform curObject, Quaternion endRotation)
-    {
-        while (Quaternion.Angle(curObject.transform.rotation, endRotation) > 0.1)
-        {
-            curObject.transform.rotation = Quaternion.Lerp(curObject.transform.rotation, endRotation, 0.1f);
-            yield return new WaitForEndOfFrame();
-        }
-        yield return new WaitForSeconds(2);
     }
 }
