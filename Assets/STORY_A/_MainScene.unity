@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1912008552}
-  m_IndirectSpecularColor: {r: 2.2510877, g: 2.4951177, b: 2.8544466, a: 1}
+  m_IndirectSpecularColor: {r: 1.3502762, g: 1.4970454, b: 1.7126658, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3850,16 +3850,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneAudioSource: {fileID: 589491349}
   NarrationAudioClips:
-  - {fileID: 8300000, guid: 99544c838e20ad547bb8a230a0434aa8, type: 3}
-  - {fileID: 8300000, guid: ebe1afb7367965047bcb5454ec457d35, type: 3}
-  - {fileID: 8300000, guid: 57b9ff1399442974fbbf2bf5835b3ccb, type: 3}
-  - {fileID: 8300000, guid: 7c27c8b48aaaad74794777b48a01087a, type: 3}
-  - {fileID: 8300000, guid: c9cd2eb63ccda7442b3b589212f1b1b4, type: 3}
-  - {fileID: 8300000, guid: 29bcad70c1a88554a8b3839599a5f59c, type: 3}
+  - {fileID: 8300000, guid: 66f3ec91784a694428b443c3bb739082, type: 3}
+  - {fileID: 8300000, guid: d95904eda82345a4b9cf007f9baa8679, type: 3}
+  - {fileID: 8300000, guid: 21ec64449c72db740a5ca106ce91df4b, type: 3}
+  - {fileID: 8300000, guid: a2cf29c9690922548a97d92f4098915d, type: 3}
+  - {fileID: 8300000, guid: e1560f1c49d068847b61703503793773, type: 3}
+  - {fileID: 8300000, guid: 58dfab431214e104986bba25709f404f, type: 3}
   CharacterAudioClips:
-  - {fileID: 8300000, guid: ae7ce0d55b9221547b5450d973a0e7fa, type: 3}
-  - {fileID: 8300000, guid: 772cde4766cab3b49a578fa8919c0a19, type: 3}
-  - {fileID: 8300000, guid: 53fbd705edfe5c74f84824b803aed287, type: 3}
+  - {fileID: 8300000, guid: e355ccc65e585ee44aad8fd05990c1ca, type: 3}
+  - {fileID: 8300000, guid: 8d9b070cba5c6b94195462694d9bb6a3, type: 3}
+  - {fileID: 8300000, guid: 3daf9fc5d2ddfa84f9b701f53d05975e, type: 3}
+  - {fileID: 8300000, guid: 95e04687959e58245ad06108bd872961, type: 3}
   BackgroundAudioClips:
   - {fileID: 0}
   - {fileID: 0}
@@ -3867,8 +3868,8 @@ MonoBehaviour:
   - {fileID: 0}
   soundDelay: 3
   houseSpeed: 2
-  teacher: {fileID: 0}
-  emil: {fileID: 0}
+  teacher: {fileID: 1981142710}
+  emil: {fileID: 1910294111}
   classMates:
   - {fileID: 2053804196}
   - {fileID: 2094110421}
@@ -6367,6 +6368,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: d355505ff1b32bf4ab179c3d8bf6785d, type: 3}
   - {fileID: 2800000, guid: 7c85cf28335961246b7e311a3755adfc, type: 3}
   myRenderer: {fileID: 1442763472}
+  talking: 0
   talkSpeed: 1
 --- !u!1 &377814584
 GameObject:
@@ -8185,6 +8187,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: d355505ff1b32bf4ab179c3d8bf6785d, type: 3}
   - {fileID: 2800000, guid: 7c85cf28335961246b7e311a3755adfc, type: 3}
   myRenderer: {fileID: 245202452}
+  talking: 0
   talkSpeed: 1
 --- !u!1 &507017959
 GameObject:
@@ -13701,7 +13704,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d2f44c6cbd6713849bc7050f9cf441fe, type: 2}
+  - {fileID: 2100000, guid: 2228a2c0ca9443d4f8e7f58c089f0cd8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -16072,6 +16075,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: d355505ff1b32bf4ab179c3d8bf6785d, type: 3}
   - {fileID: 2800000, guid: 7c85cf28335961246b7e311a3755adfc, type: 3}
   myRenderer: {fileID: 1853551484}
+  talking: 0
   talkSpeed: 1
 --- !u!1 &935949278
 GameObject:
@@ -17023,7 +17027,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1460372238}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.27, y: 0.171, z: -7.36}
+  m_LocalPosition: {x: -2.27, y: 0.171, z: -7.237}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -25499,6 +25503,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: d355505ff1b32bf4ab179c3d8bf6785d, type: 3}
   - {fileID: 2800000, guid: 7c85cf28335961246b7e311a3755adfc, type: 3}
   myRenderer: {fileID: 1110181258}
+  talking: 0
   talkSpeed: 1
 --- !u!1 &1460914179
 GameObject:
@@ -27295,7 +27300,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1560518073}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.886, y: 0.171, z: -4.34}
+  m_LocalPosition: {x: -1.886, y: 0.171, z: -4.126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -27324,6 +27329,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: d355505ff1b32bf4ab179c3d8bf6785d, type: 3}
   - {fileID: 2800000, guid: 7c85cf28335961246b7e311a3755adfc, type: 3}
   myRenderer: {fileID: 160395874}
+  talking: 0
   talkSpeed: 1
 --- !u!1 &1562937989
 GameObject:
@@ -34209,6 +34215,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   myRenderer: {fileID: 1885552891}
+  talking: 0
   talkSpeed: 1
 --- !u!1 &1911589065
 GameObject:
@@ -35512,6 +35519,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1981142709}
+  - 114: {fileID: 1981142710}
   m_Layer: 0
   m_Name: Teacher
   m_TagString: Teacher
@@ -35534,6 +35542,27 @@ Transform:
   - {fileID: 876470969}
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &1981142710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981142708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adb74b08f55f544bbcc082523695d87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAnimator: {fileID: 1180454854}
+  myType: 0
+  myState: 0
+  MaleTextures:
+  - {fileID: 2800000, guid: 26cf6444c835d8f46b9cffdb4ddf5e5b, type: 3}
+  - {fileID: 2800000, guid: 0b023db8666a4e549acb0240b2c703a4, type: 3}
+  FemaleTextures: []
+  myRenderer: {fileID: 814747671}
+  talking: 0
+  talkSpeed: 1
 --- !u!1 &1981872921
 GameObject:
   m_ObjectHideFlags: 0
@@ -37885,6 +37914,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: d355505ff1b32bf4ab179c3d8bf6785d, type: 3}
   - {fileID: 2800000, guid: 7c85cf28335961246b7e311a3755adfc, type: 3}
   myRenderer: {fileID: 1585174792}
+  talking: 0
   talkSpeed: 1
 --- !u!1 &2057811704
 GameObject:
@@ -38593,6 +38623,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: d355505ff1b32bf4ab179c3d8bf6785d, type: 3}
   - {fileID: 2800000, guid: 7c85cf28335961246b7e311a3755adfc, type: 3}
   myRenderer: {fileID: 1741165710}
+  talking: 0
   talkSpeed: 1
 --- !u!1 &2094897889
 GameObject:

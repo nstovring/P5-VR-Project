@@ -50,6 +50,7 @@ public class ClassMate : MonoBehaviour
             myAnimator.SetBool("Sleeping", true);
 	        break;
         }
+       // StartTalking();
     }
 	
 	// Update is called once per frame
@@ -58,20 +59,31 @@ public class ClassMate : MonoBehaviour
 	}
 
     private int myTexture;
-    public bool talking;
+    public bool talking = true;
     [Range(0.1f,2)]
     public float talkSpeed = 1;
-    public IEnumerator Talking()
+    public IEnumerator Talk()
     {
-        while (talking)
+        int i = 0;
+        while (true)
         {
-            myRenderer.material.mainTexture = myTexture2DArray[0];
-            yield return new WaitForSeconds(talkSpeed/10);
-            myRenderer.material.mainTexture = myTexture2DArray[1];
+            myRenderer.material.SetTexture("_MainTex",myTexture2DArray[i%2]);
+            yield return new WaitForSeconds(Random.Range((talkSpeed/10f)- 0.1f, (talkSpeed / 10f) + 0.1f));
+            i++;
         }
-        myRenderer.material.mainTexture = myTexture2DArray[0];
     }
 
+    public void StartTalking()
+    {
+        StartCoroutine(Talk());
+    }
+
+    public void StopTalking()
+    {
+        StopCoroutine(Talk());
+        StopAllCoroutines();
+        myRenderer.material.mainTexture = myTexture2DArray[0];
+    }
     public void HandsUp()
     {
        myAnimator.SetBool("Hand Raised", true);

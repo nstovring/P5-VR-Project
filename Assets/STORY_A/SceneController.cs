@@ -54,9 +54,10 @@ public class SceneController : MonoBehaviour
         yield return new WaitForSeconds(2);
         // Læren stiller et spørgsmål
         teacherAnimator.SetBool("Gesturing", true);
-        StartCoroutine(teacher.Talking());
+        teacher.talking = true;
+        teacher.StartTalking();
         yield return PlaySoundAtLocation(CharacterAudioClips[1], teacher.transform.position, true);
-        teacher.talking = false;
+        teacher.StopTalking();
         teacherAnimator.SetBool("Gesturing", false);
         foreach (var classMate in classMates)
         {
@@ -67,9 +68,9 @@ public class SceneController : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         // 2!
-        StartCoroutine(emil.Talking());
+        emil.StartTalking();
         yield return PlaySoundAtLocation(CharacterAudioClips[0], emil.transform.position, true);
-        emil.talking = false;
+        emil.StopTalking();
         foreach (var classMate in classMates)
         {
             classMate.HandsDown();
@@ -101,9 +102,9 @@ public class SceneController : MonoBehaviour
         SceneAudioSource.spatialize = true;
         SceneAudioSource.transform.position = teacher.transform.position;
         teacherAnimator.SetBool("Gesturing", true);
-        StartCoroutine(teacher.Talking());
+        teacher.StartTalking();
         yield return PlaySoundAtLocation(CharacterAudioClips[1], teacher.transform.position, true);
-        teacher.talking = false;
+        teacher.StopTalking();
         teacherAnimator.SetBool("Gesturing", false);
         emil.HandsUp();
 
@@ -117,9 +118,9 @@ public class SceneController : MonoBehaviour
         yield return new WaitForSeconds(1);
         //Lærer spørger emil specifikt
         teacherAnimator.SetBool("Gesturing", true);
-        StartCoroutine(teacher.Talking());
+        teacher.StartTalking();
         yield return PlaySoundAtLocation(CharacterAudioClips[2], teacher.transform.position, true);
-        teacher.talking = false;
+        teacher.StopTalking();
         teacherAnimator.SetBool("Gesturing", false);
         foreach (var classMate in classMates)
         {
@@ -127,15 +128,14 @@ public class SceneController : MonoBehaviour
 
         }
         //Emil svarer
-        StartCoroutine(emil.Talking());
+        emil.StartTalking();
         yield return PlaySoundAtLocation(CharacterAudioClips[0], emil.transform.position, true);
-        emil.talking = false;
+        emil.StopTalking();
 
         // Godt emil!
-        StartCoroutine(teacher.Talking());
+        teacher.StartTalking();
         yield return PlaySoundAtLocation(CharacterAudioClips[3], teacher.transform.position, true);
-        teacher.talking = false;
-
+        teacher.StopTalking();
         //Nogle gane spørger han mine venner det er også ok
 
         yield return PlaySoundAtLocation(NarrationAudioClips[4], teacher.transform.position, false);
