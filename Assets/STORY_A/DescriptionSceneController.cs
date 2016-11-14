@@ -20,10 +20,10 @@ public class DescriptionSceneController : MonoBehaviour
     public float houseSpeed = 1;
     public bool pictureFadeInMode;
     // Use this for initialization
-    private IEnumerator Start ()
-	{
-            yield return StartCoroutine(PictureFadeInScene());
-    }
+ //   private IEnumerator Start ()
+	//{
+ //           yield return StartCoroutine(PictureFadeInScene());
+ //   }
 
     public Transform bookAnimator;
     public Transform houseScale;
@@ -63,22 +63,22 @@ public class DescriptionSceneController : MonoBehaviour
         var frameRenderer = frameRenderers[0];
 
         PlayBackgroundClip(BackgroundAudioClips[0]);
-        backgroundFadeSoundSnapshot.TransitionTo(2f);
+        backgroundFadeSoundSnapshot.TransitionTo(4f);
         yield return StartCoroutine(lerpColor(frameRenderer, 0.5f));
         yield return PlaySoundAndDelay(NarrationAudioClips[1]);
 
         PlayBackgroundFadeClip(BackgroundAudioClips[1]);
-        backgroundSoundSnapshot.TransitionTo(2f);
+        backgroundSoundSnapshot.TransitionTo(4f);
         yield return StartCoroutine(lerpColor(frameRenderers[1], 0.2f));
         yield return PlaySoundAndDelay(NarrationAudioClips[2]);
 
         PlayBackgroundClip(BackgroundAudioClips[2]);
-        backgroundFadeSoundSnapshot.TransitionTo(2f);
+        backgroundFadeSoundSnapshot.TransitionTo(4f);
         yield return StartCoroutine(lerpColor(frameRenderers[2], 0.2f));
         yield return PlaySoundAndDelay(NarrationAudioClips[3]);
 
         PlayBackgroundFadeClip(BackgroundAudioClips[3]);
-        backgroundSoundSnapshot.TransitionTo(2f);
+        backgroundSoundSnapshot.TransitionTo(4f);
         yield return StartCoroutine(lerpColor(frameRenderers[3], 0.2f));
         yield return PlaySoundAndDelay(NarrationAudioClips[4]);
 
@@ -177,12 +177,24 @@ public class DescriptionSceneController : MonoBehaviour
 
     private bool entireSceneOver = false;
 
+    private bool Started = false;
     // Update is called once per frame
     void Update () {
-       
+        if (Input.anyKeyDown && !Started)
+        {
+            Started = true;
+            StartCoroutine(PictureFadeInScene());
+            return;
+        }
         if (entireSceneOver && Input.anyKeyDown)
         {
             entireSceneOver = false;
+            SceneManager.LoadScene(0);
+            return;
+        }
+
+        if (Input.anyKeyDown)
+        {
             SceneManager.LoadScene(0);
         }
 

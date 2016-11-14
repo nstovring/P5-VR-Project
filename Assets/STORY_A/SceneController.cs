@@ -165,13 +165,18 @@ public class SceneController : MonoBehaviour
         if (Input.anyKeyDown && wrongSceneOver)
         {
             StartCoroutine(ClassRoomSceneB());
+            return;
         }
 
         if (entireSceneOver && Input.anyKeyDown)
         {
             entireSceneOver = false;
             SceneManager.LoadScene(0);
+            return;
         }
-
+        //if (Input.anyKeyDown)
+        //{
+        //    SceneManager.LoadScene(0);
+        //}
     }
 }
