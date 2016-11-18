@@ -25,15 +25,15 @@ public class ClassMate : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        //myRenderer = GetComponentInChildren<Renderer>();
-        if (myType == classMateType.female)
+       
+        switch (myType)
         {
-            myTexture2DArray = FemaleTextures;
-        }
-
-        if (myType == classMateType.male)
-        {
-            myTexture2DArray = MaleTextures;
+            case classMateType.male:
+                myTexture2DArray = MaleTextures;
+                break;
+            case classMateType.female:
+                myTexture2DArray = FemaleTextures;
+                break;
         }
 
         myAnimator = GetComponentInChildren<Animator>();
