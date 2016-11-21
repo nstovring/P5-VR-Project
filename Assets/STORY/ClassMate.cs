@@ -14,9 +14,14 @@ public class ClassMate : MonoBehaviour
         male,female
     }
 
+
+    public enum emotion
+    {
+        neutral, anglry
+    }
     public classMateType myType;
     public classMateStates myState;
-
+    public emotion myEmotion;
     public Texture2D[] MaleTextures;
     public Texture2D[] FemaleTextures;
     private Texture2D[] myTexture2DArray;
@@ -73,6 +78,16 @@ public class ClassMate : MonoBehaviour
         }
     }
 
+    public void GetAngry()
+    {
+        if(myTexture2DArray.Length > 2)
+        myRenderer.material.SetTexture("_MainTex", myTexture2DArray[2]);
+    }
+
+    public void GetNeutral()
+    {
+        myRenderer.material.SetTexture("_MainTex", myTexture2DArray[0]);
+    }
     public void StartTalking()
     {
         StartCoroutine(Talk());

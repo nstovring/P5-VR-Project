@@ -17,22 +17,22 @@ public class IdaSceneController : MonoBehaviour
     public ClassMate ida;
     public List<ClassMate> classMates;
     public Transform idaMovePoint;
+    public Transform idaStartPosition;
     private bool wrongSceneOver = false;
 
     private Animator teacherAnimator;
     private Animator idaAnimator;
-
     // Use this for initialization
     private IEnumerator Start ()
 	{
-        
-        //GameObject[] temp = GameObject.FindGameObjectsWithTag("ClassMate");
 
-        //classMates = new List<ClassMate>();
-        //foreach (var o in temp)
-        //{
-        //        classMates.Add(o.GetComponent<ClassMate>());
-        //}
+        GameObject[] temp = GameObject.FindGameObjectsWithTag("ClassMate");
+
+        classMates = new List<ClassMate>();
+        foreach (var o in temp)
+        {
+            classMates.Add(o.GetComponent<ClassMate>());
+        }
 
         if (!teacher)
         teacher = GameObject.FindGameObjectWithTag("Teacher").GetComponent<ClassMate>();
@@ -64,7 +64,19 @@ public class IdaSceneController : MonoBehaviour
         idaAnimator.SetBool("Sit down", true);
         idaAnimator.applyRootMotion = true;
 
+        yield return new WaitForSeconds(4);
+        //Uden at spørge om love bwegynder hun at tegne
+        // All classmates bliver sure
+        foreach (var classMate in classMates)
+        {
+            classMate.myAnimator.SetBool("Drawing", false);
+            classMate.myAnimator.SetBool("Idle", true);
+            classMate.GetAngry();
+        }
+
+        yield return new WaitForSeconds(3f);
         wrongSceneOver = true;
+        myFade.FadeOut(3f,false);
     }
     private IEnumerator MoveTowards(Transform endPoint)
     {
@@ -79,8 +91,6 @@ public class IdaSceneController : MonoBehaviour
         }
 
     }
-
-
     private IEnumerator RotateTowards(Transform endPoint)
     {
         Vector3 relativePos = endPoint.position - ida.transform.position;
@@ -93,65 +103,16 @@ public class IdaSceneController : MonoBehaviour
             ida.transform.rotation = Quaternion.Lerp(ida.transform.rotation, rotation, 0.2f);
             yield return new WaitForEndOfFrame();
         }
-
+     
     }
 
     private IEnumerator ClassRoomSceneB()
     {
+        myFade.FadeIn(3,false);
         wrongSceneOver = false;
-        myFade.FadeIn(2, false);
-        //Emil Narratter
-        yield return PlaySoundAtLocation(NarrationAudioClips[3], teacher.transform.position, false);
+        
+
         yield return new WaitForSeconds(2);
-
-        //Lærer stiller spørgsmål igen
-        SceneAudioSource.spatialize = true;
-        SceneAudioSource.transform.position = teacher.transform.position;
-        teacherAnimator.SetBool("Gesturing", true);
-        teacher.StartTalking();
-        yield return PlaySoundAtLocation(CharacterAudioClips[1], teacher.transform.position, true);
-        teacher.StopTalking();
-        teacherAnimator.SetBool("Gesturing", false);
-        ida.HandsUp();
-
-        foreach (var classMate in classMates)
-        {
-            if(classMate.myState == ClassMate.classMateStates.Idle)
-            classMate.HandsUp();
-        }
-        yield return new WaitForSeconds(0.4f);
-      
-        yield return new WaitForSeconds(1);
-        //Lærer spørger emil specifikt
-        teacherAnimator.SetBool("Gesturing", true);
-        teacher.StartTalking();
-        yield return PlaySoundAtLocation(CharacterAudioClips[2], teacher.transform.position, true);
-        teacher.StopTalking();
-        teacherAnimator.SetBool("Gesturing", false);
-        foreach (var classMate in classMates)
-        {
-            classMate.HandsDown();
-
-        }
-        //Emil svarer
-        ida.StartTalking();
-        yield return PlaySoundAtLocation(CharacterAudioClips[0], ida.transform.position, true);
-        ida.StopTalking();
-
-        // Godt emil!
-        teacher.StartTalking();
-        yield return PlaySoundAtLocation(CharacterAudioClips[3], teacher.transform.position, true);
-        teacher.StopTalking();
-        //Nogle gane spørger han mine venner det er også ok
-
-        yield return PlaySoundAtLocation(NarrationAudioClips[4], teacher.transform.position, false);
-
-        //når jeg rækker hånden op blah blah blah
-        yield return PlaySoundAtLocation(NarrationAudioClips[5], teacher.transform.position, false);
-
-        yield return new WaitForSeconds(5);
-
-        myFade.FadeOut(2, false);
         entireSceneOver = true;
     }
 
