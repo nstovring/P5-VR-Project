@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: aa1ff81afa8ba8f4399962f69bc09aa1
+timeCreated: 1479720494
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: chair_table:Chair
+    100002: chair_table:Chair1
+    100004: chair_table:group1
+    100006: chair_table:pCube1
+    100008: chair_table:pCube12
+    100010: chair_table:pCube13
+    100012: chair_table:pCube14
+    100014: chair_table:pCube2
+    100016: chair_table:pCube3
+    100018: chair_table:pCube4
+    100020: chair_table:pCube6
+    100022: //RootNode
+    100024: IdaWithRig:Character1_RightArm
+    100026: IdaWithRig:Character1_RightForeArm
+    100028: IdaWithRig:Character1_RightHand
+    100030: IdaWithRig:Character1_RightHandMiddle1
+    100032: IdaWithRig:Character1_RightHandMiddle2
+    100034: IdaWithRig:Character1_RightHandMiddle3
+    100036: IdaWithRig:Character1_RightHandMiddle4
+    100038: IdaWithRig:Character1_RightHandThumb1
+    100040: IdaWithRig:Character1_RightHandThumb2
+    100042: IdaWithRig:Character1_RightHandThumb3
+    100044: IdaWithRig:Character1_RightHandThumb4
+    100046: IdaWithRig:Character1_RightShoulder
+    100048: IdaWithRig:ikHandle1
+    100050: IdaWithRig:ikHandle2
+    100052: IdaWithRig:ikHandle3
+    100054: IdaWithRig:ikHandle4
+    100056: IdaWithRig:ikHandle5
+    100058: IdaWithRig:ikHandle6
+    100060: IdaWithRig:Scene1_0018:Character1_Head
+    100062: IdaWithRig:Scene1_0018:Character1_Hips
+    100064: IdaWithRig:Scene1_0018:Character1_LeftFoot
+    100066: IdaWithRig:Scene1_0018:Character1_LeftFoot1
+    100068: IdaWithRig:Scene1_0018:Character1_LeftLeg
+    100070: IdaWithRig:Scene1_0018:Character1_LeftLeg1
+    100072: IdaWithRig:Scene1_0018:Character1_LeftToeBase
+    100074: IdaWithRig:Scene1_0018:Character1_LeftToeBase1
+    100076: IdaWithRig:Scene1_0018:Character1_LeftUpLeg
+    100078: IdaWithRig:Scene1_0018:Character1_LeftUpLeg1
+    100080: IdaWithRig:Scene1_0018:Character1_Neck
+    100082: IdaWithRig:Scene1_0018:Character1_Reference
+    100084: IdaWithRig:Scene1_0018:Character1_RightArm
+    100086: IdaWithRig:Scene1_0018:Character1_RightForeArm
+    100088: IdaWithRig:Scene1_0018:Character1_RightHand
+    100090: IdaWithRig:Scene1_0018:Character1_RightHandMiddle1
+    100092: IdaWithRig:Scene1_0018:Character1_RightHandMiddle2
+    100094: IdaWithRig:Scene1_0018:Character1_RightHandMiddle3
+    100096: IdaWithRig:Scene1_0018:Character1_RightHandMiddle4
+    100098: IdaWithRig:Scene1_0018:Character1_RightHandThumb1
+    100100: IdaWithRig:Scene1_0018:Character1_RightHandThumb2
+    100102: IdaWithRig:Scene1_0018:Character1_RightHandThumb3
+    100104: IdaWithRig:Scene1_0018:Character1_RightHandThumb4
+    100106: IdaWithRig:Scene1_0018:Character1_RightShoulder
+    100108: IdaWithRig:Scene1_0018:Character1_Spine
+    100110: IdaWithRig:Scene1_0018:Character1_Spine1
+    100112: IdaWithRig:Scene1_0018:Character1_Spine2
+    100114: IdaWithRig:Scene1_0018:joint1
+    100116: IdaWithRig:Scene1_0018:joint2
+    100118: left1
+    100120: Left_Arm
+    100122: Left_Arm_Controller
+    100124: Left_Foot
+    100126: pCylinder8
+    100128: Right_Arm
+    100130: Right_Arm_Controller
+    100132: Right_Foot
+    400000: chair_table:Chair
+    400002: chair_table:Chair1
+    400004: chair_table:group1
+    400006: chair_table:pCube1
+    400008: chair_table:pCube12
+    400010: chair_table:pCube13
+    400012: chair_table:pCube14
+    400014: chair_table:pCube2
+    400016: chair_table:pCube3
+    400018: chair_table:pCube4
+    400020: chair_table:pCube6
+    400022: //RootNode
+    400024: IdaWithRig:Character1_RightArm
+    400026: IdaWithRig:Character1_RightForeArm
+    400028: IdaWithRig:Character1_RightHand
+    400030: IdaWithRig:Character1_RightHandMiddle1
+    400032: IdaWithRig:Character1_RightHandMiddle2
+    400034: IdaWithRig:Character1_RightHandMiddle3
+    400036: IdaWithRig:Character1_RightHandMiddle4
+    400038: IdaWithRig:Character1_RightHandThumb1
+    400040: IdaWithRig:Character1_RightHandThumb2
+    400042: IdaWithRig:Character1_RightHandThumb3
+    400044: IdaWithRig:Character1_RightHandThumb4
+    400046: IdaWithRig:Character1_RightShoulder
+    400048: IdaWithRig:ikHandle1
+    400050: IdaWithRig:ikHandle2
+    400052: IdaWithRig:ikHandle3
+    400054: IdaWithRig:ikHandle4
+    400056: IdaWithRig:ikHandle5
+    400058: IdaWithRig:ikHandle6
+    400060: IdaWithRig:Scene1_0018:Character1_Head
+    400062: IdaWithRig:Scene1_0018:Character1_Hips
+    400064: IdaWithRig:Scene1_0018:Character1_LeftFoot
+    400066: IdaWithRig:Scene1_0018:Character1_LeftFoot1
+    400068: IdaWithRig:Scene1_0018:Character1_LeftLeg
+    400070: IdaWithRig:Scene1_0018:Character1_LeftLeg1
+    400072: IdaWithRig:Scene1_0018:Character1_LeftToeBase
+    400074: IdaWithRig:Scene1_0018:Character1_LeftToeBase1
+    400076: IdaWithRig:Scene1_0018:Character1_LeftUpLeg
+    400078: IdaWithRig:Scene1_0018:Character1_LeftUpLeg1
+    400080: IdaWithRig:Scene1_0018:Character1_Neck
+    400082: IdaWithRig:Scene1_0018:Character1_Reference
+    400084: IdaWithRig:Scene1_0018:Character1_RightArm
+    400086: IdaWithRig:Scene1_0018:Character1_RightForeArm
+    400088: IdaWithRig:Scene1_0018:Character1_RightHand
+    400090: IdaWithRig:Scene1_0018:Character1_RightHandMiddle1
+    400092: IdaWithRig:Scene1_0018:Character1_RightHandMiddle2
+    400094: IdaWithRig:Scene1_0018:Character1_RightHandMiddle3
+    400096: IdaWithRig:Scene1_0018:Character1_RightHandMiddle4
+    400098: IdaWithRig:Scene1_0018:Character1_RightHandThumb1
+    400100: IdaWithRig:Scene1_0018:Character1_RightHandThumb2
+    400102: IdaWithRig:Scene1_0018:Character1_RightHandThumb3
+    400104: IdaWithRig:Scene1_0018:Character1_RightHandThumb4
+    400106: IdaWithRig:Scene1_0018:Character1_RightShoulder
+    400108: IdaWithRig:Scene1_0018:Character1_Spine
+    400110: IdaWithRig:Scene1_0018:Character1_Spine1
+    400112: IdaWithRig:Scene1_0018:Character1_Spine2
+    400114: IdaWithRig:Scene1_0018:joint1
+    400116: IdaWithRig:Scene1_0018:joint2
+    400118: left1
+    400120: Left_Arm
+    400122: Left_Arm_Controller
+    400124: Left_Foot
+    400126: pCylinder8
+    400128: Right_Arm
+    400130: Right_Arm_Controller
+    400132: Right_Foot
+    2300000: chair_table:pCube1
+    2300002: chair_table:pCube12
+    2300004: chair_table:pCube13
+    2300006: chair_table:pCube14
+    2300008: chair_table:pCube2
+    2300010: chair_table:pCube3
+    2300012: chair_table:pCube4
+    2300014: chair_table:pCube6
+    3300000: chair_table:pCube1
+    3300002: chair_table:pCube12
+    3300004: chair_table:pCube13
+    3300006: chair_table:pCube14
+    3300008: chair_table:pCube2
+    3300010: chair_table:pCube3
+    3300012: chair_table:pCube4
+    3300014: chair_table:pCube6
+    4300000: pCylinder8
+    4300002: chair_table:pCube12
+    4300004: chair_table:pCube6
+    4300006: chair_table:pCube3
+    4300008: chair_table:pCube4
+    4300010: chair_table:pCube1
+    4300012: chair_table:pCube13
+    4300014: chair_table:pCube14
+    4300016: chair_table:pCube2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: pCylinder8
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 12
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: IdaWithRig:Scene1_0018:Character1_Reference
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_LeftUpLeg1
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_LeftLeg1
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_LeftFoot1
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_Spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_Spine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Character1_RightShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Character1_RightArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Character1_RightForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Character1_RightHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_LeftToeBase1
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Character1_RightHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Character1_RightHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Character1_RightHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Character1_RightHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Character1_RightHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Character1_RightHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_LeftUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_LeftLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_LeftFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IdaWithRig:Scene1_0018:Character1_LeftToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: IdaWithAnimations(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chair_table:group1
+      position: {x: -1.08792, y: 0, z: -0.992077}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chair_table:Chair
+      position: {x: -0.25747567, y: 0, z: 0.24839278}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chair_table:pCube1
+      position: {x: -0, y: 0.267323, z: -0.033837754}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 2.6178696, y: 0.12689082, z: 2.051209}
+      transformModified: 1
+    - name: chair_table:pCube3
+      position: {x: -0.14618994, y: 0.13607055, z: 0.072798796}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.14856826, y: 2.122761, z: 0.14856826}
+      transformModified: 1
+    - name: chair_table:pCube4
+      position: {x: 0.14279568, y: 0.13607055, z: 0.072798796}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.14856826, y: 2.122761, z: 0.14856826}
+      transformModified: 1
+    - name: chair_table:pCube6
+      position: {x: 0.14279568, y: 0.13607055, z: -0.1462178}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.14856826, y: 2.122761, z: 0.14856826}
+      transformModified: 1
+    - name: chair_table:pCube13
+      position: {x: -0.14728913, y: 0.13607055, z: -0.1462178}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.14856826, y: 2.122761, z: 0.14856826}
+      transformModified: 1
+    - name: chair_table:Chair1
+      position: {x: 0.2856056, y: 0, z: 0.24839278}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chair_table:pCube12
+      position: {x: -0.5464113, y: 0.41650185, z: -0.14880149}
+      rotation: {x: -0.7097759, y: 0, z: -0, w: 0.70442754}
+      scale: {x: 2.6178696, y: 0.1569396, z: 2.6178696}
+      transformModified: 1
+    - name: chair_table:pCube2
+      position: {x: 0.9230667, y: -0.022203973, z: 0.9250742}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.8678076, y: 1.4483436, z: 1.3926259}
+      transformModified: 1
+    - name: chair_table:pCube14
+      position: {x: 1.133129, y: 0, z: -0.038544577}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.6723528, y: 1.5222642, z: 1.6723528}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_Reference
+      position: {x: 0.0061725304, y: -0.022696612, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.062034536, y: 0.062034536, z: 0.062034536}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_Hips
+      position: {x: -0.12836362, y: 10.399515, z: 0.95312077}
+      rotation: {x: 0.0013368313, y: -0, z: -0, w: 0.9999991}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_LeftUpLeg
+      position: {x: -2.9027932, y: -0.7524005, z: 0}
+      rotation: {x: 0.023477519, y: -0.004351514, z: -0.07740617, w: 0.9967137}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_LeftLeg
+      position: {x: 8.5904896e-16, y: -4.817897, z: 0.21366787}
+      rotation: {x: 0.052212793, y: -7.186071e-18, z: -1.7080552e-16, w: 0.998636}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_LeftFoot
+      position: {x: -4.2632563e-16, y: -4.054632, z: 0}
+      rotation: {x: -0.07972578, y: 0.008058386, z: 0.07710844, w: 0.99379736}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_LeftToeBase
+      position: {x: -0.0000011444091, y: -0.6256729, z: 1.2962945}
+      rotation: {x: 0.097968176, y: 0.71203667, z: 0.09390819, w: 0.688903}
+      scale: {x: 1, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:joint1
+      position: {x: -1.0286502, y: 0.28128514, z: -0.022879345}
+      rotation: {x: -0.115534, y: -0.71048725, z: -0.11141573, w: 0.68516153}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_LeftUpLeg1
+      position: {x: 2.6784594, y: -0.7548307, z: 0.000045510056}
+      rotation: {x: 0.9989477, y: 0.044730745, z: -0.0007667291, w: 0.010104916}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_LeftLeg1
+      position: {x: -0, y: 4.8178916, z: -0.16615587}
+      rotation: {x: 0.12666348, y: 4.952216e-17, z: 3.040428e-16, w: 0.99194574}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_LeftFoot1
+      position: {x: -4.2632563e-16, y: 4.0546365, z: -4.9654977e-16}
+      rotation: {x: -0.12073607, y: 0.006237381, z: 0.04430033, w: 0.9916761}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_LeftToeBase1
+      position: {x: 0.000012130737, y: 0.62567395, z: -1.2962999}
+      rotation: {x: -0.020227605, y: 0.71904755, z: -0.025215302, w: 0.69420874}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:joint2
+      position: {x: 1.0286499, y: -0.28128567, z: 0.022877559}
+      rotation: {x: -0.115534, y: -0.71048725, z: -0.11141573, w: 0.68516153}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_Spine
+      position: {x: -0, y: 1.0021261, z: -0.016876202}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_Spine1
+      position: {x: -0, y: 1.1242713, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_Spine2
+      position: {x: -0, y: 1.1242713, z: 0}
+      rotation: {x: -0.05937895, y: 0.99580705, z: 0.004142113, w: -0.06946477}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightShoulder
+      position: {x: 2.216892, y: 0.5162357, z: 0.8820324}
+      rotation: {x: 0.99580705, y: 0.05937895, z: 0.06946477, w: -0.004142113}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightArm
+      position: {x: 1.5519959, y: -0.3868363, z: 0.16269913}
+      rotation: {x: -0.1901886, y: 0.03365805, z: 0.5319043, w: 0.82448363}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightForeArm
+      position: {x: 2.0789874, y: 0.009135305, z: 0.00015865528}
+      rotation: {x: 0.010213541, y: -0.33190095, z: 0.009189114, w: 0.94321424}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightHand
+      position: {x: 3.4629123, y: -0.06319666, z: 0.25601384}
+      rotation: {x: 0.013927458, y: -0.0026542018, z: -0.016113374, w: 0.9997697}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightHandMiddle1
+      position: {x: 0.6521292, y: 0.060107116, z: 0.0026405668}
+      rotation: {x: -0.000083671934, y: -0.0007495455, z: 0.046461478, w: 0.9989198}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightHandMiddle2
+      position: {x: 0.71320766, y: -0.11110565, z: 0.000036292076}
+      rotation: {x: 0.00082945294, y: 0.14576583, z: -0.045999702, w: 0.9882488}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightHandMiddle3
+      position: {x: 0.6833986, y: -0.049179167, z: 0.19994536}
+      rotation: {x: -0.000001933651, y: 0.00006563145, z: 0.02488293, w: 0.99969035}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightHandMiddle4
+      position: {x: 0.7169001, y: 0.054471307, z: 0.28195176}
+      rotation: {x: 0, y: -0.0003509054, z: -0, w: 0.99999994}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightHandThumb1
+      position: {x: 0.34370092, y: 0.09434963, z: 0.4974146}
+      rotation: {x: 6.8758297e-17, y: -6.2789667e-18, z: 1.0114578e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightHandThumb2
+      position: {x: 0.1622873, y: -0.06433228, z: 0.33545247}
+      rotation: {x: 5.1874564e-15, y: -1.6502904e-16, z: -2.904719e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightHandThumb3
+      position: {x: 0.19438201, y: -0.0000018310546, z: 0.38993964}
+      rotation: {x: -2.9168646e-16, y: -1.3122487e-14, z: -4.3593736e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Character1_RightHandThumb4
+      position: {x: 0.34781614, y: 0.0000009155273, z: 0.31092978}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_Neck
+      position: {x: -0.13360323, y: 1.1163046, z: 2.2964252e-16}
+      rotation: {x: -0.05937895, y: 0.99580705, z: 0.004142113, w: 0.06946477}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_Head
+      position: {x: -0, y: 5.166678, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightShoulder
+      position: {x: -2.096449, y: -2.9859447e-15, z: 1.3322676e-15}
+      rotation: {x: -0.05937895, y: 0.99580705, z: 0.004142113, w: 0.06946477}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightArm
+      position: {x: 1.4291146, y: 0.3102053, z: 0.1626992}
+      rotation: {x: 0.113112554, y: 0.19408712, z: -0.60863, w: 0.76098967}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightForeArm
+      position: {x: 2.6099167, y: 0, z: 7.9936054e-17}
+      rotation: {x: 0.0017524872, y: -0.51284266, z: 0.0015814662, w: 0.8584794}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightHand
+      position: {x: 3.2287543, y: -0.019116271, z: 0.0028759383}
+      rotation: {x: 0.013927458, y: -0.0026542018, z: -0.016113374, w: 0.9997697}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightHandMiddle1
+      position: {x: 0.6521292, y: 0.060107116, z: 0.0026405668}
+      rotation: {x: -0.000083671934, y: -0.0007495455, z: 0.046461478, w: 0.9989198}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightHandMiddle2
+      position: {x: 0.71320766, y: -0.11110565, z: 0.000036292076}
+      rotation: {x: 0.00082945294, y: 0.14576583, z: -0.045999702, w: 0.9882488}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightHandMiddle3
+      position: {x: 0.7420934, y: -0.048903037, z: 0.23656581}
+      rotation: {x: -0.000001933651, y: 0.00006563145, z: 0.02488293, w: 0.99969035}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightHandMiddle4
+      position: {x: 0.472275, y: -0.054383237, z: 0.32335782}
+      rotation: {x: 0, y: -0.0003509054, z: -0, w: 0.99999994}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightHandThumb1
+      position: {x: 0.28655797, y: 0.013193508, z: 0.4342303}
+      rotation: {x: 6.8758297e-17, y: -6.2789667e-18, z: 1.0114578e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightHandThumb2
+      position: {x: 0.1622873, y: -0.06433228, z: 0.33545247}
+      rotation: {x: 5.1874564e-15, y: -1.6502904e-16, z: -2.904719e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightHandThumb3
+      position: {x: 0.19438201, y: -0.0000018310546, z: 0.38993964}
+      rotation: {x: -2.9168646e-16, y: -1.3122487e-14, z: -4.3593736e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:Scene1_0018:Character1_RightHandThumb4
+      position: {x: 0.34781614, y: 0.0000009155273, z: 0.31092978}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: left1
+      position: {x: 12.011999, y: 0.49914527, z: 0.1059829}
+      rotation: {x: 0, y: -1.110223e-16, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Left_Arm
+      position: {x: -0.29268867, y: 0.6454286, z: -0.20526099}
+      rotation: {x: 0.09648428, y: 0.09677883, z: 0.69623667, w: 0.7046837}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Left_Arm_Controller
+      position: {x: 0.0038617456, y: -0.0010603052, z: -0.009706279}
+      rotation: {x: -0.006092821, y: -0.0061987955, z: 0.7131373, w: 0.70097053}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Left_Foot
+      position: {x: -0.1914803, y: 0.010920842, z: 0.23213013}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:ikHandle1
+      position: {x: 0.01140687, y: 0.057318147, z: -0.064999506}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:ikHandle2
+      position: {x: 0.011406798, y: 0.018504824, z: 0.01541552}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:ikHandle3
+      position: {x: 0.012183023, y: 0.016583309, z: 0.08155289}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: pCylinder8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Right_Arm
+      position: {x: 0.28854814, y: 0.554293, z: 0.21231264}
+      rotation: {x: 0.23400597, y: -0.23400597, z: -0.667264, w: 0.667264}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Right_Arm_Controller
+      position: {x: -0.009792147, y: -0.0058422694, z: -0.028082162}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Right_Foot
+      position: {x: 0.17538561, y: 0.023104228, z: -0.21188235}
+      rotation: {x: 0.14127594, y: -0, z: -0, w: 0.98997027}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:ikHandle4
+      position: {x: 0.0046874858, y: 0.057318185, z: -0.06794689}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:ikHandle5
+      position: {x: 0.004688244, y: 0.01850479, z: 0.0124684805}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IdaWithRig:ikHandle6
+      position: {x: 0.0057155797, y: 0.031917896, z: 0.0772564}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
