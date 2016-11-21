@@ -14,12 +14,14 @@ public class IdaSceneController : MonoBehaviour
     public float soundDelay = 3;
     public float houseSpeed = 1;
     public ClassMate teacher;
-    public ClassMate emil;
+    public ClassMate ida;
     public List<ClassMate> classMates;
-
+    public Transform idaMovePoint;
     private bool wrongSceneOver = false;
 
     private Animator teacherAnimator;
+    private Animator idaAnimator;
+
     // Use this for initialization
     private IEnumerator Start ()
 	{
@@ -35,8 +37,13 @@ public class IdaSceneController : MonoBehaviour
         if (!teacher)
         teacher = GameObject.FindGameObjectWithTag("Teacher").GetComponent<ClassMate>();
         teacherAnimator = teacher.GetComponentInChildren<Animator>();
-        if(!emil)
-        emil = GameObject.FindGameObjectWithTag("Emil").GetComponent<ClassMate>();
+        if(!ida)
+        ida = GameObject.FindGameObjectWithTag("Ida").GetComponent<ClassMate>();
+
+        idaAnimator = ida.myAnimator;
+        idaAnimator.SetBool("Idle", false);
+        idaAnimator.SetBool("Sit down", false);
+        idaAnimator.speed = 1.5f;
         yield return new WaitForSeconds(2);
         myFade = Camera.main.GetComponent<VRCameraFade>();
         myFade.FadeIn(5, false);
@@ -48,47 +55,46 @@ public class IdaSceneController : MonoBehaviour
     {
         myFade = Camera.main.GetComponent<VRCameraFade>();
 
-        //Emil Narratter
-        yield return PlaySoundAtLocation(NarrationAudioClips[0], teacher.transform.position, false);
-       
         yield return new WaitForSeconds(2);
-        // Læren stiller et spørgsmål
-        teacherAnimator.SetBool("Gesturing", true);
-        teacher.talking = true;
-        teacher.StartTalking();
-        yield return PlaySoundAtLocation(CharacterAudioClips[1], teacher.transform.position, true);
-        teacher.StopTalking();
-        teacherAnimator.SetBool("Gesturing", false);
-        foreach (var classMate in classMates)
-        {
-            if (classMate.myState == ClassMate.classMateStates.Idle)
-                classMate.myAnimator.SetBool("Idle", false);
-                classMate.HandsUp();
-        }
-        yield return new WaitForSeconds(2);
+        idaAnimator.SetBool("Walk", true);
+     
+        yield return StartCoroutine(MoveTowards(idaMovePoint));
+        yield return StartCoroutine(RotateTowards(idaMovePoint));
+        idaAnimator.SetBool("Walk", false);
+        idaAnimator.SetBool("Sit down", true);
+        idaAnimator.applyRootMotion = true;
 
-        // 2!
-        emil.StartTalking();
-        yield return PlaySoundAtLocation(CharacterAudioClips[0], emil.transform.position, true);
-        emil.StopTalking();
-        foreach (var classMate in classMates)
-        {
-            classMate.HandsDown();
-            classMate.myAnimator.SetBool("Idle", true);
-        }
-
-        yield return new WaitForSeconds(3);
-
-        yield return PlaySoundAtLocation(NarrationAudioClips[1], teacher.transform.position, false);
-
-        yield return PlaySoundAtLocation(NarrationAudioClips[2], teacher.transform.position, false);
-
-        yield return new WaitForSeconds(2);
-        myFade.FadeOut(2, false);
-        
         wrongSceneOver = true;
     }
+    private IEnumerator MoveTowards(Transform endPoint)
+    {
+        Vector3 offsetmovePoint = endPoint.position;
+        offsetmovePoint.y =0;
 
+        ida.transform.LookAt(offsetmovePoint);
+        while (Vector3.Distance(ida.transform.position, idaMovePoint.position) > 0.1f)
+        {
+            ida.transform.position = Vector3.MoveTowards(ida.transform.position, endPoint.position, 0.01f);
+            yield return new WaitForSeconds(0.01f);
+        }
+
+    }
+
+
+    private IEnumerator RotateTowards(Transform endPoint)
+    {
+        Vector3 relativePos = endPoint.position - ida.transform.position;
+        Quaternion rotation = Quaternion.LookRotation(relativePos);
+        ida.transform.rotation = endPoint.rotation;
+        yield return new WaitForEndOfFrame();
+ 
+        while (Vector3.Angle(ida.transform.forward, endPoint.forward) > 0.1f)
+        {
+            ida.transform.rotation = Quaternion.Lerp(ida.transform.rotation, rotation, 0.2f);
+            yield return new WaitForEndOfFrame();
+        }
+
+    }
 
     private IEnumerator ClassRoomSceneB()
     {
@@ -106,7 +112,7 @@ public class IdaSceneController : MonoBehaviour
         yield return PlaySoundAtLocation(CharacterAudioClips[1], teacher.transform.position, true);
         teacher.StopTalking();
         teacherAnimator.SetBool("Gesturing", false);
-        emil.HandsUp();
+        ida.HandsUp();
 
         foreach (var classMate in classMates)
         {
@@ -128,9 +134,9 @@ public class IdaSceneController : MonoBehaviour
 
         }
         //Emil svarer
-        emil.StartTalking();
-        yield return PlaySoundAtLocation(CharacterAudioClips[0], emil.transform.position, true);
-        emil.StopTalking();
+        ida.StartTalking();
+        yield return PlaySoundAtLocation(CharacterAudioClips[0], ida.transform.position, true);
+        ida.StopTalking();
 
         // Godt emil!
         teacher.StartTalking();
