@@ -129,13 +129,13 @@ public class IdaSceneController : MonoBehaviour
 
     // Update is called once per frame
     void Update () {
-        if (Input.anyKeyDown && wrongSceneOver)
+        if (Input.GetKeyUp(KeyCode.Space) && wrongSceneOver)
         {
             StartCoroutine(ClassRoomSceneB());
             return;
         }
 
-        if (entireSceneOver && Input.anyKeyDown)
+        if (entireSceneOver && Input.GetKeyUp(KeyCode.Space))
         {
             entireSceneOver = false;
             SceneManager.LoadScene(0);

@@ -19,33 +19,12 @@ public class DescriptionSceneController : MonoBehaviour
     public float soundDelay = 3;
     public float houseSpeed = 1;
     public bool pictureFadeInMode;
-    // Use this for initialization
- //   private IEnumerator Start ()
-	//{
- //           yield return StartCoroutine(PictureFadeInScene());
- //   }
 
+    public Transform User;
     public Transform bookAnimator;
     public Transform houseScale;
-
-    private IEnumerator BogScene()
-    {
-        yield return new WaitForSeconds(3);
-        Quaternion quat = new Quaternion();
-        Vector3 scaleVector = new Vector3(0.8928202f, 0.8928202f, 0.8928202f);
-        quat.eulerAngles = new Vector3(0,0, 0);
-        StartCoroutine(rotateObject(bookAnimator, quat, 0.05f));
-        yield return StartCoroutine(scaleObject(houseScale, scaleVector, 0.01f));
-
-        SceneAudioSource.PlayOneShot(NarrationAudioClips[0]);
-        soundDelay = NarrationAudioClips[0].length;
-        yield return new WaitForSeconds(soundDelay);
-
-        Camera.main.GetComponent<VRCameraFade>().FadeOut(2,false);
-       
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(1);
-    }
+    public Transform framesParent;
+    public Transform[] frames;
     public Renderer[] frameRenderers;
     private IEnumerator PictureFadeInScene()
     {
@@ -53,6 +32,8 @@ public class DescriptionSceneController : MonoBehaviour
         //SceneAudioSource.PlayOneShot(NarrationAudioClips[0]);
         //soundDelay = NarrationAudioClips[0].length;
         yield return PlaySoundAndDelay(NarrationAudioClips[0]);
+        framesParent.parent = null;
+        StartCoroutine(RotateFramesWithHead());
         for (int index = 0; index < frameRenderers.Length; index++)
         {
             Material tempMat = new Material(frameRenderers[index].material);
@@ -180,23 +161,37 @@ public class DescriptionSceneController : MonoBehaviour
     private bool Started = false;
     // Update is called once per frame
     void Update () {
-        if (Input.anyKeyDown && !Started)
+        if (Input.GetKeyUp(KeyCode.Space) && !Started)
         {
             Started = true;
             StartCoroutine(PictureFadeInScene());
             return;
         }
-        if (entireSceneOver && Input.anyKeyDown)
+        if (entireSceneOver && Input.GetKeyUp(KeyCode.Space))
         {
             entireSceneOver = false;
             SceneManager.LoadScene(0);
             return;
         }
 
-        if (Input.anyKeyDown)
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             SceneManager.LoadScene(0);
         }
-
     }
+
+    IEnumerator RotateFramesWithHead()
+    {
+        while (true)
+        {
+
+            foreach (var frame in frames)
+            {
+                frame.LookAt(frameLookAtTarget);
+            }
+            yield return new WaitForEndOfFrame();
+        }
+    }
+
+    public Transform frameLookAtTarget;
 }
