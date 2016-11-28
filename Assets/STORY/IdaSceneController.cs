@@ -57,7 +57,7 @@ public class IdaSceneController : MonoBehaviour
 
         yield return new WaitForSeconds(2);
         idaAnimator.SetBool("Walk", true);
-     
+        
         yield return StartCoroutine(MoveTowards(idaMovePoint));
         yield return StartCoroutine(RotateTowards(idaMovePoint));
         idaAnimator.SetBool("Walk", false);
@@ -73,6 +73,7 @@ public class IdaSceneController : MonoBehaviour
             classMate.myAnimator.SetBool("Idle", true);
             classMate.GetAngry();
         }
+        yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[3], idaMovePoint.position,false));
 
         yield return new WaitForSeconds(3f);
         wrongSceneOver = true;
@@ -108,16 +109,31 @@ public class IdaSceneController : MonoBehaviour
 
     private IEnumerator ClassRoomSceneB()
     {
+        myFade = Camera.main.GetComponent<VRCameraFade>();
         myFade.FadeIn(3,false);
         wrongSceneOver = false;
-        
-
+        yield return new WaitForSeconds(4);
+        yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[6], idaMovePoint.position, true));
+        idaAnimator.SetBool("Walk", true);
+        yield return StartCoroutine(MoveTowards(idaMovePoint));
+        yield return StartCoroutine(RotateTowards(idaMovePoint));
+        idaAnimator.SetBool("Walk", false);
+        yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[4], idaMovePoint.position, true));
+        yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[2], idaMovePoint.position, true));
+        idaAnimator.SetBool("Sit down", true);
+        idaAnimator.applyRootMotion = true;
+        yield return new WaitForSeconds(2);
+        idaAnimator.SetBool("Drawing", true);
+        yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[5], idaMovePoint.position, false));
+        yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[0], idaMovePoint.position, false));
+        yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[1], idaMovePoint.position, false));
         yield return new WaitForSeconds(2);
         entireSceneOver = true;
     }
 
     IEnumerator PlaySoundAtLocation(AudioClip clip, Vector3 soundLocation, bool spatialize)
     {
+        Debug.Log("playing " + clip.name);
         SceneAudioSource.spatialize = spatialize;
         SceneAudioSource.transform.position = soundLocation;
         SceneAudioSource.PlayOneShot(clip);

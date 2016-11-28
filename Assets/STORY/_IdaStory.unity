@@ -2274,9 +2274,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   CharacterAudioClips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b6db919b928f860468c9a7069c9d60f0, type: 3}
+  - {fileID: 8300000, guid: d8f8e0bd04cab4a428c3c62e48275054, type: 3}
+  - {fileID: 8300000, guid: 619e12ad1fe85fb4ca32fb309833d5ce, type: 3}
+  - {fileID: 8300000, guid: 949733ada66929042aaf172fec865659, type: 3}
+  - {fileID: 8300000, guid: fc710d24bb80e0a47ae88d02923d08e9, type: 3}
+  - {fileID: 8300000, guid: 84b86de684f9ded4c8156df34275e225, type: 3}
+  - {fileID: 8300000, guid: 0bf5d831ddbf280489b93c9a3f0d03c8, type: 3}
+  - {fileID: 8300000, guid: 4d03f93163dc89e46a0a15a262fd8c61, type: 3}
   BackgroundAudioClips:
   - {fileID: 0}
   - {fileID: 0}
@@ -5319,7 +5324,7 @@ GameObject:
   - 95: {fileID: 531855121}
   m_Layer: 0
   m_Name: FemaleClassmateAnimations
-  m_TagString: ClassMate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9941,7 +9946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8adb74b08f55f544bbcc082523695d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myAnimator: {fileID: 0}
+  myAnimator: {fileID: 531855121}
   myType: 1
   myState: 2
   myEmotion: 0
