@@ -2363,14 +2363,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneAudioSource: {fileID: 589491349}
   NarrationAudioClips:
-  - {fileID: 8300000, guid: 66f3ec91784a694428b443c3bb739082, type: 3}
-  - {fileID: 8300000, guid: d95904eda82345a4b9cf007f9baa8679, type: 3}
-  - {fileID: 8300000, guid: 21ec64449c72db740a5ca106ce91df4b, type: 3}
-  - {fileID: 8300000, guid: a2cf29c9690922548a97d92f4098915d, type: 3}
-  - {fileID: 8300000, guid: e1560f1c49d068847b61703503793773, type: 3}
-  - {fileID: 8300000, guid: 58dfab431214e104986bba25709f404f, type: 3}
+  - {fileID: 8300000, guid: 2901d199b198a1341810cf78191e8642, type: 3}
+  - {fileID: 8300000, guid: 6b776ddf21bc43742a05f575473feb8a, type: 3}
+  - {fileID: 8300000, guid: 3c9fe626905690c47a2315054e54ad65, type: 3}
+  - {fileID: 8300000, guid: c4d8b607aa2b0784bb37bcf719cbe8a7, type: 3}
+  - {fileID: 8300000, guid: 10014bbb8ce158f4c9da694ec0048509, type: 3}
+  - {fileID: 8300000, guid: d22629a6235364847b1145d9edfa5ecc, type: 3}
   CharacterAudioClips:
-  - {fileID: 8300000, guid: e355ccc65e585ee44aad8fd05990c1ca, type: 3}
+  - {fileID: 8300000, guid: 0397da46778c6484f90fffe6f8db8f8b, type: 3}
   - {fileID: 8300000, guid: 8d9b070cba5c6b94195462694d9bb6a3, type: 3}
   - {fileID: 8300000, guid: 3daf9fc5d2ddfa84f9b701f53d05975e, type: 3}
   - {fileID: 8300000, guid: 95e04687959e58245ad06108bd872961, type: 3}
@@ -14205,7 +14205,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013573712740, guid: ff8e1dc68199e0b47a70cc8a41300a1d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.249
+      value: -0.072
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff8e1dc68199e0b47a70cc8a41300a1d, type: 2}

@@ -14,7 +14,7 @@ public class IdaSceneController : MonoBehaviour
     public float soundDelay = 3;
     public float houseSpeed = 1;
     public ClassMate teacher;
-    public ClassMate ida;
+    public CharacterAnimator ida;
     public List<ClassMate> classMates;
     public Transform idaMovePoint;
     public Transform idaStartPosition;
@@ -38,7 +38,7 @@ public class IdaSceneController : MonoBehaviour
         teacher = GameObject.FindGameObjectWithTag("Teacher").GetComponent<ClassMate>();
         teacherAnimator = teacher.GetComponentInChildren<Animator>();
         if(!ida)
-        ida = GameObject.FindGameObjectWithTag("Ida").GetComponent<ClassMate>();
+        ida = GameObject.FindGameObjectWithTag("Ida").GetComponent<CharacterAnimator>();
 
         idaAnimator = ida.myAnimator;
         idaAnimator.SetBool("Idle", false);

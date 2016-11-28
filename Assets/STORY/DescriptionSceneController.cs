@@ -24,11 +24,12 @@ public class DescriptionSceneController : MonoBehaviour
     public Transform bookAnimator;
     public Transform houseScale;
     public Transform framesParent;
-    public Transform[] frames;
+    public List<Transform> frames;
+    private List<Transform> rotatedframes;
     public Renderer[] frameRenderers;
     private IEnumerator PictureFadeInScene()
     {
-
+        rotatedframes = new List<Transform>();
         //SceneAudioSource.PlayOneShot(NarrationAudioClips[0]);
         //soundDelay = NarrationAudioClips[0].length;
         yield return PlaySoundAndDelay(NarrationAudioClips[0]);
@@ -41,26 +42,30 @@ public class DescriptionSceneController : MonoBehaviour
             frameRenderers[index].material = tempMat;
         }
 
-        var frameRenderer = frameRenderers[0];
+        Renderer frameRenderer = frameRenderers[0];
 
         PlayBackgroundClip(BackgroundAudioClips[0]);
         backgroundFadeSoundSnapshot.TransitionTo(4f);
         yield return StartCoroutine(lerpColor(frameRenderer, 0.5f));
+        rotatedframes.Add(frames[0]);
         yield return PlaySoundAndDelay(NarrationAudioClips[1]);
 
         PlayBackgroundFadeClip(BackgroundAudioClips[1]);
         backgroundSoundSnapshot.TransitionTo(4f);
         yield return StartCoroutine(lerpColor(frameRenderers[1], 0.2f));
+        rotatedframes.Add(frames[1]);
         yield return PlaySoundAndDelay(NarrationAudioClips[2]);
 
         PlayBackgroundClip(BackgroundAudioClips[2]);
         backgroundFadeSoundSnapshot.TransitionTo(4f);
         yield return StartCoroutine(lerpColor(frameRenderers[2], 0.2f));
+        rotatedframes.Add(frames[2]);
         yield return PlaySoundAndDelay(NarrationAudioClips[3]);
 
         PlayBackgroundFadeClip(BackgroundAudioClips[3]);
         backgroundSoundSnapshot.TransitionTo(4f);
         yield return StartCoroutine(lerpColor(frameRenderers[3], 0.2f));
+        rotatedframes.Add(frames[3]);
         yield return PlaySoundAndDelay(NarrationAudioClips[4]);
 
         yield return new WaitForSeconds(3f);
@@ -71,7 +76,7 @@ public class DescriptionSceneController : MonoBehaviour
         Camera.main.GetComponent<VRCameraFade>().FadeOut(2, false);
       
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     IEnumerator PlaySoundAndDelay(AudioClip clip)
@@ -184,10 +189,12 @@ public class DescriptionSceneController : MonoBehaviour
     {
         while (true)
         {
-
-            foreach (var frame in frames)
+            if (rotatedframes.Count > 0)
             {
-                frame.LookAt(frameLookAtTarget);
+                foreach (var frame in rotatedframes)
+                {
+                    frame.LookAt(frameLookAtTarget);
+                }
             }
             yield return new WaitForEndOfFrame();
         }
