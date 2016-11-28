@@ -27,6 +27,7 @@ public class DescriptionSceneController : MonoBehaviour
     public List<Transform> frames;
     private List<Transform> rotatedframes;
     public Renderer[] frameRenderers;
+
     private IEnumerator PictureFadeInScene()
     {
         rotatedframes = new List<Transform>();
@@ -46,8 +47,9 @@ public class DescriptionSceneController : MonoBehaviour
 
         PlayBackgroundClip(BackgroundAudioClips[0]);
         backgroundFadeSoundSnapshot.TransitionTo(4f);
-        yield return StartCoroutine(lerpColor(frameRenderer, 0.5f));
         rotatedframes.Add(frames[0]);
+
+        yield return StartCoroutine(lerpColor(frameRenderer, 0.5f));
         yield return PlaySoundAndDelay(NarrationAudioClips[1]);
 
         PlayBackgroundFadeClip(BackgroundAudioClips[1]);
@@ -165,7 +167,30 @@ public class DescriptionSceneController : MonoBehaviour
 
     private bool Started = false;
     // Update is called once per frame
+
+
+    void callMeOnce() {
+        foreach (var frame in frames)
+        {
+            //frame.LookAt(frameLookAtTarget);
+
+
+            Vector3 dir = frameLookAtTarget.transform.position - frame.transform.position;
+            Quaternion dest = Quaternion.LookRotation(dir);
+            frame.transform.rotation = dest;
+        }
+    }
+
     void Update () {
+
+
+        if (Started == false) {
+
+            callMeOnce();
+            print("i got here");
+
+        }
+
         if (Input.GetKeyUp(KeyCode.Space) && !Started)
         {
             Started = true;
@@ -185,20 +210,35 @@ public class DescriptionSceneController : MonoBehaviour
         }
     }
 
+
+
+
     IEnumerator RotateFramesWithHead()
     {
+
+        float test = Time.deltaTime;
+        test *= 2f;
+
         while (true)
         {
             if (rotatedframes.Count > 0)
             {
                 foreach (var frame in rotatedframes)
                 {
-                    frame.LookAt(frameLookAtTarget);
+                    //frame.LookAt(frameLookAtTarget);
+                    Vector3 dir = frameLookAtTarget.transform.position - frame.transform.position;
+                    Quaternion dest = Quaternion.LookRotation(dir);
+                    frame.transform.rotation = Quaternion.Lerp(frame.transform.rotation, dest, test);
+
                 }
             }
             yield return new WaitForEndOfFrame();
         }
     }
+
+
+
+
 
     public Transform frameLookAtTarget;
 }
