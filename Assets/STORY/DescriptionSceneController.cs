@@ -204,7 +204,7 @@ public class DescriptionSceneController : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);
         }

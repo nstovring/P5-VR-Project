@@ -157,9 +157,9 @@ public class IdaSceneController : MonoBehaviour
             SceneManager.LoadScene(0);
             return;
         }
-        //if (Input.anyKeyDown)
-        //{
-        //    SceneManager.LoadScene(0);
-        //}
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
