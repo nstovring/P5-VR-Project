@@ -69,9 +69,9 @@ public class IdaSceneController : MonoBehaviour
         // All classmates bliver sure
         foreach (var classMate in classMates)
         {
-            classMate.myAnimator.SetBool("Drawing", false);
-            classMate.myAnimator.SetBool("Idle", true);
-            classMate.GetAngry();
+            //lassMate.myAnimator.SetBool("Drawing", false);
+            //classMate.myAnimator.SetBool("Idle", true);
+            //classMate.GetAngry();
         }
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[3], idaMovePoint.position,false));
 

@@ -63,9 +63,12 @@ public class SceneController : MonoBehaviour
         {
             if (classMate.myState == ClassMate.classMateStates.Idle)
                 classMate.myAnimator.SetBool("Idle", false);
-                classMate.HandsUp();
+                classMate.HandsUpIdle();
+                classMate.myAnimator.SetBool("Hand up idle", true);
+        
         }
-        yield return new WaitForSeconds(2);
+
+        yield return new WaitForSeconds(1);
 
         // 2!
         emil.StartTalking();
@@ -107,30 +110,48 @@ public class SceneController : MonoBehaviour
         teacher.StopTalking();
         teacherAnimator.SetBool("Gesturing", false);
         emil.HandsUp();
+        emil.myAnimator.SetBool("Idle", false);
+        emil.myAnimator.SetBool("Hand Raised", true);
 
         foreach (var classMate in classMates)
         {
-            if(classMate.myState == ClassMate.classMateStates.Idle)
-            classMate.HandsUp();
+            
+                if (classMate.myState == ClassMate.classMateStates.Idle)
+                    classMate.myAnimator.SetBool("Idle", false);
+                classMate.HandsUpIdle();
+                //classMate.myAnimator.SetBool("Hand up idle", true);
+
+            
         }
-        yield return new WaitForSeconds(0.4f);
       
         yield return new WaitForSeconds(1);
         //Lærer spørger emil specifikt
         teacherAnimator.SetBool("Gesturing", true);
         teacher.StartTalking();
-        yield return PlaySoundAtLocation(CharacterAudioClips[2], teacher.transform.position, true);
-        teacher.StopTalking();
-        teacherAnimator.SetBool("Gesturing", false);
+        emil.myAnimator.SetBool("Idle", true);
+
+
         foreach (var classMate in classMates)
         {
             classMate.HandsDown();
+            classMate.myAnimator.SetBool("Idle", true);
 
         }
+
+        yield return PlaySoundAtLocation(CharacterAudioClips[2], teacher.transform.position, true);
+
+        teacher.StopTalking();
+
+        print("aa");
+
+        teacherAnimator.SetBool("Gesturing", false);
+
         //Emil svarer
         emil.StartTalking();
         yield return PlaySoundAtLocation(CharacterAudioClips[0], emil.transform.position, true);
         emil.StopTalking();
+
+
 
         // Godt emil!
         teacher.StartTalking();

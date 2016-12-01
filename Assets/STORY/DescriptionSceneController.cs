@@ -187,7 +187,7 @@ public class DescriptionSceneController : MonoBehaviour
         if (Started == false) {
 
             callMeOnce();
-            print("i got here");
+
 
         }
 
