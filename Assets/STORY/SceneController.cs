@@ -6,6 +6,7 @@ using VRStandardAssets.Utils;
 
 public class SceneController : MonoBehaviour
 {
+    public NetworkStreamer networkStreamer;
     public AudioSource SceneAudioSource;
     public AudioClip[] NarrationAudioClips = new AudioClip[4];
     public AudioClip[] CharacterAudioClips = new AudioClip[3];
@@ -23,7 +24,7 @@ public class SceneController : MonoBehaviour
     // Use this for initialization
     private IEnumerator Start ()
 	{
-        
+
         //GameObject[] temp = GameObject.FindGameObjectsWithTag("ClassMate");
 
         //classMates = new List<ClassMate>();
@@ -31,7 +32,9 @@ public class SceneController : MonoBehaviour
         //{
         //        classMates.Add(o.GetComponent<ClassMate>());
         //}
-
+        networkStreamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<NetworkStreamer>();
+        networkStreamer.reset();
+        networkStreamer.sceneController2 = this;
         if (!teacher)
         teacher = GameObject.FindGameObjectWithTag("Teacher").GetComponent<ClassMate>();
         teacherAnimator = teacher.GetComponentInChildren<Animator>();
@@ -183,19 +186,41 @@ public class SceneController : MonoBehaviour
 
     // Update is called once per frame
     void Update () {
+
         if (Input.anyKeyDown && wrongSceneOver)
         {
-            StartCoroutine(ClassRoomSceneB());
+            networkStreamer.SendInput(KeyCode.A);
+            inputSelector(KeyCode.A);
             return;
         }
 
         if (entireSceneOver && Input.anyKeyDown)
         {
+            networkStreamer.SendInput(KeyCode.A);
+            inputSelector(KeyCode.A);
+            return;
+        }
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            networkStreamer.SendInput(KeyCode.Escape);
+            inputSelector(KeyCode.Escape);
+        }
+    }
+    public void inputSelector(KeyCode key)
+    {
+        if (key == KeyCode.A && wrongSceneOver)
+        {
+            StartCoroutine(ClassRoomSceneB());
+            return;
+        }
+
+        if (entireSceneOver && key == KeyCode.A)
+        {
             entireSceneOver = false;
             SceneManager.LoadScene(0);
             return;
         }
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (key == KeyCode.Escape)
         {
             SceneManager.LoadScene(0);
         }

@@ -4,8 +4,11 @@ using UnityEngine.Networking;
 
 public class NetworkStreamer : NetworkBehaviour {
     public NetworkManager manager;
-    Vector3 rotations;
+    Quaternion rotations;
     public GameObject Camera;
+    public SceneChooser sceneController1;
+    public SceneController sceneController2;
+    public IdaSceneController sceneController3;
 	// Use this for initialization
 	void Start () {
         //manager = GetComponent<NetworkManager>();
@@ -17,26 +20,31 @@ public class NetworkStreamer : NetworkBehaviour {
 	void FixedUpdate () {
         if (isServer)
         {
-            Rpc_GetRotations();
-            transform.rotation = Quaternion.Euler(rotations);
+            rotations = transform.rotation;
+            Rpc_SendRotations(rotations);
+            //transform.rotation = Quaternion.Euler(rotations);
         }
 	}
     void Update()
     {
-        if (isClient && !isServer)
+        if (isServer)
         {
             if (Input.GetKeyDown(KeyCode.A))
             {
                 transform.Rotate(new Vector3(10, 0, 0));
             }
-            rotations = Quaternion.ToEulerAngles(transform.rotation);
+            //rotations = Quaternion.ToEulerAngles(transform.rotation);
+        }
+        if(isClient && !isServer)
+        {
+            transform.rotation = rotations;
         }
     }
     //public virtual void OnStartHost()
     //{
     //    Camera = GameObject.Find("Main Camera");
     //}
-    [Command]
+    /*[Command]
     public void Cmd_SendRotations(Vector3 clientRotate)
     {
         rotations = clientRotate;
@@ -47,5 +55,38 @@ public class NetworkStreamer : NetworkBehaviour {
     {
         if(isClient && !isServer)
         Cmd_SendRotations(rotations);
+    }*/
+    [ClientRpc]
+    public void Rpc_SendRotations(Quaternion rot)
+    {
+        if (!isServer)
+        {
+            rotations = rot;
+            Debug.Log("getting rotations");
+        }
+    }
+    [ClientRpc]
+    public void Rpc_Input(KeyCode key)
+    {
+        if (!isServer)
+        {
+            if (sceneController1) { sceneController1.inputSelector(key); }
+            else if (sceneController2) { sceneController2.inputSelector(key); }
+            else if (sceneController3) { }//sceneController3.inputSelector(key); }
+            Debug.Log("getting keycodes");
+        }
+    }
+    public void SendInput(KeyCode key)
+    {
+        if (isServer)
+        {
+            Rpc_Input(key);
+        }
+    }
+    public void reset()
+    {
+        sceneController1 = null;
+        sceneController2 = null;
+        sceneController3 = null;
     }
 }
