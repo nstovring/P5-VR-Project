@@ -367,7 +367,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
-  Camera: {fileID: 0}
   sceneController1: {fileID: 0}
   sceneController2: {fileID: 0}
   sceneController3: {fileID: 0}

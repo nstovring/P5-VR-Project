@@ -5,7 +5,6 @@ using UnityEngine.Networking;
 public class NetworkStreamer : NetworkBehaviour {
     public NetworkManager manager;
     Quaternion rotations;
-    public GameObject Camera;
     public SceneChooser sceneController1;
     public SceneController sceneController2;
     public IdaSceneController sceneController3;
