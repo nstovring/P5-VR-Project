@@ -559,7 +559,7 @@ PlayerSettings:
   XboxOne::VR::enabledDevices: []
   iOS::VR::enabledDevices: []
   tvOS::VR::enabledDevices: []
-  cloudProjectId: 4b9a4f7d-de37-430c-9ba6-d29fdb633ad6
-  projectName: VRSamples (1)
-  organizationId: nikolaj-stovring
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
