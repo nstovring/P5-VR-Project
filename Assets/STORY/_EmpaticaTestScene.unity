@@ -3870,6 +3870,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011983855050, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
   m_IsPrefabParent: 0
@@ -5557,7 +5561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &971271596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5575,8 +5579,8 @@ MonoBehaviour:
   NarrationAudioClips:
   - {fileID: 8300000, guid: 7cd2962cc73211d4aad770fc313073e1, type: 3}
   - {fileID: 8300000, guid: 347be86915a7612409089e2582ca7ae6, type: 3}
-  - {fileID: 8300000, guid: 4d54255320a729446a287a550dda961a, type: 3}
   - {fileID: 8300000, guid: 871e95cda44a92b4bbdf4cb88aae2d2a, type: 3}
+  - {fileID: 8300000, guid: 4d54255320a729446a287a550dda961a, type: 3}
   - {fileID: 8300000, guid: 8f9ce5f2d8fb8624b90ac3430dd1356d, type: 3}
   BackgroundAudioClips:
   - {fileID: 8300000, guid: bc7d29dbf99ac0b45988352d498d75b9, type: 3}
@@ -8631,6 +8635,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1280929905}
   m_RootOrder: 16
+--- !u!1 &1535204156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1535204158}
+  - 114: {fileID: 1535204157}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1535204157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1535204156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3155c287500cbff4390e2522a9355b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1535204158
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1535204156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2612758, y: 0.8495319, z: -7.246994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &1553433476
 GameObject:
   m_ObjectHideFlags: 0
@@ -9771,7 +9815,7 @@ Prefab:
     - target: {fileID: 13700000, guid: e1263f8f5c07998408f1d552674b0dc6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 95d86beba16a9b44b936020e63811c7a, type: 2}
+      objectReference: {fileID: 2100000, guid: d48e3b18084f9dc438eedfaf0f93aa1d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e1263f8f5c07998408f1d552674b0dc6, type: 3}
   m_IsPrefabParent: 0

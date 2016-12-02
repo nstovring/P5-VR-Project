@@ -107,4 +107,9 @@ public class ClassMate : MonoBehaviour
     {
         myAnimator.SetBool("Hand Raised", false);
     }
+    public void HandsUpIdle()
+    {
+        myAnimator.SetBool("Hand up idle", true);
+    }
+
 }

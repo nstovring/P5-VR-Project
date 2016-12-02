@@ -69,9 +69,9 @@ public class IdaSceneController : MonoBehaviour
         // All classmates bliver sure
         foreach (var classMate in classMates)
         {
-            classMate.myAnimator.SetBool("Drawing", false);
-            classMate.myAnimator.SetBool("Idle", true);
-            classMate.GetAngry();
+            //lassMate.myAnimator.SetBool("Drawing", false);
+            //classMate.myAnimator.SetBool("Idle", true);
+            //classMate.GetAngry();
         }
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[3], idaMovePoint.position,false));
 
@@ -157,9 +157,9 @@ public class IdaSceneController : MonoBehaviour
             SceneManager.LoadScene(0);
             return;
         }
-        //if (Input.anyKeyDown)
-        //{
-        //    SceneManager.LoadScene(0);
-        //}
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
