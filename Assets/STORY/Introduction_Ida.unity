@@ -6680,7 +6680,7 @@ MonoBehaviour:
   BackgroundAudioSource: {fileID: 2082595201}
   BackgroundFadeAudioSource: {fileID: 468805877}
   NarrationAudioClips:
-  - {fileID: 8300000, guid: 7cd2962cc73211d4aad770fc313073e1, type: 3}
+  - {fileID: 8300000, guid: b782780f7707f5e4e9d39f3fc1997c90, type: 3}
   - {fileID: 8300000, guid: df7167a21d1477b4c8ac5b72134a8001, type: 3}
   - {fileID: 8300000, guid: dd1850ab37e24ac4fab15cd4d472b726, type: 3}
   - {fileID: 8300000, guid: 94d4d83efdfb39b49b9f36ac2fd9d1be, type: 3}
