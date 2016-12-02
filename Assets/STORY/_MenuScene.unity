@@ -808,7 +808,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
-  Camera: {fileID: 0}
   sceneController1: {fileID: 0}
   sceneController2: {fileID: 0}
   sceneController3: {fileID: 0}
@@ -843,7 +842,7 @@ MonoBehaviour:
     i14: 35
     i15: 173
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
+  m_LocalPlayerAuthority: 0
 --- !u!4 &599863909 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012592628324, guid: 110930e30b8f6cc4687c3dc5d87423ad,

@@ -6,6 +6,7 @@ using VRStandardAssets.Utils;
 
 public class IdaSceneController : MonoBehaviour
 {
+    public NetworkStreamer networkStreamer;
     public AudioSource SceneAudioSource;
     public AudioClip[] NarrationAudioClips = new AudioClip[4];
     public AudioClip[] CharacterAudioClips = new AudioClip[3];
@@ -33,6 +34,10 @@ public class IdaSceneController : MonoBehaviour
 
     void Awake() {
         _idaStartPosition = IDA.transform.position;
+        networkStreamer = GameObject.Find("MainCameraGearVR").GetComponent<NetworkStreamer>();
+        //networkStreamer =  GetComponent<NetworkStreamer>();
+        networkStreamer.reset();
+        networkStreamer.sceneController3 = this;
     }
 
     // Use this for initialization

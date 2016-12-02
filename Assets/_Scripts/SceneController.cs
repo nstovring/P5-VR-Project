@@ -32,9 +32,6 @@ public class SceneController : MonoBehaviour
         //{
         //        classMates.Add(o.GetComponent<ClassMate>());
         //}
-        networkStreamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<NetworkStreamer>();
-        networkStreamer.reset();
-        networkStreamer.sceneController2 = this;
         if (!teacher)
         teacher = GameObject.FindGameObjectWithTag("Teacher").GetComponent<ClassMate>();
         teacherAnimator = teacher.GetComponentInChildren<Animator>();
@@ -45,7 +42,12 @@ public class SceneController : MonoBehaviour
         myFade.FadeIn(5, false);
         yield return StartCoroutine(ClassRoomSceneA());
     }
-
+    void Awake()
+    {
+        networkStreamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<NetworkStreamer>();
+        networkStreamer.reset();
+        networkStreamer.sceneController2 = this;
+    }
     private VRCameraFade myFade;
     private IEnumerator ClassRoomSceneA()
     {

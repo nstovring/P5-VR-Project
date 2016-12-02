@@ -13,11 +13,13 @@ public class SceneChooser : MonoBehaviour {
     }
 	// Use this for initialization
 	void Start () {
-        networkStreamer = GameObject.Find("MainCameraGearVR").GetComponent<NetworkStreamer>();
-        //networkStreamer =  GetComponent<NetworkStreamer>();
+	}
+    void OnEnable()
+    {
+        networkStreamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<NetworkStreamer>();
         networkStreamer.reset();
         networkStreamer.sceneController1 = this;
-	}
+    }
     private KeyCode[] keyCodes = {
          KeyCode.Alpha1,
          KeyCode.Alpha2,
