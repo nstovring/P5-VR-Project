@@ -796,6 +796,53 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224000011045814612, guid: 110930e30b8f6cc4687c3dc5d87423ad,
     type: 2}
   m_PrefabInternal: {fileID: 599863893}
+--- !u!114 &599863897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 599863894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711ddcc591489f9469d19ca3143fb090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  sceneController1: {fileID: 0}
+  sceneController2: {fileID: 0}
+  sceneController3: {fileID: 0}
+--- !u!114 &599863898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 599863894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 17
+    i1: 9
+    i2: 48
+    i3: 227
+    i4: 11
+    i5: 143
+    i6: 108
+    i7: 196
+    i8: 104
+    i9: 124
+    i10: 61
+    i11: 197
+    i12: 216
+    i13: 116
+    i14: 35
+    i15: 173
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!4 &599863909 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012592628324, guid: 110930e30b8f6cc4687c3dc5d87423ad,
@@ -1075,6 +1122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869d229c7f2fa374e9a5e6684adfc6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  networkStreamer: {fileID: 0}
 --- !u!1001 &990790772
 Prefab:
   m_ObjectHideFlags: 0
