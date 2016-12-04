@@ -5,25 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-<<<<<<< HEAD
-  - enabled: 0
+  - enabled: 1
     path: Assets/STORY/_MenuScene.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/STORY/_DescriptionSceneA_Emil.unity
-  - enabled: 0
-=======
   - enabled: 1
-    path: Assets/NetworkStreaming/StreamingTestScene.unity
-  - enabled: 1
-    path: Assets/STORY/_MenuScene.unity
-  - enabled: 0
-    path: Assets/STORY/_DescriptionSceneA.unity
-  - enabled: 1
->>>>>>> 157f29a890cb76f5eabc890ca4af8e16141a9eb9
     path: Assets/STORY/_DescriptionSceneB_IDA.unity
-  - enabled: 0
-    path: Assets/STORY/_MainScene.unity
-  - enabled: 0
-    path: Assets/STORY/_MainScene02.unity
   - enabled: 1
-    path: Assets/JavaScriptExample.unity
+    path: Assets/STORY/_MainScene.unity
+  - enabled: 1
+    path: Assets/STORY/_MainScene02.unity
