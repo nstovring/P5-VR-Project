@@ -733,6 +733,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 879380040}
   m_RootOrder: 0
+--- !u!1 &83390816 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013890423192, guid: e8d1c48dc8c0b68428da77cdf91a0c2d,
+    type: 2}
+  m_PrefabInternal: {fileID: 328580841}
 --- !u!1 &88438504
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,7 +2303,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   idaMovePoint: {fileID: 854659789}
-  idaStartPosition: {fileID: 0}
+  idaStartPosition: {fileID: 206309054}
+  IDA: {fileID: 83390816}
 --- !u!4 &206309054
 Transform:
   m_ObjectHideFlags: 0
@@ -10911,7 +10917,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000012592628324, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.82
+      value: -3.311
       objectReference: {fileID: 0}
     - target: {fileID: 4000012592628324, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
       propertyPath: m_LocalPosition.y
@@ -10919,15 +10925,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012592628324, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.64
+      value: -1.923
       objectReference: {fileID: 0}
     - target: {fileID: 4000012592628324, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012592628324, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.8746621
+      value: 0.92047167
       objectReference: {fileID: 0}
     - target: {fileID: 4000012592628324, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
       propertyPath: m_LocalRotation.z
@@ -10935,7 +10941,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012592628324, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.48473316
+      value: 0.3908094
       objectReference: {fileID: 0}
     - target: {fileID: 4000012592628324, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
       propertyPath: m_RootOrder
@@ -10980,7 +10986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012592628324, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 237.99
+      value: 133.914
       objectReference: {fileID: 0}
     - target: {fileID: 20000010742696948, guid: 110930e30b8f6cc4687c3dc5d87423ad,
         type: 2}

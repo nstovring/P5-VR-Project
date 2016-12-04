@@ -11,20 +11,34 @@ public class IdaSceneController : MonoBehaviour
     public AudioClip[] CharacterAudioClips = new AudioClip[3];
     public AudioClip[] BackgroundAudioClips = new AudioClip[4];
 
+
     public float soundDelay = 3;
     public float houseSpeed = 1;
     public ClassMate teacher;
     public CharacterAnimator ida;
     public List<ClassMate> classMates;
+
     public Transform idaMovePoint;
     public Transform idaStartPosition;
+    public GameObject IDA;
+
     private bool wrongSceneOver = false;
 
     private Animator teacherAnimator;
     private Animator idaAnimator;
+
+    private Vector3 _idaStartPosition;
+
+
+
+    void Awake() {
+        _idaStartPosition = IDA.transform.position;
+    }
+
     // Use this for initialization
     private IEnumerator Start ()
 	{
+        print(_idaStartPosition);
 
         GameObject[] temp = GameObject.FindGameObjectsWithTag("ClassMate");
 
@@ -41,10 +55,12 @@ public class IdaSceneController : MonoBehaviour
         ida = GameObject.FindGameObjectWithTag("Ida").GetComponent<CharacterAnimator>();
 
         idaAnimator = ida.myAnimator;
+        idaAnimator.SetBool("GETUP", false);
+
         idaAnimator.SetBool("Idle", false);
         idaAnimator.SetBool("Sit down", false);
         idaAnimator.speed = 1.5f;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         myFade = Camera.main.GetComponent<VRCameraFade>();
         myFade.FadeIn(5, false);
         yield return StartCoroutine(ClassRoomSceneA());
@@ -54,6 +70,7 @@ public class IdaSceneController : MonoBehaviour
     private IEnumerator ClassRoomSceneA()
     {
         myFade = Camera.main.GetComponent<VRCameraFade>();
+
 
         yield return new WaitForSeconds(2);
         idaAnimator.SetBool("Walk", true);
@@ -109,15 +126,35 @@ public class IdaSceneController : MonoBehaviour
 
     private IEnumerator ClassRoomSceneB()
     {
+        IDA.transform.position = _idaStartPosition;
+        print(IDA.transform.position);
+
+
+        
+        idaAnimator.SetBool("GETUP", true);
+       // idaAnimator.SetBool("GETUP", false);
+
+
+        idaAnimator.SetBool("Idle", false);
+        idaAnimator.SetBool("Sit down", false);
+
+        yield return new WaitForSeconds(2);
+
+
         myFade = Camera.main.GetComponent<VRCameraFade>();
         myFade.FadeIn(3,false);
         wrongSceneOver = false;
+
         yield return new WaitForSeconds(4);
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[6], idaMovePoint.position, true));
         idaAnimator.SetBool("Walk", true);
+        idaAnimator.SetBool("GETUP", false);
+
         yield return StartCoroutine(MoveTowards(idaMovePoint));
         yield return StartCoroutine(RotateTowards(idaMovePoint));
         idaAnimator.SetBool("Walk", false);
+
+
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[4], idaMovePoint.position, true));
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[2], idaMovePoint.position, true));
         idaAnimator.SetBool("Sit down", true);
