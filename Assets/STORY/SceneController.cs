@@ -20,6 +20,15 @@ public class SceneController : MonoBehaviour
     private bool wrongSceneOver = false;
 
     private Animator teacherAnimator;
+
+    Network_Streamer streamer;
+
+    void Awake()
+    {
+        streamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Network_Streamer>();
+        streamer.reset();
+        streamer.controller2 = this;
+    }
     // Use this for initialization
     private IEnumerator Start ()
 	{
@@ -185,17 +194,39 @@ public class SceneController : MonoBehaviour
     void Update () {
         if (Input.anyKeyDown && wrongSceneOver)
         {
+            streamer.Rpc_SendAction(KeyCode.A);
             StartCoroutine(ClassRoomSceneB());
             return;
         }
 
         if (entireSceneOver && Input.anyKeyDown)
         {
+            streamer.Rpc_SendAction(KeyCode.A);
             entireSceneOver = false;
             SceneManager.LoadScene(0);
             return;
         }
         if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            streamer.Rpc_SendAction(KeyCode.Escape);
+            SceneManager.LoadScene(0);
+        }
+    }
+    public void Action(KeyCode key)
+    {
+        if (key == KeyCode.A && wrongSceneOver)
+        {
+            StartCoroutine(ClassRoomSceneB());
+            return;
+        }
+
+        if (entireSceneOver && key == KeyCode.A)
+        {
+            entireSceneOver = false;
+            SceneManager.LoadScene(0);
+            return;
+        }
+        if (key == KeyCode.Escape)
         {
             SceneManager.LoadScene(0);
         }

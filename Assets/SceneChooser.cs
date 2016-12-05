@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneChooser : MonoBehaviour {
 
-
+    Network_Streamer streamer;
     public static void ChooseScene(int sceneInt)
     {
         SceneManager.LoadScene(sceneInt);
@@ -13,6 +13,12 @@ public class SceneChooser : MonoBehaviour {
 	void Start () {
 	
 	}
+    void Awake()
+    {
+        streamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Network_Streamer>();
+        streamer.reset();
+        streamer.controller1 = this;
+    }
     private KeyCode[] keyCodes = {
          KeyCode.Alpha1,
          KeyCode.Alpha2,
@@ -36,6 +42,7 @@ public class SceneChooser : MonoBehaviour {
             if (Input.GetKeyDown(keyCodes[i]))
             {
                 selectedLevel = i + 1;
+                streamer.Rpc_SendAction(keyCodes[i]);
             }
         }
         if (selectedLevel < 3 && selectedLevel > 0)
@@ -50,5 +57,21 @@ public class SceneChooser : MonoBehaviour {
         int sceneSelected = e.numeric ? e.character : 0;
         //sceneSelected = sceneSelected%2 + 1;
         
+    }
+    public void Actions(KeyCode key)
+    {
+        int selectedLevel = 0;
+
+        for (int i = 0; i < keyCodes.Length; i++)
+        {
+            if (key == keyCodes[i])
+            {
+                selectedLevel = i + 1;
+            }
+        }
+        if (selectedLevel < 3 && selectedLevel > 0)
+        {
+            ChooseScene(selectedLevel);
+        }
     }
 }
