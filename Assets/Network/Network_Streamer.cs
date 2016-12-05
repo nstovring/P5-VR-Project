@@ -70,7 +70,7 @@ public class Network_Streamer : NetworkBehaviour {
             }
             else if (controller3)
             {
-                controller3.Action(key);
+                //controller3.Action(key);
                 Debug.Log("recieving actions");
             }
             else if (controller4)

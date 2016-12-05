@@ -19,6 +19,8 @@ public class IdaSceneController : MonoBehaviour
     public List<ClassMate> classMates;
 
     public Transform idaMovePoint;
+    public Transform idaMovePoint2;
+
     public Transform idaStartPosition;
     public GameObject IDA;
 
@@ -28,14 +30,11 @@ public class IdaSceneController : MonoBehaviour
     private Animator idaAnimator;
 
     private Vector3 _idaStartPosition;
-
-    Network_Streamer streamer;
+    private Quaternion _idaStartRotation;
 
     void Awake() {
         _idaStartPosition = IDA.transform.position;
-        /*streamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Network_Streamer>();
-        streamer.reset();
-        streamer.controller3 = this;*/
+        _idaStartRotation = IDA.transform.rotation;
     }
 
     // Use this for initialization
@@ -72,13 +71,20 @@ public class IdaSceneController : MonoBehaviour
     private VRCameraFade myFade;
     private IEnumerator ClassRoomSceneA()
     {
-        StringLogger.AddTimeStamp(" ClassRoomSceneA Start IDA");
         myFade = Camera.main.GetComponent<VRCameraFade>();
 
 
         yield return new WaitForSeconds(2);
         idaAnimator.SetBool("Walk", true);
-        
+
+        yield return StartCoroutine(MoveTowardsFirst(idaMovePoint2));
+        yield return StartCoroutine(RotateTowardsFirst(idaMovePoint2));
+        idaAnimator.SetBool("Walk", false);
+        idaAnimator.SetBool("Sit down", true);
+        idaAnimator.applyRootMotion = true;
+
+        print("test");
+
         yield return StartCoroutine(MoveTowards(idaMovePoint));
         yield return StartCoroutine(RotateTowards(idaMovePoint));
         idaAnimator.SetBool("Walk", false);
@@ -98,9 +104,11 @@ public class IdaSceneController : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
         wrongSceneOver = true;
-        myFade.FadeIn(3f,false);
-        StringLogger.AddTimeStamp(" ClassRoomSceneA End IDA");
+        myFade.FadeOut(3f,false);
+        idaAnimator.SetBool("GETUP", true);
+
     }
+
     private IEnumerator MoveTowards(Transform endPoint)
     {
         Vector3 offsetmovePoint = endPoint.position;
@@ -113,7 +121,41 @@ public class IdaSceneController : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
 
+
+
     }
+
+    private IEnumerator MoveTowardsFirst(Transform endPoint)
+    {
+        Vector3 offsetmovePoint = endPoint.position;
+        offsetmovePoint.y = 0;
+
+        ida.transform.LookAt(offsetmovePoint);
+        while (Vector3.Distance(ida.transform.position, idaMovePoint2.position) > 0.1f)
+        {
+            ida.transform.position = Vector3.MoveTowards(ida.transform.position, endPoint.position, 0.01f);
+            yield return new WaitForSeconds(0.01f);
+        }
+
+
+
+    }
+
+    private IEnumerator RotateTowardsFirst(Transform endPoint)
+    {
+        Vector3 relativePos = endPoint.position - ida.transform.position;
+        Quaternion rotation = Quaternion.LookRotation(relativePos);
+        ida.transform.rotation = endPoint.rotation;
+        yield return new WaitForEndOfFrame();
+
+        while (Vector3.Angle(ida.transform.forward, endPoint.forward) > 0.1f)
+        {
+            ida.transform.rotation = Quaternion.Lerp(ida.transform.rotation, rotation, 0.2f);
+            yield return new WaitForEndOfFrame();
+        }
+
+    }
+
     private IEnumerator RotateTowards(Transform endPoint)
     {
         Vector3 relativePos = endPoint.position - ida.transform.position;
@@ -131,15 +173,13 @@ public class IdaSceneController : MonoBehaviour
 
     private IEnumerator ClassRoomSceneB()
     {
-        StringLogger.AddTimeStamp(" ClassRoomSceneB Start IDA");
         IDA.transform.position = _idaStartPosition;
+        IDA.transform.rotation = _idaStartRotation;
         print(IDA.transform.position);
 
 
         
-        idaAnimator.SetBool("GETUP", true);
-       // idaAnimator.SetBool("GETUP", false);
-
+        //idaAnimator.SetBool("GETUP", true);
 
         idaAnimator.SetBool("Idle", false);
         idaAnimator.SetBool("Sit down", false);
@@ -155,6 +195,13 @@ public class IdaSceneController : MonoBehaviour
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[6], idaMovePoint.position, true));
         idaAnimator.SetBool("Walk", true);
         idaAnimator.SetBool("GETUP", false);
+
+
+
+        yield return StartCoroutine(MoveTowardsFirst(idaMovePoint2));
+        yield return StartCoroutine(RotateTowardsFirst(idaMovePoint2));
+
+
 
         yield return StartCoroutine(MoveTowards(idaMovePoint));
         yield return StartCoroutine(RotateTowards(idaMovePoint));
@@ -172,10 +219,7 @@ public class IdaSceneController : MonoBehaviour
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[1], idaMovePoint.position, false));
         yield return new WaitForSeconds(2);
         entireSceneOver = true;
-        StringLogger.AddTimeStamp(" ClassRoomSceneB End IDA");
-        myFade.FadeIn(2, false);
-        yield return new WaitForSeconds(30);
-        SceneManager.LoadScene(0);
+        myFade.FadeOut(3f, false);
 
     }
 
@@ -195,7 +239,6 @@ public class IdaSceneController : MonoBehaviour
     void Update () {
         if (Input.GetKeyUp(KeyCode.Space) && wrongSceneOver)
         {
-            //streamer.Rpc_SendAction(KeyCode.Space);
             StartCoroutine(ClassRoomSceneB());
             return;
         }
@@ -203,31 +246,10 @@ public class IdaSceneController : MonoBehaviour
         if (entireSceneOver && Input.GetKeyUp(KeyCode.Space))
         {
             entireSceneOver = false;
-            //streamer.Rpc_SendAction(KeyCode.Space);
             SceneManager.LoadScene(0);
             return;
         }
         if (Input.GetKeyUp(KeyCode.Escape))
-        {
-            //streamer.Rpc_SendAction(KeyCode.Escape);
-            SceneManager.LoadScene(0);
-        }
-    }
-    public void Action(KeyCode key)
-    {
-        if (key == KeyCode.Space && wrongSceneOver)
-        {
-            StartCoroutine(ClassRoomSceneB());
-            return;
-        }
-
-        if (entireSceneOver && key == KeyCode.Space)
-        {
-            entireSceneOver = false;
-            SceneManager.LoadScene(0);
-            return;
-        }
-        if (key == KeyCode.Escape)
         {
             SceneManager.LoadScene(0);
         }
