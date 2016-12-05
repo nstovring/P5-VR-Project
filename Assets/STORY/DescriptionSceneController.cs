@@ -80,9 +80,6 @@ public class DescriptionSceneController : MonoBehaviour
         yield return PlaySoundAndDelay(NarrationAudioClips[4]);
 
         yield return new WaitForSeconds(3f);
-        //yield return StartCoroutine(lerpObject(houseAnimation[0], houseAnimation[1], houseSpeed));
-
-        //yield return new WaitForSeconds(soundDelay);
 
         Camera.main.GetComponent<VRCameraFade>().FadeOut(2, false);
       
@@ -127,24 +124,6 @@ public class DescriptionSceneController : MonoBehaviour
     private float audio2Volume;
     float audio1Volume;
 
-    void fadeIn(AudioSource audioSource)
-    {
-        if (audio2Volume < 1f)
-        {
-            audio2Volume += 0.1f * Time.deltaTime;
-            audioSource.volume = audio2Volume;
-        }
-    }
-
-    void fadeOut(AudioSource audioSource)
-    {
-        if (audio1Volume > 0.1f)
-        {
-            audio1Volume -= 0.1f * Time.deltaTime;
-            audioSource.volume = audio1Volume;
-        }
-    }
-
     IEnumerator scaleObject(Transform curObject, Vector3 endScale, float speed)
     {
         float step =  speed;
@@ -181,9 +160,6 @@ public class DescriptionSceneController : MonoBehaviour
     void callMeOnce() {
         foreach (var frame in frames)
         {
-            //frame.LookAt(frameLookAtTarget);
-
-
             Vector3 dir = frameLookAtTarget.transform.position - frame.transform.position;
             Quaternion dest = Quaternion.LookRotation(dir);
             frame.transform.rotation = dest;
@@ -196,8 +172,6 @@ public class DescriptionSceneController : MonoBehaviour
         if (Started == false) {
 
             callMeOnce();
-
-
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && !Started)
@@ -210,8 +184,8 @@ public class DescriptionSceneController : MonoBehaviour
         if (entireSceneOver && Input.GetKeyUp(KeyCode.Space))
         {
             //streamer.Rpc_SendAction(KeyCode.Space);
-            entireSceneOver = false;
-            SceneManager.LoadScene(0);
+            int loadedScene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(loadedScene + 2);
             return;
         }
 
@@ -233,7 +207,8 @@ public class DescriptionSceneController : MonoBehaviour
         if (entireSceneOver && key == KeyCode.Space)
         {
             entireSceneOver = false;
-            SceneManager.LoadScene(0);
+            int loadedScene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(loadedScene + 2);
             return;
         }
 
