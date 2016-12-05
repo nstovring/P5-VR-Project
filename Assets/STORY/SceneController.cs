@@ -184,7 +184,7 @@ public class SceneController : MonoBehaviour
 
         myFade.FadeOut(2, false);
         entireSceneOver = true;
-        StringLogger.AddTimeStamp(" ClassRoomSceneB End EMIL");
+        StringLogger.AddTimeStampAndNewLine(" ClassRoomSceneB End EMIL");
         yield return new WaitForSeconds(30);
         SceneManager.LoadScene(0);
     }

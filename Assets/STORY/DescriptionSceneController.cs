@@ -39,6 +39,7 @@ public class DescriptionSceneController : MonoBehaviour
     }*/
     private IEnumerator PictureFadeInScene()
     {
+        StringLogger.AddHeading();
         StringLogger.AddTimeStamp(" Start ");
         rotatedframes = new List<Transform>();
         //SceneAudioSource.PlayOneShot(NarrationAudioClips[0]);
