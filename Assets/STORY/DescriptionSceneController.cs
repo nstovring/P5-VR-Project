@@ -30,7 +30,7 @@ public class DescriptionSceneController : MonoBehaviour
     public Renderer[] frameRenderers;
 
     Network_Streamer streamer;
-
+    public string Person;
     IEnumerator Start()
     {
         //streamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Network_Streamer>();
@@ -40,7 +40,7 @@ public class DescriptionSceneController : MonoBehaviour
     }
     private IEnumerator PictureFadeInScene()
     {
-        StringLogger.AddHeading();
+        StringLogger.AddHeading(Person);
         StringLogger.AddTimeStamp(" Start ");
         rotatedframes = new List<Transform>();
         //SceneAudioSource.PlayOneShot(NarrationAudioClips[0]);
