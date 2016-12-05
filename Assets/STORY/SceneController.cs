@@ -35,7 +35,7 @@ public class SceneController : MonoBehaviour
     // Use this for initialization
     private IEnumerator Start ()
 	{
-        
+        print(Application.persistentDataPath);
         //GameObject[] temp = GameObject.FindGameObjectsWithTag("ClassMate");
 
         //classMates = new List<ClassMate>();

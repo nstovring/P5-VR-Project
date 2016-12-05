@@ -6897,6 +6897,7 @@ MonoBehaviour:
   - {fileID: 1358703414}
   - {fileID: 625072413}
   - {fileID: 1396912743}
+  Person: Ida
   frameLookAtTarget: {fileID: 160260651}
 --- !u!1001 &990790772
 Prefab:
@@ -9122,7 +9123,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1358703413}
-  m_LocalRotation: {x: 0.16169208, y: 0.00000003352761, z: -0.031197494, w: 0.9863481}
+  m_LocalRotation: {x: 0.16169207, y: 0.000000033527606, z: -0.03119749, w: 0.986348}
   m_LocalPosition: {x: 0.25, y: -1.12, z: 1.23}
   m_LocalScale: {x: 3.2647986, y: 5.0191755, z: 3.2647982}
   m_LocalEulerAnglesHint: {x: 18.555, y: -0.592, z: -3.6160002}

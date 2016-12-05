@@ -72,7 +72,7 @@ public class IdaSceneController : MonoBehaviour
     private IEnumerator ClassRoomSceneA()
     {
         myFade = Camera.main.GetComponent<VRCameraFade>();
-
+        StringLogger.AddTimeStamp("B");
 
         yield return new WaitForSeconds(2);
         idaAnimator.SetBool("Walk", true);
@@ -103,6 +103,7 @@ public class IdaSceneController : MonoBehaviour
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[3], idaMovePoint.position,false));
 
         yield return new WaitForSeconds(3f);
+        StringLogger.AddTimeStamp("B");
         wrongSceneOver = true;
         myFade.FadeOut(3f,false);
         idaAnimator.SetBool("GETUP", true);
@@ -173,6 +174,8 @@ public class IdaSceneController : MonoBehaviour
 
     private IEnumerator ClassRoomSceneB()
     {
+        StringLogger.AddTimeStamp("B");
+
         IDA.transform.position = _idaStartPosition;
         IDA.transform.rotation = _idaStartRotation;
         print(IDA.transform.position);
@@ -218,6 +221,7 @@ public class IdaSceneController : MonoBehaviour
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[0], idaMovePoint.position, false));
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[1], idaMovePoint.position, false));
         yield return new WaitForSeconds(2);
+        StringLogger.AddTimeStampAndNewLine(" ClassRoomSceneB End IDA");
         entireSceneOver = true;
         myFade.FadeOut(3f, false);
 

@@ -5874,6 +5874,7 @@ MonoBehaviour:
   - {fileID: 1358703414}
   - {fileID: 625072413}
   - {fileID: 1396912743}
+  Person: Emil
   frameLookAtTarget: {fileID: 2147302941}
 --- !u!1001 &990790772
 Prefab:
