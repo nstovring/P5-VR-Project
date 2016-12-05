@@ -39,6 +39,7 @@ public class DescriptionSceneController : MonoBehaviour
     }*/
     private IEnumerator PictureFadeInScene()
     {
+        StringLogger.AddTimeStamp(" Start ");
         rotatedframes = new List<Transform>();
         //SceneAudioSource.PlayOneShot(NarrationAudioClips[0]);
         //soundDelay = NarrationAudioClips[0].length;
@@ -85,6 +86,8 @@ public class DescriptionSceneController : MonoBehaviour
       
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        int loadedScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(loadedScene + 2);
     }
 
     IEnumerator PlaySoundAndDelay(AudioClip clip)
@@ -242,10 +245,5 @@ public class DescriptionSceneController : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
     }
-
-
-
-
-
     public Transform frameLookAtTarget;
 }

@@ -45,16 +45,17 @@ public class SceneChooser : MonoBehaviour {
         {
             if (Input.GetKeyDown(keyCodes[i]))
             {
-                selectedLevel = i + 1;
+                selectedLevel = i + 2;
+                PlayerPrefs.SetInt("NextScene", selectedLevel);
                 //streamer.Rpc_SendAction(keyCodes[i]);
             }
         }
-        if (selectedLevel < 3 && selectedLevel > 0)
+        if (selectedLevel < 4 && selectedLevel > 0)
 	    {
             //SceneManager.LoadScene(selectedLevel);
             //Scene scene1 = SceneManager.GetSceneAt(selectedLevel);
             //manager.ServerChangeScene(SceneManager.GetSceneAt(selectedLevel).name);
-            ChooseScene(selectedLevel);
+            ChooseScene(1);
         }
 	
 	}
@@ -76,7 +77,7 @@ public class SceneChooser : MonoBehaviour {
                 selectedLevel = i + 1;
             }
         }
-        if (selectedLevel < 3 && selectedLevel > 0)
+        if (selectedLevel < 4 && selectedLevel > 0)
         {
             //ChooseScene(selectedLevel);
             //manager.ServerChangeScene(SceneManager.GetSceneAt(selectedLevel).name);

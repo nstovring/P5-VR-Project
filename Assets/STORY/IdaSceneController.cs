@@ -72,6 +72,7 @@ public class IdaSceneController : MonoBehaviour
     private VRCameraFade myFade;
     private IEnumerator ClassRoomSceneA()
     {
+        StringLogger.AddTimeStamp(" ClassRoomSceneA Start IDA");
         myFade = Camera.main.GetComponent<VRCameraFade>();
 
 
@@ -97,7 +98,8 @@ public class IdaSceneController : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
         wrongSceneOver = true;
-        myFade.FadeOut(3f,false);
+        myFade.FadeIn(3f,false);
+        StringLogger.AddTimeStamp(" ClassRoomSceneA End IDA");
     }
     private IEnumerator MoveTowards(Transform endPoint)
     {
@@ -129,6 +131,7 @@ public class IdaSceneController : MonoBehaviour
 
     private IEnumerator ClassRoomSceneB()
     {
+        StringLogger.AddTimeStamp(" ClassRoomSceneB Start IDA");
         IDA.transform.position = _idaStartPosition;
         print(IDA.transform.position);
 
@@ -169,6 +172,11 @@ public class IdaSceneController : MonoBehaviour
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[1], idaMovePoint.position, false));
         yield return new WaitForSeconds(2);
         entireSceneOver = true;
+        StringLogger.AddTimeStamp(" ClassRoomSceneB End IDA");
+        myFade.FadeIn(2, false);
+        yield return new WaitForSeconds(30);
+        SceneManager.LoadScene(0);
+
     }
 
     IEnumerator PlaySoundAtLocation(AudioClip clip, Vector3 soundLocation, bool spatialize)

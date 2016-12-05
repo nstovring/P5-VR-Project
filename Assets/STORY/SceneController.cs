@@ -57,6 +57,7 @@ public class SceneController : MonoBehaviour
     private VRCameraFade myFade;
     private IEnumerator ClassRoomSceneA()
     {
+        StringLogger.AddTimeStamp(" ClassRoomSceneA start EMIL");
         myFade = Camera.main.GetComponent<VRCameraFade>();
 
         //Emil Narratter
@@ -101,11 +102,15 @@ public class SceneController : MonoBehaviour
         myFade.FadeOut(2, false);
         
         wrongSceneOver = true;
+        StringLogger.AddTimeStamp(" ClassRoomSceneA End EMIL");
+
     }
 
 
     private IEnumerator ClassRoomSceneB()
     {
+        StringLogger.AddTimeStamp(" ClassRoomSceneB Start EMIL");
+
         wrongSceneOver = false;
         myFade.FadeIn(2, false);
         //Emil Narratter
@@ -179,6 +184,9 @@ public class SceneController : MonoBehaviour
 
         myFade.FadeOut(2, false);
         entireSceneOver = true;
+        StringLogger.AddTimeStamp(" ClassRoomSceneB End EMIL");
+        yield return new WaitForSeconds(30);
+        SceneManager.LoadScene(0);
     }
 
     IEnumerator PlaySoundAtLocation(AudioClip clip, Vector3 soundLocation, bool spatialize)

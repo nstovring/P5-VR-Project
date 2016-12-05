@@ -8,6 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/STORY/_MenuScene.unity
   - enabled: 1
+    path: Assets/RelaxScene.unity
+  - enabled: 1
     path: Assets/STORY/_DescriptionSceneA_Emil.unity
   - enabled: 1
     path: Assets/STORY/_DescriptionSceneB_IDA.unity
