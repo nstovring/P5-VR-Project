@@ -172,7 +172,7 @@ public class IdaSceneController : MonoBehaviour
         yield return StartCoroutine(PlaySoundAtLocation(CharacterAudioClips[1], idaMovePoint.position, false));
         yield return new WaitForSeconds(2);
         entireSceneOver = true;
-        StringLogger.AddTimeStamp(" ClassRoomSceneB End IDA");
+        StringLogger.AddTimeStampAndNewLine(" ClassRoomSceneB End IDA");
         myFade.FadeIn(2, false);
         yield return new WaitForSeconds(30);
         SceneManager.LoadScene(0);

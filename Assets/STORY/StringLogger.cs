@@ -20,16 +20,31 @@ public class StringLogger : MonoBehaviour {
             return;
         }
         var sr = File.CreateText(Application.persistentDataPath + "\\" + fileName);
+        sr.WriteLine("Start current time, classroom sceneA start ida, classroom sceneA end ida, classroom sceneB start ida, classroom sceneB end ida");
         sr.Close();
     }
 
+    public static  void AddHeading()
+    {
+        var sr = File.CreateText(Application.persistentDataPath + "\\" + "TimeStamps.txt");
+        sr.WriteLine("Start current time, classroom sceneA start ida, classroom sceneA end ida, classroom sceneB start ida, classroom sceneB end ida" + Environment.NewLine);
+        sr.Close();
+    }
 
     public static void AddTimeStamp(string when)
     {
         var sr = File.AppendText(Application.persistentDataPath + "\\" + "TimeStamps.txt");
-        sr.WriteLine( "\n" + "Current Time: " + DateTimeToUnixTimestamp(DateTime.Now) +" "+ when + "\n");
+        sr.WriteLine( "\n" + "Current Time: " + DateTimeToUnixTimestamp(DateTime.Now) +" "+ when);
         sr.Close();
     }
+
+    public static void AddTimeStampAndNewLine(string when)
+    {
+        var sr = File.AppendText(Application.persistentDataPath + "\\" + "TimeStamps.txt");
+        sr.WriteLine("\n" + "Current Time: " + DateTimeToUnixTimestamp(DateTime.Now) + " "+ when + Environment.NewLine);
+        sr.Close();
+    }
+
 
     public static double DateTimeToUnixTimestamp(DateTime dateTime)
     {
