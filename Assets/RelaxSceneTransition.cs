@@ -10,7 +10,7 @@ public class RelaxSceneTransition : MonoBehaviour
 	IEnumerator Start ()
 	{
 	    nextScene = PlayerPrefs.GetInt("NextScene");
-	    yield return new WaitForSeconds(90);
+	    yield return new WaitForSeconds(10);
         Camera.main.GetComponent<VRCameraFade>().FadeOut(2, true);
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(nextScene);

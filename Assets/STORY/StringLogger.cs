@@ -34,14 +34,14 @@ public class StringLogger : MonoBehaviour {
     public static void AddTimeStamp(string when)
     {
         var sr = File.AppendText(Application.persistentDataPath + "\\" + "TimeStamps.txt");
-        sr.WriteLine(DateTimeToUnixTimestamp(DateTime.Now) +","+ when);
+        sr.WriteLine(DateTimeToUnixTimestamp(DateTime.Now) +",");
         sr.Close();
     }
 
     public static void AddTimeStampAndNewLine(string when)
     {
         var sr = File.AppendText(Application.persistentDataPath + "\\" + "TimeStamps.txt");
-        sr.WriteLine("\n" + "Current Time: " + DateTimeToUnixTimestamp(DateTime.Now) + " "+ when + Environment.NewLine);
+        sr.WriteLine( DateTimeToUnixTimestamp(DateTime.Now) + Environment.NewLine);
         sr.Close();
     }
 
