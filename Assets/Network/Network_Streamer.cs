@@ -7,13 +7,18 @@ public class Network_Streamer : NetworkBehaviour {
     public SceneChooser controller1;
     public SceneController controller2;
     public IdaSceneController controller3;
+    public DescriptionSceneController controller4;
     Quaternion rotations;
     Transform myTransform;
+
 	// Use this for initialization
 	void Start () {
         myTransform = transform;
 	}
-	
+	void OnAwake()
+    {
+        //gameObject.SetActive(true);
+    }
 	// Update is called once per frame
 	void FixedUpdate () {
         if (isServer)
@@ -66,6 +71,11 @@ public class Network_Streamer : NetworkBehaviour {
             else if (controller3)
             {
                 controller3.Action(key);
+                Debug.Log("recieving actions");
+            }
+            else if (controller4)
+            {
+                controller4.Action(key);
                 Debug.Log("recieving actions");
             }
         }

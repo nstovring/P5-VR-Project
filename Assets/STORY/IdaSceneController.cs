@@ -33,9 +33,9 @@ public class IdaSceneController : MonoBehaviour
 
     void Awake() {
         _idaStartPosition = IDA.transform.position;
-        streamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Network_Streamer>();
+        /*streamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Network_Streamer>();
         streamer.reset();
-        streamer.controller3 = this;
+        streamer.controller3 = this;*/
     }
 
     // Use this for initialization
@@ -187,7 +187,7 @@ public class IdaSceneController : MonoBehaviour
     void Update () {
         if (Input.GetKeyUp(KeyCode.Space) && wrongSceneOver)
         {
-            streamer.Rpc_SendAction(KeyCode.Space);
+            //streamer.Rpc_SendAction(KeyCode.Space);
             StartCoroutine(ClassRoomSceneB());
             return;
         }
@@ -195,13 +195,13 @@ public class IdaSceneController : MonoBehaviour
         if (entireSceneOver && Input.GetKeyUp(KeyCode.Space))
         {
             entireSceneOver = false;
-            streamer.Rpc_SendAction(KeyCode.Space);
+            //streamer.Rpc_SendAction(KeyCode.Space);
             SceneManager.LoadScene(0);
             return;
         }
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            streamer.Rpc_SendAction(KeyCode.Escape);
+            //streamer.Rpc_SendAction(KeyCode.Escape);
             SceneManager.LoadScene(0);
         }
     }

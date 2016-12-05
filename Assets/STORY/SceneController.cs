@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using VRStandardAssets.Utils;
+using UnityEngine.Networking;
 
 public class SceneController : MonoBehaviour
 {
@@ -22,13 +23,15 @@ public class SceneController : MonoBehaviour
     private Animator teacherAnimator;
 
     Network_Streamer streamer;
+    NetworkManager manager;
 
-    void Awake()
+   /* void Awake()
     {
         streamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Network_Streamer>();
         streamer.reset();
         streamer.controller2 = this;
-    }
+
+    }*/
     // Use this for initialization
     private IEnumerator Start ()
 	{
@@ -194,21 +197,23 @@ public class SceneController : MonoBehaviour
     void Update () {
         if (Input.anyKeyDown && wrongSceneOver)
         {
-            streamer.Rpc_SendAction(KeyCode.A);
+            //streamer.Rpc_SendAction(KeyCode.A);
             StartCoroutine(ClassRoomSceneB());
             return;
         }
 
         if (entireSceneOver && Input.anyKeyDown)
         {
-            streamer.Rpc_SendAction(KeyCode.A);
+            //streamer.Rpc_SendAction(KeyCode.A);
             entireSceneOver = false;
+            //manager.ServerChangeScene(SceneManager.GetSceneAt(0).name);
             SceneManager.LoadScene(0);
+            
             return;
         }
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            streamer.Rpc_SendAction(KeyCode.Escape);
+            //streamer.Rpc_SendAction(KeyCode.Escape);
             SceneManager.LoadScene(0);
         }
     }

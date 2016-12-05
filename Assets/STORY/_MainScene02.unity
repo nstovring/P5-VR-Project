@@ -848,11 +848,13 @@ Animator:
   m_LinearVelocityBlending: 0
   m_WarningMessage: "\nBinding warning: Some transforms are animated by both a Humanoid
     animation clip and a Generic animation clip. Only the Humanoid clip will be applied
-    on those transforms.\n\tTransform 'Character1_LeftLeg1'\n\tTransform 'Character1_LeftHand'\n\tTransform
-    'Character1_RightHandMiddle3'\n\tTransform 'Character1_RightHandThumb3'\n\tTransform
-    'Character1_LeftLeg'\n\tTransform 'Character1_LeftHandMiddle2'\n\tTransform 'Character1_LeftFoot'\n\tTransform
-    'Character1_RightHandMiddle2'\n\tTransform 'Character1_LeftFoot1'\n\tTransform
-    'Character1_LeftForeArm'\n\tand more ...\n\tFrom animation clip 'Classmate_Drawing'"
+    on those transforms.\n\tTransform 'Character1_Neck'\n\tTransform 'Character1_LeftLeg1'\n\tTransform
+    'Character1_LeftHand'\n\tTransform 'Character1_RightHandMiddle3'\n\tTransform
+    'Character1_LeftUpLeg1'\n\tTransform 'Character1_Spine'\n\tTransform 'Character1_RightHandThumb3'\n\tTransform
+    'Character1_LeftLeg'\n\tTransform 'Character1_LeftHandMiddle2'\n\tTransform 'Character1_Spine1'\n\tand
+    more ...\n\tFrom animation clip 'Male_HandUp'\n\tFrom animation clip 'Male_Drawing'\n\tFrom
+    animation clip 'Male_Idle'\n\tFrom animation clip 'Male_HandUpIdle'\n\tFrom animation
+    clip 'Male_HandDown'\n\tFrom animation clip 'Male_HandUpIdle'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &44693126
@@ -3461,11 +3463,13 @@ Animator:
   m_LinearVelocityBlending: 0
   m_WarningMessage: "\nBinding warning: Some transforms are animated by both a Humanoid
     animation clip and a Generic animation clip. Only the Humanoid clip will be applied
-    on those transforms.\n\tTransform 'Character1_LeftLeg1'\n\tTransform 'Character1_LeftHand'\n\tTransform
-    'Character1_RightHandMiddle3'\n\tTransform 'Character1_RightHandThumb3'\n\tTransform
-    'Character1_LeftLeg'\n\tTransform 'Character1_LeftHandMiddle2'\n\tTransform 'Character1_LeftFoot'\n\tTransform
-    'Character1_RightHandMiddle2'\n\tTransform 'Character1_LeftFoot1'\n\tTransform
-    'Character1_LeftForeArm'\n\tand more ...\n\tFrom animation clip 'Classmate_Drawing'"
+    on those transforms.\n\tTransform 'Character1_Neck'\n\tTransform 'Character1_LeftLeg1'\n\tTransform
+    'Character1_LeftHand'\n\tTransform 'Character1_RightHandMiddle3'\n\tTransform
+    'Character1_LeftUpLeg1'\n\tTransform 'Character1_Spine'\n\tTransform 'Character1_RightHandThumb3'\n\tTransform
+    'Character1_LeftLeg'\n\tTransform 'Character1_LeftHandMiddle2'\n\tTransform 'Character1_Spine1'\n\tand
+    more ...\n\tFrom animation clip 'Male_HandUp'\n\tFrom animation clip 'Male_Drawing'\n\tFrom
+    animation clip 'Male_Idle'\n\tFrom animation clip 'Male_HandUpIdle'\n\tFrom animation
+    clip 'Male_HandDown'\n\tFrom animation clip 'Male_HandUpIdle'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &185862896
@@ -6361,6 +6365,7 @@ MonoBehaviour:
   myAnimator: {fileID: 0}
   myType: 0
   myState: 0
+  myEmotion: 0
   MaleTextures:
   - {fileID: 2800000, guid: 82f086a6e780d4c408b196ef0c4cdc9c, type: 3}
   - {fileID: 2800000, guid: eb2b906e817eb58409468dc93feb710f, type: 3}
@@ -8180,6 +8185,7 @@ MonoBehaviour:
   myAnimator: {fileID: 0}
   myType: 1
   myState: 0
+  myEmotion: 0
   MaleTextures:
   - {fileID: 2800000, guid: 82f086a6e780d4c408b196ef0c4cdc9c, type: 3}
   - {fileID: 2800000, guid: eb2b906e817eb58409468dc93feb710f, type: 3}
@@ -16142,6 +16148,7 @@ MonoBehaviour:
   myAnimator: {fileID: 0}
   myType: 1
   myState: 0
+  myEmotion: 0
   MaleTextures:
   - {fileID: 2800000, guid: 82f086a6e780d4c408b196ef0c4cdc9c, type: 3}
   - {fileID: 2800000, guid: eb2b906e817eb58409468dc93feb710f, type: 3}
@@ -18024,6 +18031,58 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 110930e30b8f6cc4687c3dc5d87423ad, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1060072381 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011983855050, guid: 110930e30b8f6cc4687c3dc5d87423ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 1060072380}
+--- !u!114 &1060072382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1060072381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d322c4e55b7b4fd4db788381200f4f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller1: {fileID: 0}
+  controller2: {fileID: 0}
+  controller3: {fileID: 0}
+  controller4: {fileID: 0}
+--- !u!114 &1060072383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1060072381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 17
+    i1: 9
+    i2: 48
+    i3: 227
+    i4: 11
+    i5: 143
+    i6: 108
+    i7: 196
+    i8: 104
+    i9: 124
+    i10: 61
+    i11: 197
+    i12: 216
+    i13: 116
+    i14: 35
+    i15: 173
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!1 &1066127493
 GameObject:
   m_ObjectHideFlags: 0
@@ -21611,11 +21670,13 @@ Animator:
   m_LinearVelocityBlending: 0
   m_WarningMessage: "\nBinding warning: Some transforms are animated by both a Humanoid
     animation clip and a Generic animation clip. Only the Humanoid clip will be applied
-    on those transforms.\n\tTransform 'Character1_LeftLeg1'\n\tTransform 'Character1_LeftHand'\n\tTransform
-    'Character1_RightHandMiddle3'\n\tTransform 'Character1_RightHandThumb3'\n\tTransform
-    'Character1_LeftLeg'\n\tTransform 'Character1_LeftHandMiddle2'\n\tTransform 'Character1_LeftFoot'\n\tTransform
-    'Character1_RightHandMiddle2'\n\tTransform 'Character1_LeftFoot1'\n\tTransform
-    'Character1_LeftForeArm'\n\tand more ...\n\tFrom animation clip 'Classmate_Drawing'"
+    on those transforms.\n\tTransform 'Character1_Neck'\n\tTransform 'Character1_LeftLeg1'\n\tTransform
+    'Character1_LeftHand'\n\tTransform 'Character1_RightHandMiddle3'\n\tTransform
+    'Character1_LeftUpLeg1'\n\tTransform 'Character1_Spine'\n\tTransform 'Character1_RightHandThumb3'\n\tTransform
+    'Character1_LeftLeg'\n\tTransform 'Character1_LeftHandMiddle2'\n\tTransform 'Character1_Spine1'\n\tand
+    more ...\n\tFrom animation clip 'Male_HandUp'\n\tFrom animation clip 'Male_Drawing'\n\tFrom
+    animation clip 'Male_Idle'\n\tFrom animation clip 'Male_HandUpIdle'\n\tFrom animation
+    clip 'Male_HandDown'\n\tFrom animation clip 'Male_HandUpIdle'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1232096134
@@ -25570,6 +25631,7 @@ MonoBehaviour:
   myAnimator: {fileID: 0}
   myType: 0
   myState: 1
+  myEmotion: 0
   MaleTextures:
   - {fileID: 2800000, guid: 3012536eea5c7eb45bbb80628463eb02, type: 3}
   - {fileID: 2800000, guid: 21c782d6a88fe6a489c6295d760c9179, type: 3}
@@ -27396,6 +27458,7 @@ MonoBehaviour:
   myAnimator: {fileID: 0}
   myType: 0
   myState: 1
+  myEmotion: 0
   MaleTextures:
   - {fileID: 2800000, guid: e52684e99e2b40f43b81f24ddaed807e, type: 3}
   - {fileID: 2800000, guid: a5d20e2581e7bcb41bc099befdd66f0a, type: 3}
@@ -33770,11 +33833,13 @@ Animator:
   m_LinearVelocityBlending: 0
   m_WarningMessage: "\nBinding warning: Some transforms are animated by both a Humanoid
     animation clip and a Generic animation clip. Only the Humanoid clip will be applied
-    on those transforms.\n\tTransform 'Character1_LeftLeg1'\n\tTransform 'Character1_LeftHand'\n\tTransform
-    'Character1_RightHandMiddle3'\n\tTransform 'Character1_RightHandThumb3'\n\tTransform
-    'Character1_LeftLeg'\n\tTransform 'Character1_LeftHandMiddle2'\n\tTransform 'Character1_LeftFoot'\n\tTransform
-    'Character1_RightHandMiddle2'\n\tTransform 'Character1_LeftFoot1'\n\tTransform
-    'Character1_LeftForeArm'\n\tand more ...\n\tFrom animation clip 'Classmate_Drawing'"
+    on those transforms.\n\tTransform 'Character1_Neck'\n\tTransform 'Character1_LeftLeg1'\n\tTransform
+    'Character1_LeftHand'\n\tTransform 'Character1_RightHandMiddle3'\n\tTransform
+    'Character1_LeftUpLeg1'\n\tTransform 'Character1_Spine'\n\tTransform 'Character1_RightHandThumb3'\n\tTransform
+    'Character1_LeftLeg'\n\tTransform 'Character1_LeftHandMiddle2'\n\tTransform 'Character1_Spine1'\n\tand
+    more ...\n\tFrom animation clip 'Male_HandUp'\n\tFrom animation clip 'Male_Drawing'\n\tFrom
+    animation clip 'Male_Idle'\n\tFrom animation clip 'Male_HandUpIdle'\n\tFrom animation
+    clip 'Male_HandDown'\n\tFrom animation clip 'Male_HandUpIdle'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1894352954
@@ -34287,6 +34352,7 @@ MonoBehaviour:
   myAnimator: {fileID: 0}
   myType: 0
   myState: 0
+  myEmotion: 0
   MaleTextures:
   - {fileID: 2800000, guid: a72483f8817b6d14f8d0c3f7fa77b5b2, type: 3}
   - {fileID: 2800000, guid: 71dd34f9bdc4858439b368268d2f65ee, type: 3}
@@ -35635,6 +35701,7 @@ MonoBehaviour:
   myAnimator: {fileID: 1180454854}
   myType: 0
   myState: 0
+  myEmotion: 0
   MaleTextures:
   - {fileID: 2800000, guid: 26cf6444c835d8f46b9cffdb4ddf5e5b, type: 3}
   - {fileID: 2800000, guid: 0b023db8666a4e549acb0240b2c703a4, type: 3}
@@ -37986,6 +38053,7 @@ MonoBehaviour:
   myAnimator: {fileID: 0}
   myType: 1
   myState: 2
+  myEmotion: 0
   MaleTextures:
   - {fileID: 2800000, guid: 82f086a6e780d4c408b196ef0c4cdc9c, type: 3}
   - {fileID: 2800000, guid: eb2b906e817eb58409468dc93feb710f, type: 3}
@@ -38695,6 +38763,7 @@ MonoBehaviour:
   myAnimator: {fileID: 0}
   myType: 0
   myState: 0
+  myEmotion: 0
   MaleTextures:
   - {fileID: 2800000, guid: 3012536eea5c7eb45bbb80628463eb02, type: 3}
   - {fileID: 2800000, guid: 21c782d6a88fe6a489c6295d760c9179, type: 3}

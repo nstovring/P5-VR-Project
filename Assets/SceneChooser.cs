@@ -1,24 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 
 public class SceneChooser : MonoBehaviour {
 
     Network_Streamer streamer;
+    NetworkManager manager;
     public static void ChooseScene(int sceneInt)
     {
         SceneManager.LoadScene(sceneInt);
+        
     }
 	// Use this for initialization
 	void Start () {
 	
 	}
-    void Awake()
+    /*void Awake()
     {
         streamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Network_Streamer>();
         streamer.reset();
         streamer.controller1 = this;
-    }
+        manager = GameObject.Find("Network Host Manager").GetComponent<NetworkManager>();
+    }*/
     private KeyCode[] keyCodes = {
          KeyCode.Alpha1,
          KeyCode.Alpha2,
@@ -42,11 +46,14 @@ public class SceneChooser : MonoBehaviour {
             if (Input.GetKeyDown(keyCodes[i]))
             {
                 selectedLevel = i + 1;
-                streamer.Rpc_SendAction(keyCodes[i]);
+                //streamer.Rpc_SendAction(keyCodes[i]);
             }
         }
         if (selectedLevel < 3 && selectedLevel > 0)
 	    {
+            //SceneManager.LoadScene(selectedLevel);
+            //Scene scene1 = SceneManager.GetSceneAt(selectedLevel);
+            //manager.ServerChangeScene(SceneManager.GetSceneAt(selectedLevel).name);
             ChooseScene(selectedLevel);
         }
 	
@@ -71,7 +78,8 @@ public class SceneChooser : MonoBehaviour {
         }
         if (selectedLevel < 3 && selectedLevel > 0)
         {
-            ChooseScene(selectedLevel);
+            //ChooseScene(selectedLevel);
+            //manager.ServerChangeScene(SceneManager.GetSceneAt(selectedLevel).name);
         }
     }
 }

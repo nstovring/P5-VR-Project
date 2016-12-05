@@ -7,6 +7,7 @@ using VRStandardAssets.Utils;
 
 public class DescriptionSceneController : MonoBehaviour
 {
+
     public AudioSource SceneAudioSource;
     public AudioSource BackgroundAudioSource;
     public AudioSource BackgroundFadeAudioSource;
@@ -28,6 +29,14 @@ public class DescriptionSceneController : MonoBehaviour
     private List<Transform> rotatedframes;
     public Renderer[] frameRenderers;
 
+    Network_Streamer streamer;
+
+   /* void Awake()
+    {
+        streamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Network_Streamer>();
+        streamer.reset();
+        streamer.controller4 = this;
+    }*/
     private IEnumerator PictureFadeInScene()
     {
         rotatedframes = new List<Transform>();
@@ -193,12 +202,14 @@ public class DescriptionSceneController : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Space) && !Started)
         {
+            //streamer.Rpc_SendAction(KeyCode.Space);
             Started = true;
             StartCoroutine(PictureFadeInScene());
             return;
         }
         if (entireSceneOver && Input.GetKeyUp(KeyCode.Space))
         {
+            //streamer.Rpc_SendAction(KeyCode.Space);
             entireSceneOver = false;
             SceneManager.LoadScene(0);
             return;
@@ -206,10 +217,31 @@ public class DescriptionSceneController : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Escape))
         {
+            //streamer.Rpc_SendAction(KeyCode.Escape);
             SceneManager.LoadScene(0);
         }
     }
 
+    public void Action(KeyCode key)
+    {
+        if (key == KeyCode.Space && !Started)
+        {
+            Started = true;
+            StartCoroutine(PictureFadeInScene());
+            return;
+        }
+        if (entireSceneOver && key == KeyCode.Space)
+        {
+            entireSceneOver = false;
+            SceneManager.LoadScene(0);
+            return;
+        }
+
+        if (key == KeyCode.Escape)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 
 
 
