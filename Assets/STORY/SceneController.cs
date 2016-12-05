@@ -43,7 +43,6 @@ public class SceneController : MonoBehaviour
         //{
         //        classMates.Add(o.GetComponent<ClassMate>());
         //}
-
         if (!teacher)
         teacher = GameObject.FindGameObjectWithTag("Teacher").GetComponent<ClassMate>();
         teacherAnimator = teacher.GetComponentInChildren<Animator>();

@@ -12,8 +12,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/STORY/_DescriptionSceneB_IDA.unity
   - enabled: 1
-    path: Assets/STORY/_MainScene.unity
+    path: Assets/STORY/_EmilStory.unity
   - enabled: 1
+    path: Assets/STORY/_IdaStory.unity
+  - enabled: 0
     path: Assets/STORY/_MainScene02.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Network/NetworkScene.unity
