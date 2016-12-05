@@ -24,17 +24,17 @@ public class StringLogger : MonoBehaviour {
         sr.Close();
     }
 
-    public static  void AddHeading()
+    public static  void AddHeading(string who)
     {
         var sr = File.CreateText(Application.persistentDataPath + "\\" + "TimeStamps.txt");
-        sr.WriteLine("Start current time, classroom sceneA start ida, classroom sceneA end ida, classroom sceneB start ida, classroom sceneB end ida" + Environment.NewLine);
+        sr.WriteLine("Start current time, classroom sceneA start " + who + ", classroom sceneA end " + who+ ", classroom sceneB start ida, classroom sceneB end " + who + Environment.NewLine);
         sr.Close();
     }
 
     public static void AddTimeStamp(string when)
     {
         var sr = File.AppendText(Application.persistentDataPath + "\\" + "TimeStamps.txt");
-        sr.WriteLine( "\n" + "Current Time: " + DateTimeToUnixTimestamp(DateTime.Now) +" "+ when);
+        sr.WriteLine(DateTimeToUnixTimestamp(DateTime.Now) +","+ when);
         sr.Close();
     }
 

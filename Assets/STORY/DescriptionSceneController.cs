@@ -31,12 +31,13 @@ public class DescriptionSceneController : MonoBehaviour
 
     Network_Streamer streamer;
 
-   /* void Awake()
+    IEnumerator Start()
     {
-        streamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Network_Streamer>();
-        streamer.reset();
-        streamer.controller4 = this;
-    }*/
+        //streamer = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Network_Streamer>();
+        //streamer.reset();
+        //streamer.controller4 = this;
+        yield return StartCoroutine(PictureFadeInScene());
+    }
     private IEnumerator PictureFadeInScene()
     {
         StringLogger.AddHeading();
