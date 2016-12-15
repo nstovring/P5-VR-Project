@@ -3,14 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags:
   - ClassMate
   - Teacher
   - Emil
-=======
-  tags: []
->>>>>>> 11d3c9e... VR Samples
   layers:
   - Default
   - TransparentFX

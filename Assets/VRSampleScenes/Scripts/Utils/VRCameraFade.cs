@@ -35,10 +35,7 @@ namespace VRStandardAssets.Utils
         {
             m_FadeOutColor = new Color(m_FadeColor.r, m_FadeColor.g, m_FadeColor.b, 0f);
             m_FadeImage.enabled = true;
-<<<<<<< HEAD
             m_FadeImage.color = m_FadeColor;
-=======
->>>>>>> 11d3c9e... VR Samples
         }
 
 
