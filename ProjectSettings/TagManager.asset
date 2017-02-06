@@ -7,6 +7,8 @@ TagManager:
   - ClassMate
   - Teacher
   - Emil
+  - NPC
+  - Event_Manager
   layers:
   - Default
   - TransparentFX
